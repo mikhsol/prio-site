@@ -596,6 +596,116 @@ nav a:hover {
   color: var(--on-surface-variant);
 }
 
+/* Waitlist / Stay Updated */
+.waitlist {
+  padding: 2rem 0 0.5rem;
+  text-align: center;
+}
+
+.waitlist h2 {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.waitlist .section-sub {
+  color: var(--on-surface-variant);
+  margin-bottom: 1.5rem;
+}
+
+.waitlist-form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.waitlist-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.waitlist-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--outline);
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: inherit;
+}
+
+.waitlist-input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+  border-color: var(--primary);
+}
+
+.waitlist-note {
+  font-size: 0.78rem;
+  color: var(--on-surface-variant);
+  margin-top: 0.6rem;
+  opacity: 0.8;
+}
+
+/* Donate / Support */
+.donate {
+  padding: 1.5rem 0 0.5rem;
+}
+
+.donate h2 {
+  text-align: center;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.donate .section-sub {
+  text-align: center;
+  color: var(--on-surface-variant);
+  margin-bottom: 1.5rem;
+}
+
+.donate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.donate-card {
+  border: 1px solid var(--outline);
+  border-radius: 12px;
+  padding: 1.2rem;
+  background: var(--surface-variant);
+  text-align: center;
+}
+
+.donate-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.donate-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+
+.donate-addr {
+  display: block;
+  font-size: 0.7rem;
+  word-break: break-all;
+  background: var(--surface);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--outline);
+  color: var(--on-surface-variant);
+  user-select: all;
+  cursor: text;
+}
+
 .final-cta {
   padding: 2.2rem 0 0.5rem;
   text-align: center;
@@ -773,6 +883,12 @@ footer a {
     margin: 0 auto;
   }
 
+  .donate-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
   .privacy-badges {
     gap: 0.5rem;
   }
@@ -845,7 +961,9 @@ footer a {
   .how h2,
   .proof h2,
   .faq h2,
-  .final-cta h2 {
+  .final-cta h2,
+  .waitlist h2,
+  .donate h2 {
     font-size: 1.4rem;
   }
 
@@ -914,6 +1032,25 @@ footer a {
 
   .pricing-price {
     font-size: 1.6rem;
+  }
+
+  /* Waitlist */
+  .waitlist-row {
+    flex-direction: column;
+  }
+
+  .waitlist-input {
+    width: 100%;
+  }
+
+  /* Donate */
+  .donate-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .donate-addr {
+    font-size: 0.65rem;
   }
 
   /* Legal links */
