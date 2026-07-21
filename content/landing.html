@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prio">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="https://prio.tl-dr.ch/assets/social/{{SOCIAL_CARD_FILE}}">
+  <meta property="og:image:alt" content="{{SOCIAL_IMAGE_ALT}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{{OG_LOCALE}}">
+{{OG_ALTERNATES}}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta name="twitter:image" content="https://prio.tl-dr.ch/assets/social/{{SOCIAL_CARD_FILE}}">
+  <meta name="twitter:image:alt" content="{{SOCIAL_IMAGE_ALT}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+{{HREFLANG_LINKS}}
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+  <script src="/site.js" defer></script>
+</head>
+<body class="landing-page">
+  <a class="skip-link" href="#main">{{SKIP_LINK}}</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="{{NAV_ARIA}}">
+      <a class="brand" href="{{HOME_URL}}" aria-label="Prio">
+        <img src="/logo.svg" width="40" height="40" alt="">
+        <span>Prio</span>
+      </a>
+      <div class="nav-links">
+        <a href="#benefits">{{NAV_BENEFITS}}</a>
+        <a href="#how">{{NAV_HOW}}</a>
+        <a href="#privacy">{{NAV_PRIVACY}}</a>
+        <a href="#updates">{{NAV_UPDATES}}</a>
+      </div>
+      <div class="nav-actions">
+        <label class="language-select">
+          <span class="sr-only">{{LANGUAGE_LABEL}}</span>
+          <svg class="icon language-select__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+          <select data-language-selector aria-label="{{LANGUAGE_LABEL}}">
+{{LANGUAGE_OPTIONS}}
+          </select>
+        </label>
+        <details class="mobile-menu" data-mobile-menu>
+          <summary
+            aria-label="{{MENU_LABEL}}"
+            data-open-label="{{MENU_LABEL}}"
+            data-close-label="{{CLOSE_MENU_LABEL}}"
+          >
+            <span class="mobile-menu__icon" aria-hidden="true"></span>
+            <span class="mobile-menu__label">{{MENU_LABEL}}</span>
+          </summary>
+          <div class="mobile-menu__panel">
+            <a href="#benefits">{{NAV_BENEFITS}}</a>
+            <a href="#how">{{NAV_HOW}}</a>
+            <a href="#privacy">{{NAV_PRIVACY}}</a>
+            <a href="#updates">{{NAV_UPDATES}}</a>
+            <a class="button button--small" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer">
+              {{NAV_INSTALL}}
+            </a>
+          </div>
+        </details>
+        <a class="button button--small" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer">
+          {{NAV_INSTALL}}
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+      <div class="section-shell hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">{{HERO_EYEBROW}}</p>
+          <h1>{{HERO_TITLE}}</h1>
+          <p class="hero__body">{{HERO_BODY}}</p>
+          <div class="hero__actions">
+            <a class="play-badge" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer" aria-label="{{PLAY_ARIA}}">
+              <img src="/assets/google-play/{{BADGE_FILE}}" width="646" height="250" alt="{{PLAY_ARIA}}" fetchpriority="high">
+            </a>
+            <a class="text-link" href="#how">{{HERO_SECONDARY_CTA}} <svg class="icon text-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <figure class="hero-showcase">
+{{HERO_SURFACE}}
+            <figcaption class="hero-showcase__proof">
+              <strong>4</strong>
+              <span>{{HERO_PROOF_LABEL}}</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="{{TRUST_ARIA}}">
+      <div class="section-shell trust-strip__grid">
+{{TRUST_STRIP}}
+      </div>
+    </section>
+
+    <section class="section" id="benefits">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{BENEFITS_EYEBROW}}</p>
+          <h2>{{BENEFITS_TITLE}}</h2>
+          <p>{{BENEFITS_BODY}}</p>
+        </div>
+        <div class="outcome-grid">
+{{BENEFIT_ITEMS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="how">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{HOW_EYEBROW}}</p>
+          <h2>{{HOW_TITLE}}</h2>
+        </div>
+        <ol class="steps">
+{{HOW_ITEMS}}
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tint gallery" id="screens">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{GALLERY_EYEBROW}}</p>
+          <h2>{{GALLERY_TITLE}}</h2>
+          <p>{{GALLERY_BODY}}</p>
+        </div>
+        <div class="gallery-grid" role="region" aria-label="{{GALLERY_TITLE}}" tabindex="0">
+{{GALLERY_ITEMS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy" id="privacy">
+      <div class="section-shell privacy__grid">
+        <div class="privacy__copy">
+          <p class="eyebrow eyebrow--light">{{PRIVACY_EYEBROW}}</p>
+          <h2>{{PRIVACY_TITLE}}</h2>
+          <p class="privacy__lead">{{PRIVACY_BODY}}</p>
+          <p class="privacy__detail">{{PRIVACY_DETAIL}}</p>
+          <a class="button button--light" href="/privacy-policy.html">{{FOOTER_PRIVACY}}</a>
+        </div>
+        <div class="privacy-points">
+{{PRIVACY_POINTS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="updates">
+      <div class="section-shell update-grid">
+        <div class="section-heading section-heading--left">
+          <p class="eyebrow">{{UPDATES_EYEBROW}}</p>
+          <h2>{{UPDATES_TITLE}}</h2>
+          <p>{{UPDATES_BODY}}</p>
+        </div>
+        <ul class="update-list" role="list">
+{{UPDATE_ITEMS}}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{FEATURES_EYEBROW}}</p>
+          <h2>{{FEATURES_TITLE}}</h2>
+        </div>
+        <ul class="feature-list" role="list">
+{{FEATURE_ITEMS}}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section free-callout">
+      <div class="section-shell free-callout__card">
+        <div>
+          <p class="eyebrow">{{FREE_EYEBROW}}</p>
+          <h2>{{FREE_TITLE}}</h2>
+          <p>{{FREE_BODY}}</p>
+        </div>
+        <a class="button button--large" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer">{{FREE_CTA}}</a>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">{{FAQ_EYEBROW}}</p>
+          <h2>{{FAQ_TITLE}}</h2>
+        </div>
+        <div class="faq-list">
+{{FAQ_ITEMS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="section-shell final-cta__inner">
+        <img src="/logo.svg" width="72" height="72" alt="">
+        <h2>{{FINAL_TITLE}}</h2>
+        <p>{{FINAL_BODY}}</p>
+        <a class="play-badge" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer" aria-label="{{PLAY_ARIA}}">
+          <img src="/assets/google-play/{{BADGE_FILE}}" width="646" height="250" alt="{{PLAY_ARIA}}" loading="lazy">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-grid">
+      <div>
+        <a class="brand brand--footer" href="{{HOME_URL}}" aria-label="Prio">
+          <img src="/logo.svg" width="36" height="36" alt="">
+          <span>Prio</span>
+        </a>
+        <p>{{FOOTER_TAGLINE}}</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy-policy.html">{{FOOTER_PRIVACY}}</a>
+        <a href="/terms-of-service.html">{{FOOTER_TERMS}}</a>
+        <a href="/delete-data.html">{{FOOTER_DELETE}}</a>
+        <a href="mailto:mik.prio.ai@gmail.com">{{FOOTER_CONTACT}}</a>
+      </div>
+      <div class="footer-meta">
+        <p>{{FOOTER_RIGHTS}}</p>
+        <p>{{FOOTER_PLAY_TRADEMARK}}</p>
+      </div>
+    </div>
+    <nav class="section-shell footer-languages" aria-label="{{LANGUAGE_LABEL}}">
+{{LANGUAGE_LINKS}}
+    </nav>
+  </footer>
+
+  <a class="mobile-install" href="{{PLAY_URL}}" target="_blank" rel="noopener noreferrer">
+    {{FINAL_CTA}}
+  </a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+_site/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+.playwright-cli/
+
+# Local translation work files; content/locales.json is canonical.
+content/locale_*.json
