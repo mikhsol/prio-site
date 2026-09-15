@@ -83,11 +83,13 @@ backup content before upload to the app's private Drive area. Google still
 receives OAuth authorization, network, file, and ciphertext metadata. Android
 system Auto Backup is disabled.
 
-The reviewed iOS build does not offer the implemented explicit iCloud backup
-path because the signed target lacks the required capability. iCloud backup
-controls are visible in Settings, but connection cannot complete. Prio marks
-its internal database and generated local backup files excluded from
-Apple-managed device backup and protects them for access after first unlock.
+iCloud backup controls are visible in Settings. Availability requires the app's
+iCloud capability, an available iCloud account and container, network access,
+and your explicit opt-in. When available and enabled, Prio encrypts backup
+contents with AES-256-GCM before uploading them to app-specific iCloud storage;
+the decryption key remains local. Prio marks its internal database and generated
+local backup files excluded from Apple-managed device backup and protects them
+for access after first unlock.
 
 Manual exports are plaintext JSON. A share destination can read them. Backups
 or restores can fail because of deletion, corruption, key loss, account state,

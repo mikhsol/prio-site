@@ -52,7 +52,7 @@ service:
 | Destination | What to do |
 |---|---|
 | Google Drive backup | Delete Prio's private app data through Google controls and remove Prio's access in your Google Account. Disconnecting inside Prio only stops future backup attempts. |
-| Firebase Analytics or Crashlytics | Turning either independent diagnostics toggle off stops future collection. Google controls retention of records already uploaded. |
+| Firebase Analytics or Crashlytics | Turning Analytics off stops future Analytics collection. Finish Crashlytics withdrawal by restarting Prio and clearing unsent reports; until then it can remain pending. Google controls retention of records already uploaded. |
 | OpenAI, Anthropic, Google Gemini, or xAI | Remove the API key in Prio to stop future requests, then use the selected provider's account and deletion process for data already sent. |
 | Clipboard, export, share destination, assistant, or paired client | Clear or delete the copy using the receiving app, device, or service controls. |
 | Google Play or Apple App Store | Use the store account and privacy controls for historical entitlement, transaction, or review records. |

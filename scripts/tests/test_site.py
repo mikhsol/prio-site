@@ -11,7 +11,16 @@ from PIL import Image
 from scripts import build_site
 
 
+def _legal_text(source: str) -> str:
+    return " ".join(re.sub(r"<!--.*?-->", "", source, flags=re.DOTALL).split())
+
+
 class SiteBuildTests(unittest.TestCase):
+    def test_legal_copy_does_not_count_commented_disclosures(self) -> None:
+        source = "<!-- same app installation or device -->\n<p>Visible policy</p>"
+        self.assertNotIn("same app installation or device", _legal_text(source))
+        self.assertIn("Visible policy", _legal_text(source))
+
     def test_locales_have_complete_matching_schema(self) -> None:
         locales = build_site.load_locales()
         self.assertEqual(tuple(locales), build_site.EXPECTED_LOCALES)
@@ -119,6 +128,30 @@ class SiteBuildTests(unittest.TestCase):
                 'class="table-wrap" role="region"',
                 privacy,
             )
+            privacy_text = _legal_text(privacy)
+            terms_text = _legal_text(terms)
+            deletion_text = _legal_text(
+                (output / "delete-data.html").read_text(encoding="utf-8")
+            )
+            self.assertIn("same app installation or device", privacy_text)
+            self.assertIn("Google authorization", privacy_text)
+            self.assertNotIn("Prio requests Google Sign-In", privacy_text)
+            self.assertIn(
+                "Crash reporting withdrawal completes after restarting Prio",
+                privacy_text,
+            )
+            self.assertIn("unsent reports", deletion_text)
+            self.assertIn("restarting Prio", deletion_text)
+            for legal_text in (privacy_text, terms_text):
+                self.assertIn("available iCloud account", legal_text)
+                self.assertNotIn(
+                    "does not declare the required iCloud capability",
+                    legal_text,
+                )
+                self.assertNotIn(
+                    "signed target lacks the required capability",
+                    legal_text,
+                )
 
     def test_seo_copy_fits_search_result_limits(self) -> None:
         for locale, data in build_site.load_locales().items():

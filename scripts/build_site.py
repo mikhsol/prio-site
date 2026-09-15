@@ -22,7 +22,7 @@ DEFAULT_OUTPUT = ROOT / "_site"
 SITE_URL = "https://prio.tl-dr.ch"
 SITE_NAME = "Prio"
 PLAY_URL = "https://play.google.com/store/apps/details?id=com.prio.app"
-LAST_MODIFIED = "2026-07-20"
+LAST_MODIFIED = "2026-09-14"
 
 EXPECTED_LOCALES = (
     "en-US",
@@ -104,12 +104,12 @@ LEGAL_PAGES = {
     "privacy-policy": {
         "title": "Privacy Policy",
         "description": "How Prio processes local data and optional network features.",
-        "meta": "Effective July 10, 2026 · Last updated July 17, 2026",
+        "meta": "Effective July 10, 2026 · Last updated September 14, 2026",
     },
     "terms-of-service": {
         "title": "Terms of Service",
         "description": "Terms for using the Prio task and planning app.",
-        "meta": "Effective July 10, 2026 · Last updated July 17, 2026",
+        "meta": "Effective July 10, 2026 · Last updated September 14, 2026",
     },
     "delete-data": {
         "title": "Delete Your Data",

@@ -78,6 +78,9 @@ Firebase installation/device identifier, and IP address. Firebase Analytics can
 derive coarse geography from IP data; Crashlytics is not the evidenced source
 of approximate location.
 
+Firebase can associate events with the same app installation or device. Not
+requiring a Prio account does not make this data anonymous.
+
 Prio does not intentionally put task text, notes, email, or other user content
 into analytics or crash logs. Prio does not request or use advertising
 identifiers, serve ads, or use Firebase data for cross-app tracking.
@@ -91,10 +94,11 @@ identifiers, serve ads, or use Firebase data for cross-app tracking.
   either under **Settings > Privacy Policy > Diagnostics sharing**.
 - **Debug builds:** collection is disabled by the reviewed platform policies.
 
-Disabling collection stops future SDK uploads but does not delete reports
-already received by Google. Google controls provider retention. People
-authorized to access Prio's Firebase project can view analytics reports and
-crash diagnostics.
+Turning Analytics off stops future Analytics collection. Crash reporting
+withdrawal completes after restarting Prio and clearing unsent reports; until
+then, the change can remain pending. Neither action deletes reports already
+received by Google. Google controls provider retention. People authorized to
+access Prio's Firebase project can view analytics reports and crash diagnostics.
 
 ## 4. Provider credentials
 
@@ -119,9 +123,9 @@ the failed category instead of claiming complete deletion.
 
 Android system Auto Backup is disabled. If you opt in to Google Drive backup:
 
-- Prio requests Google Sign-In scoped to `drive.appdata` (private app-data)
-  access only; it does not request or receive your Google account email or
-  profile;
+- Prio requests Google authorization for only `drive.appdata` (private app-data)
+  access. This grants permission to use Drive, not a Prio account sign-in;
+  Prio does not request or receive your Google account email or profile;
 - Prio uploads to Drive's private `appDataFolder`;
 - the backup payload is encrypted with AES-256-GCM before upload;
 - Google can see OAuth authorization, network, file, size, time, and ciphertext
@@ -130,17 +134,25 @@ Android system Auto Backup is disabled. If you opt in to Google Drive backup:
 - Prio retains up to three usable remote backups and prunes backups older than
   72 hours while preserving the newest or known-good copy.
 
-**Disconnect** stops future backup attempts in Prio, but it does not sign out or
-revoke Google access. Remove Prio's access in Google Account settings to revoke
-authorization, and delete Drive app data through Google controls to remove
-remote copies. Google may retain service records under its policy.
+**Disconnect** stops future backup attempts in Prio, but it does not revoke
+Google access or remove existing Drive copies. Remove Prio's access in Google
+Account settings to revoke authorization, and delete Drive app data through
+Google controls to remove remote copies. Google may retain service records
+under its policy.
 
 ### iOS
 
-Prio contains AES-256-GCM code for explicit iCloud backup, but the reviewed
-signed target does not declare the required iCloud capability. iCloud backup
-controls are visible in Settings, but connection cannot complete and the
-explicit in-app backup path is unavailable in this release.
+iCloud backup controls are visible in Settings. Availability requires the app's
+iCloud capability, an available iCloud account and container, network access,
+and your explicit opt-in. When available and enabled, Prio encrypts a local
+backup with AES-256-GCM before sending it to app-specific storage in your iCloud
+account. Prio sends encrypted contents and backup metadata, not the locally
+stored decryption key. Apple operates that storage; the Prio operator receives
+no backup copy.
+
+Disconnecting stops future backup attempts; it does not delete copies already
+in iCloud. Remove remote copies using the available Prio backup-deletion
+controls or your iCloud storage controls.
 
 Prio stores its internal database and generated local JSON backups under
 app-private Application Support, marks those roots and files excluded from
