@@ -100,6 +100,22 @@ then, the change can remain pending. Neither action deletes reports already
 received by Google. Google controls provider retention. People authorized to
 access Prio's Firebase project can view analytics reports and crash diagnostics.
 
+### Android diagnostic exports
+
+For Android only, we may use Firebase's daily batch export to copy
+Crashlytics reports and Firebase session data into a restricted Google
+BigQuery dataset in the EU for stability analysis. These copies can contain
+raw stack traces and installation/session identifiers; they are not anonymous
+aggregates. This does not enable Analytics, streaming, or iOS exports, or
+change your in-app consent settings. The EU location applies to the BigQuery
+copy, not the original Firebase processing.
+
+In the current BigQuery Sandbox, tables, views, and partitions automatically
+expire after 60 days. Authorized project administrators can delete these
+resources earlier. Stopping collection or unlinking the export does not erase
+existing copies. Google may retain recovery copies under its retention rules;
+resource expiration is not a promise of immediate erasure of every copy.
+
 ## 4. Provider credentials
 
 - **Android:** API credentials are stored in Keystore-backed encrypted
@@ -212,7 +228,8 @@ using the app's deletion controls.
 Deletion on the device cannot erase data already sent to Firebase, an AI
 provider, Google Drive, Apple or Google stores, an assistant, a paired client,
 the clipboard, or a share recipient. Use each recipient's account and deletion
-controls.
+controls. For a deletion request concerning the private Android BigQuery
+diagnostic copy described in Section 3, contact Prio below.
 
 ## 10. Security
 
@@ -231,9 +248,9 @@ terms.
 ## 12. Changes and contact
 
 We may update this policy when shipped behavior or legal requirements change.
-The effective date above will be updated for material changes.
+The last-updated date above will reflect material changes.
 
-Privacy questions or deletion requests concerning data sent directly to Prio
-support may be sent to **mik.prio.ai@gmail.com**. For data held by Google,
-Apple, an AI provider, or another share recipient, use that provider's privacy
-and deletion process.
+Send privacy questions, requests concerning the private BigQuery diagnostic
+copy, or requests about data sent directly to Prio support to
+**mik.prio.ai@gmail.com**. For other data held by Google, Apple, an AI provider,
+or another share recipient, use that provider's privacy and deletion process.

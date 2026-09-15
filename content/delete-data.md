@@ -53,16 +53,17 @@ service:
 |---|---|
 | Google Drive backup | Delete Prio's private app data through Google controls and remove Prio's access in your Google Account. Disconnecting inside Prio only stops future backup attempts. |
 | Firebase Analytics or Crashlytics | Turning Analytics off stops future Analytics collection. Finish Crashlytics withdrawal by restarting Prio and clearing unsent reports; until then it can remain pending. Google controls retention of records already uploaded. |
+| Android Crashlytics BigQuery copy | When enabled, copied crash reports and Firebase sessions are stored in a restricted EU dataset. Deleting local data or stopping exports does not erase existing copies. Sandbox tables, views, and partitions automatically expire after 60 days. Google may retain recovery copies. For a deletion request about this private copy, contact Prio below. |
 | OpenAI, Anthropic, Google Gemini, or xAI | Remove the API key in Prio to stop future requests, then use the selected provider's account and deletion process for data already sent. |
 | Clipboard, export, share destination, assistant, or paired client | Clear or delete the copy using the receiving app, device, or service controls. |
 | Google Play or Apple App Store | Use the store account and privacy controls for historical entitlement, transaction, or review records. |
 
 ## Contact
 
-For help with Prio's deletion controls or data deliberately sent to Prio
-support, email **mik.prio.ai@gmail.com** with the subject
+For help with Prio's deletion controls, the private BigQuery diagnostic copy,
+or data deliberately sent to Prio support, email **mik.prio.ai@gmail.com** with the subject
 **Data Deletion Request**.
 
 Prio does not operate an application server that stores your task database.
-For data held by Google, Apple, an AI provider, or another destination you
-selected, use that provider's privacy and deletion process.
+For other data held by Google, Apple, an AI provider, or another destination
+you selected, use that provider's privacy and deletion process.

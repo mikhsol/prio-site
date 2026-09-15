@@ -158,6 +158,41 @@ class SiteBuildTests(unittest.TestCase):
             self.assertLessEqual(len(data["seo"]["title"]), 65, locale)
             self.assertLessEqual(len(data["seo"]["description"]), 160, locale)
 
+    def test_rendered_android_diagnostic_export_disclosure_is_bounded(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "_site"
+            build_site.build(output)
+            privacy = _legal_text(
+                (output / "privacy-policy.html").read_text(encoding="utf-8")
+            )
+            deletion = _legal_text(
+                (output / "delete-data.html").read_text(encoding="utf-8")
+            )
+
+            for disclosure in (
+                "For Android only",
+                "Crashlytics reports and Firebase session data",
+                "restricted Google BigQuery dataset in the EU",
+                "raw stack traces and installation/session identifiers",
+                "not anonymous aggregates",
+                "does not enable Analytics, streaming, or iOS exports",
+                "tables, views, and partitions automatically expire after 60 days",
+                "unlinking the export does not erase existing copies",
+                "Google may retain recovery copies",
+            ):
+                with self.subTest(disclosure=disclosure):
+                    self.assertIn(disclosure, privacy)
+
+            for disclosure in (
+                "Android Crashlytics BigQuery copy",
+                "does not erase existing copies",
+                "automatically expire after 60 days",
+                "Google may retain recovery copies",
+                "deletion request about this private copy, contact Prio",
+            ):
+                with self.subTest(deletion_disclosure=disclosure):
+                    self.assertIn(disclosure, deletion)
+
     def test_non_english_footer_copy_is_localized(self) -> None:
         for locale, data in build_site.load_locales().items():
             if locale == "en-US":
