@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -516,6 +517,12 @@ def _render_gallery(items: list[dict[str, str]]) -> str:
     return "\n".join(cards)
 
 
+def asset_url(filename: str) -> str:
+    """Content-fingerprinted URL so a cached stylesheet never pairs with newer HTML."""
+    digest = hashlib.sha256((ROOT / filename).read_bytes()).hexdigest()[:12]
+    return f"/{filename}?v={digest}"
+
+
 def render_page(
     locale: str,
     data: dict[str, Any],
@@ -643,6 +650,8 @@ def render_page(
         "FOOTER_CONTACT": data["footer"]["contact"],
         "FOOTER_RIGHTS": data["footer"]["rights"],
         "FOOTER_PLAY_TRADEMARK": data["footer"]["playTrademark"],
+        "STYLE_URL": asset_url("style.css"),
+        "SCRIPT_URL": asset_url("site.js"),
     }
 
     rendered = template
@@ -734,10 +743,14 @@ def _render_legal_pages(output: Path) -> None:
             "SLUG": slug,
             "META": metadata["meta"],
             "CONTENT": rendered_markdown,
+            "STYLE_URL": asset_url("style.css"),
         }
         for key, value in replacements.items():
             replacement = value if key == "CONTENT" else _attribute(value)
             page = page.replace(f"{{{{{key}}}}}", replacement)
+        unresolved = sorted(set(re.findall(r"\{\{[A-Z_]+\}\}", page)))
+        if unresolved:
+            raise ValueError(f"{slug} rendered with unresolved placeholders: {unresolved}")
         output.joinpath(f"{slug}.html").write_text(page, encoding="utf-8")
 
 
@@ -849,6 +862,7 @@ def _render_not_found(output: Path, en_data: dict[str, Any]) -> None:
         "PLAY_URL": PLAY_URL,
         "PLAY_ARIA": en_data["common"]["playAria"],
         "BADGE_FILE": BADGE_FILES["en-US"],
+        "STYLE_URL": asset_url("style.css"),
     }
     page = template
     for key, value in replacements.items():

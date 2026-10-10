@@ -312,6 +312,31 @@ class SiteBuildTests(unittest.TestCase):
             rendered = (output / "index.html").read_text(encoding="utf-8")
             self.assertIn('class="app-surface app-surface--hero"', rendered)
 
+    def test_pages_fingerprint_assets_so_cached_css_cannot_mismatch_html(self) -> None:
+        # A browser that kept the previous style.css paired it with new gallery
+        # markup and stretched every 1080x1920 screenshot to its height attribute.
+        styles = (build_site.ROOT / "style.css").read_text(encoding="utf-8")
+        self.assertRegex(styles, r"(?m)^img\s*\{[^}]*height:\s*auto;")
+
+        style_url = build_site.asset_url("style.css")
+        script_url = build_site.asset_url("site.js")
+        self.assertRegex(style_url, r"^/style\.css\?v=[0-9a-f]{12}$")
+        self.assertRegex(script_url, r"^/site\.js\?v=[0-9a-f]{12}$")
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output = Path(temporary_directory) / "_site"
+            build_site.build(output)
+            pages = sorted(output.rglob("*.html"))
+            self.assertGreater(len(pages), len(build_site.load_locales()))
+            for page in pages:
+                with self.subTest(page=page.relative_to(output).as_posix()):
+                    source = page.read_text(encoding="utf-8")
+                    self.assertIn(f'<link rel="stylesheet" href="{style_url}">', source)
+                    self.assertNotIn('href="/style.css"', source)
+                    self.assertNotIn('src="/site.js"', source)
+                    if "landing-page" in source:
+                        self.assertIn(f'<script src="{script_url}" defer></script>', source)
+
     def test_structured_data_describes_brand_entities(self) -> None:
         locales = build_site.load_locales()
         template = build_site.TEMPLATE_PATH.read_text(encoding="utf-8")
