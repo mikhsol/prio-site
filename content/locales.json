@@ -5,7 +5,7 @@
     "ogLocale": "en_US",
     "seo": {
       "title": "Prio — Know What to Do Next | Private AI Task Planner for Android",
-      "description": "Prio turns tasks and goals into one clear next action with private, offline-first Eisenhower Matrix prioritization. Free on Android. No account required."
+      "description": "Prio turns tasks and goals into one clear next action with private, on-device Eisenhower Matrix planning. Free on Android, no account required."
     },
     "nav": {
       "benefits": "Why Prio",
@@ -17,7 +17,7 @@
     "hero": {
       "eyebrow": "Private task prioritization for Android",
       "title": "Know what to do next — without handing your tasks to the cloud.",
-      "body": "Prio turns your tasks and goals into one clear Eisenhower Matrix priority, using rule-first classification on your own device. Capture a task, review the suggested priority, and act — all without an account.",
+      "body": "Prio sorts everything on your plate into Do First, Schedule, Delegate, and Later — with a reason you can review — and connects daily work to the goals that matter. Core planning runs on your device, with no account required.",
       "secondaryCta": "See how it works",
       "proofLabel": "clear priority zones",
       "trust": [
@@ -27,22 +27,61 @@
         "On-device AI available"
       ]
     },
+    "heroSurface": {
+      "day": "Tuesday · Oct 13",
+      "greeting": "Good morning",
+      "pill": "5-day streak",
+      "overview": "Task Overview",
+      "focus": "Today's Focus",
+      "task": "Fix token refresh bug in production",
+      "meta": "Do First · Due 11:00 AM",
+      "quadrants": [
+        {
+          "name": "Do First",
+          "hint": "Urgent · important"
+        },
+        {
+          "name": "Schedule",
+          "hint": "Important · not urgent"
+        },
+        {
+          "name": "Delegate",
+          "hint": "Urgent · hand off"
+        },
+        {
+          "name": "Later",
+          "hint": "Low priority"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Why Prio",
       "title": "Turn overload into one next action",
-      "body": "Prio is built for people juggling too many tasks across too many apps. It gives you a single, explainable priority instead of another list to manage.",
+      "body": "Prio is built for people juggling too many tasks across too many apps. Instead of another list to manage, it gives you an explainable priority, a calm plan for today, and goals that keep moving.",
       "items": [
         {
-          "title": "One clear next action",
-          "body": "Stop re-sorting your to-do list. Prio's Eisenhower Matrix turns everything you capture into Do First, Schedule, Delegate, or Maybe Later — so you always know what matters most right now."
+          "title": "Instant clarity",
+          "body": "Every task lands in Do First, Schedule, Delegate, or Later, with a short reason you can review or change — so you always know what matters most right now."
         },
         {
-          "title": "Capture and schedule in seconds",
-          "body": "Add a task, due date, or reminder the moment it crosses your mind. Quick Capture, recurrence, tags, and subtasks keep your day organized without slowing you down."
+          "title": "Effortless capture",
+          "body": "Type or say a task in your own words, like “Submit tax return today,” and Prio sets the priority and timing. Voice uses on-device speech recognition."
         },
         {
-          "title": "Goals connected to daily work",
-          "body": "Link everyday tasks to the goals that matter, and use morning and evening reflections to see how today's actions move your priorities forward."
+          "title": "A calm Today screen",
+          "body": "See your focus, progress, and streak at a glance, then use My Day to plan the hours you actually have."
+        },
+        {
+          "title": "Briefings that surface what matters",
+          "body": "Morning briefings and evening summaries bring the important things forward without digging through lists."
+        },
+        {
+          "title": "Goals that keep moving",
+          "body": "Milestones, linked tasks, progress tracking, and a Goal Health check keep every goal specific and achievable."
+        },
+        {
+          "title": "Calendar and tasks together",
+          "body": "See events and tasks side by side in Day, 3-day, Week, and Month views, so you can plan around the time you really have."
         }
       ]
     },
@@ -51,43 +90,67 @@
       "title": "From overwhelmed to focused in three steps",
       "items": [
         {
-          "title": "Capture a real task",
-          "body": "Type (or say) one thing that's actually on your plate. No setup or account required — optional voice capture just asks for microphone access."
+          "title": "Capture in your own words",
+          "body": "Type or say one thing that's actually on your plate. No setup or account needed — optional voice capture only asks for microphone access."
         },
         {
           "title": "Review the suggested priority",
-          "body": "Prio explains why it suggested Do First, Schedule, Delegate, or Maybe Later. Agree or correct it — you're always in control."
+          "body": "Prio explains why it chose Do First, Schedule, Delegate, or Later and fills in the timing it understood. Accept it or change it — you stay in control."
         },
         {
           "title": "Act from Today",
-          "body": "Your confirmed task shows up as your recommended next action in Today, ready to work on right away."
+          "body": "Your confirmed task appears in Today's Focus, ready to work on, alongside your progress and streak."
         }
       ]
     },
     "gallery": {
       "eyebrow": "See it in action",
-      "title": "A calmer way to plan your day",
-      "body": "From quick capture to your Eisenhower Matrix, every screen is designed to get you to your next action faster.",
-      "captions": [
-        "Quick Capture with a priority suggestion",
-        "Morning briefing",
-        "Goal progress",
-        "Task details"
+      "title": "Real screens from the Android app",
+      "body": "From Today and Quick Capture to briefings, goals, calendar, and privacy controls — captured on Android and shown in English.",
+      "items": [
+        {
+          "caption": "Today, in dark theme",
+          "alt": "Prio Today screen in dark theme with a 5-day streak, Task Overview counts for Do First, Schedule, Delegate, and Later, 33% daily progress, and Today's Focus."
+        },
+        {
+          "caption": "Quick Capture that understands you",
+          "alt": "Quick Capture turning “Submit tax return today” into a Do First task, with the interpretation shown for review."
+        },
+        {
+          "caption": "A private morning briefing",
+          "alt": "Morning Briefing marked Private, summarizing 2 urgent tasks and 3 meetings and listing the day's Do First tasks with due times."
+        },
+        {
+          "caption": "Goals with Goal Health",
+          "alt": "Career goal at 50% and On Track, with milestones, linked tasks, and a Goal Health check rated 100% Strong."
+        },
+        {
+          "caption": "Calendar and tasks together",
+          "alt": "Calendar Day view for Tuesday, October 13, showing meetings and Prio tasks together, with 3 Days, Week, and Month options."
+        },
+        {
+          "caption": "Privacy controls in one place",
+          "alt": "Privacy & Security settings with switches to hide notification content on the lock screen and to block screenshots and screen recording."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Privacy",
       "title": "Built local-first, not local-only",
-      "body": "Core capture, planning, goals, reminders, local insights, and rule-first classification run on your Android device — no account or internet connection required.",
-      "detail": "When supported and selected, Gemini Nano or a downloaded llama.cpp model can also run fully on-device. Remote AI providers, encrypted Google Drive backup, manual export or sharing, and Firebase Analytics or Crashlytics are separate, explicit opt-ins you control individually. Prio has no AI proxy: if you connect a remote provider, your key and prompt go directly to that provider.",
+      "body": "Capture, planning, goals, reminders, local insights, and rule-first prioritization run on your Android device. Core planning works without a Prio account or an internet connection.",
+      "detail": "When supported and selected, Gemini Nano or a downloaded llama.cpp model runs AI on your device. Remote AI providers, encrypted Google Drive backup, manual export or sharing, and Firebase Analytics or Crashlytics are separate, explicit opt-ins you control individually. Prio has no AI proxy: if you connect a remote provider, your key and prompt go directly to that provider.",
       "points": [
         {
           "title": "On-device by default",
-          "body": "Rule-first classification and your core planning data never leave your device unless you choose to enable a network feature."
+          "body": "Rule-first classification and your core planning data stay on your device unless you choose to enable a network feature."
         },
         {
           "title": "Explicit opt-in for everything remote",
           "body": "Remote AI, cloud backup, export, and analytics are each off until you turn them on — turning one on never enables another."
+        },
+        {
+          "title": "Protection on your screen",
+          "body": "One switch hides task details on the lock screen; another hides Prio in the app switcher and blocks screenshots, screen recording, and screen sharing."
         },
         {
           "title": "No ads, no data sale",
@@ -97,25 +160,28 @@
     },
     "updates": {
       "eyebrow": "What's new",
-      "title": "Recently improved",
-      "body": "We keep improving the core experience with every release.",
+      "title": "Recently added",
+      "body": "Recent releases add creative tools and stronger privacy controls while keeping core planning on your device.",
       "items": [
-        "Faster, more reliable on-device AI startup and model handling",
-        "Simpler Quick Capture, scheduling, and the Today Do next flow",
-        "Clearer onboarding and easier navigation to advanced AI settings",
-        "Better accessibility, privacy, and stability throughout the app"
+        "On-device image creation in chat, with share, save, full-screen view, and variations",
+        "One-tap copy for chat messages",
+        "Privacy & Security settings that hide lock-screen details and block screenshots",
+        "A model browser for on-device AI and integrity checks before a backup is restored"
       ]
     },
     "features": {
       "eyebrow": "Everything you need",
       "title": "A complete system for priorities, goals, and time",
       "items": [
-        "Eisenhower Matrix with Do First, Schedule, Delegate, and Maybe Later",
-        "Tasks, subtasks, recurrence, tags, due dates, and reminders",
-        "Goals connected to your everyday work",
-        "Morning briefings and evening reflections",
-        "Calendar view and focused My Day planning",
-        "Local, on-device productivity insights"
+        "Eisenhower Matrix with Do First, Schedule, Delegate, and Later",
+        "Natural-language Quick Capture with on-device voice input",
+        "Tasks with subtasks, deadlines, reminders, recurrence, and tags",
+        "Goals with milestones, progress tracking, and Goal Health",
+        "Morning briefings, evening summaries, and on-device insights",
+        "Calendar in Day, 3-day, Week, and Month views, plus My Day",
+        "Chat assistant with reviewable proposals and on-device image creation",
+        "App Actions, paired agents (MCP), dark theme, and 11 languages",
+        "JSON export and opt-in encrypted Google Drive backup"
       ]
     },
     "free": {
@@ -134,11 +200,15 @@
         },
         {
           "question": "Does Prio work offline?",
-          "answer": "Yes. Core capture, planning, goals, reminders, and rule-first prioritization work fully offline, without a Prio account."
+          "answer": "Yes. Core capture, planning, goals, reminders, and rule-first prioritization work without an internet connection or a Prio account. Remote AI and cloud backup connect only if you turn them on."
         },
         {
           "question": "Does Prio send my tasks to the cloud?",
           "answer": "Not unless you choose to. Core planning stays on your device. Remote AI, cloud backup, and export are separate features you opt into individually, and Prio has no AI proxy."
+        },
+        {
+          "question": "Can I use AI without sending data to the cloud?",
+          "answer": "Yes. On supported devices, Prio can run AI with Gemini Nano or a llama.cpp model you download, on your device. Remote providers are optional, experimental, and use your own API key."
         },
         {
           "question": "What makes Prio different from a to-do list?",
@@ -175,7 +245,7 @@
     "ogLocale": "de_DE",
     "seo": {
       "title": "Prio: Wissen, was als Nächstes zu tun ist – KI-Aufgabenplaner",
-      "description": "Prio verwandelt Aufgaben und Ziele in eine klare Priorität – privat und offline mit der Eisenhower-Matrix. Kostenlos für Android, kein Konto nötig."
+      "description": "Prio macht aus Aufgaben und Zielen einen klaren nächsten Schritt – mit privater Eisenhower-Planung auf dem Gerät. Kostenlos für Android, ohne Konto."
     },
     "nav": {
       "benefits": "Warum Prio",
@@ -187,7 +257,7 @@
     "hero": {
       "eyebrow": "Private Aufgabenpriorisierung für Android",
       "title": "Wissen, was als Nächstes zu tun ist – ganz ohne Cloud.",
-      "body": "Prio verwandelt Aufgaben und Ziele in eine klare Priorität nach der Eisenhower-Matrix – mit regelbasierter Klassifizierung direkt auf deinem Gerät. Aufgabe erfassen, vorgeschlagene Priorität prüfen, loslegen – ganz ohne Konto.",
+      "body": "Prio sortiert alles, was ansteht, in Sofort erledigen, Einplanen, Delegieren und Später – mit einer Begründung, die du prüfen kannst – und verbindet deinen Alltag mit den Zielen, die dir wichtig sind. Die Kernplanung läuft auf deinem Gerät, ganz ohne Konto.",
       "secondaryCta": "So funktioniert's",
       "proofLabel": "klare Prioritätsquadranten",
       "trust": [
@@ -197,22 +267,61 @@
         "On-Device-KI verfügbar"
       ]
     },
+    "heroSurface": {
+      "day": "Dienstag · 13. Okt.",
+      "greeting": "Guten Morgen",
+      "pill": "5 Tage in Folge",
+      "overview": "Aufgabenübersicht",
+      "focus": "Fokus für heute",
+      "task": "Token-Refresh-Fehler in Produktion beheben",
+      "meta": "Sofort erledigen · fällig 11:00",
+      "quadrants": [
+        {
+          "name": "Sofort erledigen",
+          "hint": "Dringend · wichtig"
+        },
+        {
+          "name": "Einplanen",
+          "hint": "Wichtig · nicht dringend"
+        },
+        {
+          "name": "Delegieren",
+          "hint": "Dringend · abgeben"
+        },
+        {
+          "name": "Später",
+          "hint": "Niedrige Priorität"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Warum Prio",
       "title": "Aus Aufgabenflut wird eine klare nächste Priorität",
-      "body": "Prio ist für alle gemacht, die zu viele Aufgaben in zu vielen Apps jonglieren. Statt einer weiteren Liste bekommst du eine einzige, nachvollziehbare Priorität.",
+      "body": "Prio ist für alle gemacht, die zu viele Aufgaben in zu vielen Apps jonglieren. Statt einer weiteren Liste bekommst du eine nachvollziehbare Priorität, einen ruhigen Plan für heute und Ziele, die vorankommen.",
       "items": [
         {
-          "title": "Eine klare nächste Priorität",
-          "body": "Schluss mit endlosem Sortieren. Die Eisenhower-Matrix ordnet jede Aufgabe in Sofort erledigen, Einplanen, Delegieren oder Vielleicht später ein – du weißt sofort, was jetzt zählt."
+          "title": "Sofort Klarheit",
+          "body": "Jede Aufgabe landet in Sofort erledigen, Einplanen, Delegieren oder Später – mit einer kurzen Begründung, die du prüfen oder ändern kannst. So weißt du immer, was gerade zählt."
         },
         {
-          "title": "Erfassen und planen in Sekunden",
-          "body": "Aufgabe, Termin oder Erinnerung erfassen, sobald dir etwas einfällt. Schnellerfassung, Wiederholungen, Tags und Unteraufgaben halten deinen Tag organisiert, ohne dich auszubremsen."
+          "title": "Mühelos erfassen",
+          "body": "Tippe oder sprich eine Aufgabe in deinen eigenen Worten, etwa „Steuererklärung heute abgeben“, und Prio setzt Priorität und Zeitpunkt. Die Spracheingabe nutzt Spracherkennung auf dem Gerät."
         },
         {
-          "title": "Ziele mit dem Alltag verbunden",
-          "body": "Verknüpfe Aufgaben mit deinen wichtigsten Zielen und nutze Morgen- und Abendrückblicke, um zu sehen, wie der heutige Tag deine Prioritäten voranbringt."
+          "title": "Ein ruhiger Heute-Bildschirm",
+          "body": "Fokus, Fortschritt und Serie auf einen Blick – und mit Mein Tag planst du die Stunden, die du wirklich hast."
+        },
+        {
+          "title": "Briefings, die zeigen, was zählt",
+          "body": "Morgen-Briefings und Abendzusammenfassungen holen das Wichtige nach vorn, ohne dass du Listen durchsuchen musst."
+        },
+        {
+          "title": "Ziele, die vorankommen",
+          "body": "Meilensteine, verknüpfte Aufgaben, Fortschritt und eine Zielgesundheit-Prüfung halten jedes Ziel konkret und erreichbar."
+        },
+        {
+          "title": "Kalender und Aufgaben zusammen",
+          "body": "Termine und Aufgaben nebeneinander in Tages-, 3-Tages-, Wochen- und Monatsansicht – so planst du rund um die Zeit, die du wirklich hast."
         }
       ]
     },
@@ -221,71 +330,98 @@
       "title": "In drei Schritten vom Chaos zum Fokus",
       "items": [
         {
-          "title": "Eine echte Aufgabe erfassen",
-          "body": "Tippe oder sprich, was gerade wirklich anliegt. Keine Einrichtung, kein Konto nötig – die optionale Spracheingabe fragt lediglich nach Mikrofonzugriff."
+          "title": "In eigenen Worten erfassen",
+          "body": "Tippe oder sprich eine Sache, die wirklich ansteht. Ohne Einrichtung und ohne Konto – die optionale Spracheingabe fragt nur nach Mikrofonzugriff."
         },
         {
           "title": "Vorgeschlagene Priorität prüfen",
-          "body": "Prio erklärt, warum Sofort erledigen, Einplanen, Delegieren oder Vielleicht später vorgeschlagen wird. Bestätigen oder korrigieren – du hast immer die Kontrolle."
+          "body": "Prio erklärt, warum es Sofort erledigen, Einplanen, Delegieren oder Später vorschlägt, und übernimmt den erkannten Zeitpunkt. Übernimm oder ändere ihn – du behältst die Kontrolle."
         },
         {
-          "title": "Aus „Heute“ heraus handeln",
-          "body": "Deine bestätigte Aufgabe erscheint sofort als empfohlene nächste Priorität unter „Heute“ – bereit zum Loslegen."
+          "title": "Von Heute aus handeln",
+          "body": "Deine bestätigte Aufgabe erscheint im Fokus für heute, direkt startklar – neben Fortschritt und Serie."
         }
       ]
     },
     "gallery": {
       "eyebrow": "In Aktion sehen",
-      "title": "Ruhiger durch den Tag planen",
-      "body": "Von der Schnellerfassung bis zur Eisenhower-Matrix ist jeder Bildschirm darauf ausgelegt, dich schneller zur nächsten Priorität zu bringen.",
-      "captions": [
-        "Schnellerfassung mit Prioritätsvorschlag",
-        "Morgen-Briefing",
-        "Zielfortschritt",
-        "Aufgabendetails"
+      "title": "Echte Bildschirme aus der Android-App",
+      "body": "Von Heute und Schnellerfassung bis zu Briefings, Zielen, Kalender und Datenschutzeinstellungen – aufgenommen unter Android, auf Englisch dargestellt.",
+      "items": [
+        {
+          "caption": "Heute im dunklen Design",
+          "alt": "Prio-Heute-Bildschirm im dunklen Design mit 5-Tage-Serie, Aufgabenübersicht für Sofort erledigen, Einplanen, Delegieren und Später, 33 % Tagesfortschritt und Fokus für heute."
+        },
+        {
+          "caption": "Schnellerfassung, die dich versteht",
+          "alt": "Schnellerfassung macht aus „Submit tax return today“ eine Aufgabe für Sofort erledigen und zeigt die Interpretation zur Prüfung an."
+        },
+        {
+          "caption": "Ein privates Morgen-Briefing",
+          "alt": "Als privat markiertes Morgen-Briefing mit 2 dringenden Aufgaben und 3 Terminen sowie den wichtigsten Aufgaben des Tages mit Fälligkeitszeiten."
+        },
+        {
+          "caption": "Ziele mit Zielgesundheit",
+          "alt": "Karriereziel bei 50 % und im Plan, mit Meilensteinen, verknüpften Aufgaben und einer Zielgesundheit-Prüfung mit 100 % Stark."
+        },
+        {
+          "caption": "Kalender und Aufgaben zusammen",
+          "alt": "Kalender-Tagesansicht für Dienstag, 13. Oktober, mit Terminen und Prio-Aufgaben zusammen sowie den Optionen 3 Tage, Woche und Monat."
+        },
+        {
+          "caption": "Datenschutz an einem Ort",
+          "alt": "Einstellungen für Datenschutz und Sicherheit mit Schaltern, um Benachrichtigungsinhalte auf dem Sperrbildschirm auszublenden und Screenshots sowie Bildschirmaufnahmen zu blockieren."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Datenschutz",
       "title": "Lokal gedacht, nicht nur lokal beworben",
-      "body": "Erfassung, Planung, Ziele, Erinnerungen, lokale Auswertungen und regelbasierte Klassifizierung laufen auf deinem Android-Gerät – ohne Konto und ohne Internetverbindung.",
-      "detail": "Wenn unterstützt und ausgewählt, können Gemini Nano oder ein geladenes llama.cpp-Modell zusätzlich vollständig auf dem Gerät laufen. Remote-KI-Anbieter, verschlüsseltes Google-Drive-Backup, manueller Export oder Teilen sowie Firebase Analytics und Crashlytics sind jeweils separate, ausdrückliche Opt-ins, die du einzeln steuerst. Prio hat keinen KI-Proxy: Verbindest du einen Remote-Anbieter, gehen dein Schlüssel und dein Prompt direkt an diesen Anbieter.",
+      "body": "Erfassung, Planung, Ziele, Erinnerungen, lokale Auswertungen und regelbasierte Priorisierung laufen auf deinem Android-Gerät. Die Kernplanung funktioniert ohne Prio-Konto und ohne Internetverbindung.",
+      "detail": "Wenn unterstützt und ausgewählt, führen Gemini Nano oder ein heruntergeladenes llama.cpp-Modell KI direkt auf deinem Gerät aus. Remote-KI-Anbieter, verschlüsseltes Google-Drive-Backup, manueller Export oder Teilen sowie Firebase Analytics oder Crashlytics sind getrennte, ausdrückliche Opt-ins, die du einzeln steuerst. Prio hat keinen KI-Proxy: Wenn du einen Remote-Anbieter verbindest, gehen dein Schlüssel und dein Prompt direkt an diesen Anbieter.",
       "points": [
         {
           "title": "Standardmäßig auf dem Gerät",
-          "body": "Regelbasierte Klassifizierung und deine Kernplanungsdaten verlassen dein Gerät nur, wenn du eine Netzwerkfunktion ausdrücklich aktivierst."
+          "body": "Regelbasierte Klassifizierung und deine Kernplanungsdaten bleiben auf deinem Gerät, solange du keine Netzwerkfunktion aktivierst."
         },
         {
           "title": "Ausdrückliches Opt-in für alles Externe",
-          "body": "Remote-KI, Cloud-Backup, Export und Analytics sind jeweils aus, bis du sie aktivierst – eine Funktion einzuschalten aktiviert nie eine andere."
+          "body": "Remote-KI, Cloud-Backup, Export und Analyse sind jeweils aus, bis du sie einschaltest – eine Funktion aktiviert nie eine andere."
+        },
+        {
+          "title": "Schutz auf dem Bildschirm",
+          "body": "Ein Schalter blendet Aufgabendetails auf dem Sperrbildschirm aus; ein weiterer verbirgt Prio in der App-Übersicht und blockiert Screenshots, Bildschirmaufnahmen und Bildschirmfreigabe."
         },
         {
           "title": "Keine Werbung, kein Datenverkauf",
-          "body": "Prio zeigt keine Werbung, verkauft keine persönlichen Daten und nutzt sie nicht für appübergreifendes Werbetracking."
+          "body": "Prio zeigt keine Werbung, verkauft keine personenbezogenen Daten und nutzt sie nicht für App-übergreifendes Werbe-Tracking."
         }
       ]
     },
     "updates": {
       "eyebrow": "Neuigkeiten",
-      "title": "Zuletzt verbessert",
-      "body": "Wir verbessern die Kernerfahrung mit jeder Version weiter.",
+      "title": "Neu hinzugekommen",
+      "body": "Die letzten Versionen bringen kreative Werkzeuge und stärkere Datenschutzeinstellungen – die Kernplanung bleibt auf deinem Gerät.",
       "items": [
-        "Schnellerer, zuverlässigerer Start der On-Device-KI und bessere Modellverwaltung",
-        "Einfacheres Erfassen, Planen und Arbeiten mit „Als Nächstes“ unter „Heute“",
-        "Klarere Einführung und einfachere Navigation zu erweiterten KI-Einstellungen",
-        "Bessere Barrierefreiheit, Datenschutz und Stabilität in der gesamten App"
+        "Bilderstellung im Chat direkt auf dem Gerät – mit Teilen, Speichern, Vollbild und Varianten",
+        "Chat-Nachrichten mit einem Tippen kopieren",
+        "Einstellungen für Datenschutz und Sicherheit: Sperrbildschirm-Details ausblenden, Screenshots blockieren",
+        "Modellbrowser für On-Device-KI und Integritätsprüfung vor dem Wiederherstellen eines Backups"
       ]
     },
     "features": {
       "eyebrow": "Alles, was du brauchst",
       "title": "Ein vollständiges System für Prioritäten, Ziele und Zeit",
       "items": [
-        "Eisenhower-Matrix mit Sofort erledigen, Einplanen, Delegieren und Vielleicht später",
-        "Aufgaben, Unteraufgaben, Wiederholungen, Tags, Termine und Erinnerungen",
-        "Ziele, verbunden mit deinem Alltag",
-        "Morgen-Briefings und Abendrückblicke",
-        "Kalenderansicht und fokussierte Tagesplanung",
-        "Lokale, geräteinterne Produktivitätsauswertungen"
+        "Eisenhower-Matrix mit Sofort erledigen, Einplanen, Delegieren und Später",
+        "Schnellerfassung in natürlicher Sprache mit Spracheingabe auf dem Gerät",
+        "Aufgaben mit Unteraufgaben, Fristen, Erinnerungen, Wiederholung und Tags",
+        "Ziele mit Meilensteinen, Fortschritt und Zielgesundheit",
+        "Morgen-Briefings, Abendzusammenfassungen und Auswertungen auf dem Gerät",
+        "Kalender in Tages-, 3-Tages-, Wochen- und Monatsansicht, dazu Mein Tag",
+        "Chat-Assistent mit prüfbaren Vorschlägen und Bilderstellung auf dem Gerät",
+        "App Actions, gekoppelte Agenten (MCP), dunkles Design und 11 Sprachen",
+        "JSON-Export und optionales verschlüsseltes Google-Drive-Backup"
       ]
     },
     "free": {
@@ -300,19 +436,23 @@
       "items": [
         {
           "question": "Ist Prio wirklich kostenlos?",
-          "answer": "Ja. Alle aktuellen Funktionen sind kostenlos nutzbar – ohne Abo, kostenpflichtiges Upgrade oder Einmalkauf."
+          "answer": "Ja. Alle aktuellen Funktionen sind kostenlos – ohne Abo, kostenpflichtiges Upgrade oder Einmalkauf."
         },
         {
           "question": "Funktioniert Prio offline?",
-          "answer": "Ja. Erfassung, Planung, Ziele, Erinnerungen und regelbasierte Priorisierung funktionieren vollständig offline, ohne Prio-Konto."
+          "answer": "Ja. Erfassung, Planung, Ziele, Erinnerungen und regelbasierte Priorisierung funktionieren ohne Internetverbindung und ohne Prio-Konto. Remote-KI und Cloud-Backup verbinden sich nur, wenn du sie einschaltest."
         },
         {
           "question": "Schickt Prio meine Aufgaben in die Cloud?",
-          "answer": "Nur wenn du das ausdrücklich möchtest. Die Kernplanung bleibt auf deinem Gerät. Remote-KI, Cloud-Backup und Export sind separate Funktionen, die du einzeln aktivierst – Prio hat keinen KI-Proxy."
+          "answer": "Nur wenn du es willst. Die Kernplanung bleibt auf deinem Gerät. Remote-KI, Cloud-Backup und Export sind separate Funktionen, die du einzeln aktivierst – und Prio hat keinen KI-Proxy."
+        },
+        {
+          "question": "Kann ich KI nutzen, ohne Daten in die Cloud zu schicken?",
+          "answer": "Ja. Auf unterstützten Geräten kann Prio KI mit Gemini Nano oder einem heruntergeladenen llama.cpp-Modell direkt auf deinem Gerät ausführen. Remote-Anbieter sind optional, experimentell und nutzen deinen eigenen API-Schlüssel."
         },
         {
           "question": "Was unterscheidet Prio von einer To-do-Liste?",
-          "answer": "Prio speichert Aufgaben nicht nur – es priorisiert sie. Jede Erfassung erhält einen nachvollziehbaren Vorschlag nach der Eisenhower-Matrix, damit du immer weißt, was zu tun ist, statt nur, was anliegt."
+          "answer": "Prio speichert Aufgaben nicht nur – es priorisiert sie. Jede Erfassung bekommt einen nachvollziehbaren Vorschlag nach der Eisenhower-Matrix, damit du immer weißt, was als Nächstes zu tun ist, statt nur, was auf deiner Liste steht."
         }
       ]
     },
@@ -345,7 +485,7 @@
     "ogLocale": "es_ES",
     "seo": {
       "title": "Prio: Sabe qué hacer después – Planificador de tareas con IA",
-      "description": "Prio convierte tareas y objetivos en una prioridad clara con la matriz de Eisenhower, en privado y sin conexión. Gratis en Android, sin necesidad de cuenta."
+      "description": "Prio convierte tareas y objetivos en una próxima acción clara con planificación Eisenhower privada en tu dispositivo. Gratis en Android, sin cuenta."
     },
     "nav": {
       "benefits": "Por qué Prio",
@@ -357,7 +497,7 @@
     "hero": {
       "eyebrow": "Priorización de tareas privada para Android",
       "title": "Sabe qué hacer después, sin enviar tus tareas a la nube.",
-      "body": "Prio convierte tus tareas y objetivos en una prioridad clara según la matriz de Eisenhower, con clasificación por reglas en tu propio dispositivo. Captura una tarea, revisa la prioridad sugerida y actúa, sin necesidad de cuenta.",
+      "body": "Prio ordena todo lo que tienes pendiente en Hacer primero, Programar, Delegar y Después —con un motivo que puedes revisar— y conecta tu día a día con los objetivos que importan. La planificación básica se ejecuta en tu dispositivo, sin necesidad de cuenta.",
       "secondaryCta": "Ver cómo funciona",
       "proofLabel": "cuadrantes de prioridad claros",
       "trust": [
@@ -367,22 +507,61 @@
         "IA en el dispositivo disponible"
       ]
     },
+    "heroSurface": {
+      "day": "Martes · 13 oct",
+      "greeting": "Buenos días",
+      "pill": "Racha de 5 días",
+      "overview": "Resumen de tareas",
+      "focus": "Foco de hoy",
+      "task": "Corregir el fallo de renovación de token en producción",
+      "meta": "Hacer primero · vence a las 11:00",
+      "quadrants": [
+        {
+          "name": "Hacer primero",
+          "hint": "Urgente · importante"
+        },
+        {
+          "name": "Programar",
+          "hint": "Importante · no urgente"
+        },
+        {
+          "name": "Delegar",
+          "hint": "Urgente · encárgalo"
+        },
+        {
+          "name": "Después",
+          "hint": "Baja prioridad"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Por qué Prio",
       "title": "Convierte la sobrecarga en una sola acción clara",
-      "body": "Prio está pensado para quienes manejan demasiadas tareas en demasiadas apps. En vez de otra lista que gestionar, obtienes una prioridad clara y explicada.",
+      "body": "Prio está pensado para quien hace malabares con demasiadas tareas en demasiadas apps. En lugar de otra lista que gestionar, te da una prioridad explicable, un plan tranquilo para hoy y objetivos que avanzan.",
       "items": [
         {
-          "title": "Una prioridad clara para seguir",
-          "body": "Deja de reordenar tu lista. La matriz de Eisenhower de Prio clasifica cada tarea en Hacer primero, Programar, Delegar o Quizás después, para que siempre sepas qué importa ahora."
+          "title": "Claridad inmediata",
+          "body": "Cada tarea va a Hacer primero, Programar, Delegar o Después, con un breve motivo que puedes revisar o cambiar, para que siempre sepas qué importa ahora."
         },
         {
-          "title": "Captura y planifica en segundos",
-          "body": "Añade una tarea, fecha o recordatorio en el momento en que se te ocurre. Captura rápida, recurrencia, etiquetas y subtareas mantienen tu día organizado sin frenarte."
+          "title": "Captura sin esfuerzo",
+          "body": "Escribe o di una tarea con tus palabras, como «Presentar la declaración de impuestos hoy», y Prio fija la prioridad y el momento. La voz usa reconocimiento de voz en el dispositivo."
         },
         {
-          "title": "Objetivos conectados con tu día a día",
-          "body": "Vincula tareas cotidianas con los objetivos que importan y usa los resúmenes de la mañana y la noche para ver cómo avanzas."
+          "title": "Una pantalla Hoy tranquila",
+          "body": "Ve tu foco, tu progreso y tu racha de un vistazo, y usa Mi día para planificar las horas que realmente tienes."
+        },
+        {
+          "title": "Resúmenes que muestran lo importante",
+          "body": "Los resúmenes de la mañana y de la noche ponen lo importante por delante sin rebuscar en listas."
+        },
+        {
+          "title": "Objetivos que avanzan",
+          "body": "Hitos, tareas vinculadas, seguimiento del progreso y una comprobación de Salud del objetivo mantienen cada objetivo concreto y alcanzable."
+        },
+        {
+          "title": "Calendario y tareas juntos",
+          "body": "Ve eventos y tareas lado a lado en vistas de día, 3 días, semana y mes, para planificar en torno al tiempo que de verdad tienes."
         }
       ]
     },
@@ -391,43 +570,67 @@
       "title": "De la sobrecarga al enfoque en tres pasos",
       "items": [
         {
-          "title": "Captura una tarea real",
-          "body": "Escribe o dicta algo que realmente tengas pendiente. Sin configuración ni cuenta — el dictado por voz, opcional, solo pide acceso al micrófono."
+          "title": "Captura con tus palabras",
+          "body": "Escribe o di algo que de verdad tengas pendiente. Sin configuración ni cuenta: la captura por voz opcional solo pide acceso al micrófono."
         },
         {
           "title": "Revisa la prioridad sugerida",
-          "body": "Prio explica por qué sugiere Hacer primero, Programar, Delegar o Quizás después. Acéptala o corrígela: tú tienes el control."
+          "body": "Prio explica por qué eligió Hacer primero, Programar, Delegar o Después y completa el momento que entendió. Acéptala o cámbiala: siempre tienes el control."
         },
         {
           "title": "Actúa desde Hoy",
-          "body": "Tu tarea confirmada aparece como la acción recomendada en Hoy, lista para empezar."
+          "body": "Tu tarea confirmada aparece en Foco de hoy, lista para empezar, junto a tu progreso y tu racha."
         }
       ]
     },
     "gallery": {
       "eyebrow": "Míralo en acción",
-      "title": "Una forma más tranquila de planear tu día",
-      "body": "Desde la captura rápida hasta la matriz de Eisenhower, cada pantalla está pensada para llevarte antes a tu próxima prioridad.",
-      "captions": [
-        "Captura rápida con prioridad sugerida",
-        "Resumen matutino",
-        "Progreso del objetivo",
-        "Detalles de la tarea"
+      "title": "Pantallas reales de la app para Android",
+      "body": "De Hoy y la captura rápida a resúmenes, objetivos, calendario y controles de privacidad, capturadas en Android y mostradas en inglés.",
+      "items": [
+        {
+          "caption": "Hoy, con tema oscuro",
+          "alt": "Pantalla Hoy de Prio con tema oscuro: racha de 5 días, resumen de tareas para Hacer primero, Programar, Delegar y Después, 33 % de progreso diario y Foco de hoy."
+        },
+        {
+          "caption": "Captura rápida que te entiende",
+          "alt": "La captura rápida convierte «Submit tax return today» en una tarea de Hacer primero y muestra la interpretación para revisarla."
+        },
+        {
+          "caption": "Un resumen matutino privado",
+          "alt": "Resumen de la mañana marcado como privado, con 2 tareas urgentes y 3 reuniones y las tareas prioritarias del día con su hora límite."
+        },
+        {
+          "caption": "Objetivos con Salud del objetivo",
+          "alt": "Objetivo profesional al 50 % y en buen camino, con hitos, tareas vinculadas y una comprobación de Salud del objetivo con 100 % sólida."
+        },
+        {
+          "caption": "Calendario y tareas juntos",
+          "alt": "Vista de día del calendario para el martes 13 de octubre, con reuniones y tareas de Prio juntas y las opciones 3 días, semana y mes."
+        },
+        {
+          "caption": "Privacidad en un solo lugar",
+          "alt": "Ajustes de privacidad y seguridad con interruptores para ocultar el contenido de las notificaciones en la pantalla de bloqueo y bloquear capturas y grabaciones de pantalla."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Privacidad",
       "title": "Pensado para lo local, no solo anunciado como tal",
-      "body": "La captura, planificación, objetivos, recordatorios, análisis locales y la clasificación por reglas se ejecutan en tu dispositivo Android, sin cuenta ni conexión a internet.",
-      "detail": "Cuando es compatible y lo eliges, Gemini Nano o un modelo llama.cpp descargado también pueden ejecutarse por completo en el dispositivo. La IA remota, la copia de seguridad cifrada de Google Drive, la exportación o el uso compartido manual, y Firebase Analytics o Crashlytics son opciones independientes que activas explícitamente. Prio no tiene un proxy de IA: si conectas un proveedor remoto, tu clave y tu prompt van directamente a ese proveedor.",
+      "body": "La captura, la planificación, los objetivos, los recordatorios, los análisis locales y la priorización por reglas se ejecutan en tu dispositivo Android. La planificación básica funciona sin cuenta de Prio y sin conexión a internet.",
+      "detail": "Si es compatible y lo eliges, Gemini Nano o un modelo llama.cpp descargado ejecutan la IA en tu dispositivo. Los proveedores de IA remota, la copia de seguridad cifrada en Google Drive, la exportación o el uso compartido manual y Firebase Analytics o Crashlytics son activaciones separadas y explícitas que controlas una a una. Prio no tiene proxy de IA: si conectas un proveedor remoto, tu clave y tu instrucción van directamente a ese proveedor.",
       "points": [
         {
           "title": "En el dispositivo por defecto",
-          "body": "La clasificación por reglas y tus datos de planificación no salen del dispositivo salvo que actives explícitamente una función de red."
+          "body": "La clasificación por reglas y tus datos de planificación básicos se quedan en tu dispositivo, salvo que actives una función de red."
         },
         {
-          "title": "Consentimiento explícito para todo lo remoto",
-          "body": "La IA remota, la copia en la nube, la exportación y las analíticas están desactivadas hasta que las activas; activar una no activa las demás."
+          "title": "Activación explícita para todo lo remoto",
+          "body": "La IA remota, la copia en la nube, la exportación y las analíticas están desactivadas hasta que las activas, y activar una nunca activa otra."
+        },
+        {
+          "title": "Protección en tu pantalla",
+          "body": "Un interruptor oculta los detalles de las tareas en la pantalla de bloqueo; otro oculta Prio en el selector de apps y bloquea capturas, grabaciones y uso compartido de pantalla."
         },
         {
           "title": "Sin anuncios ni venta de datos",
@@ -437,25 +640,28 @@
     },
     "updates": {
       "eyebrow": "Novedades",
-      "title": "Mejoras recientes",
-      "body": "Seguimos mejorando la experiencia principal con cada versión.",
+      "title": "Novedades recientes",
+      "body": "Las últimas versiones añaden herramientas creativas y controles de privacidad más sólidos, manteniendo la planificación básica en tu dispositivo.",
       "items": [
-        "Inicio más rápido y fiable de la IA en el dispositivo y mejor gestión de modelos",
-        "Captura rápida, planificación y flujo «Haz esto ahora» de Hoy más sencillos",
-        "Inicio guiado y navegación más clara hacia los ajustes avanzados de IA",
-        "Mejor accesibilidad, privacidad y estabilidad en toda la app"
+        "Creación de imágenes en el chat, en el dispositivo, con opciones para compartir, guardar, ver a pantalla completa y crear variaciones",
+        "Copia de mensajes del chat con un toque",
+        "Ajustes de privacidad y seguridad para ocultar detalles en la pantalla de bloqueo y bloquear capturas",
+        "Explorador de modelos para IA en el dispositivo y verificación de integridad antes de restaurar una copia"
       ]
     },
     "features": {
       "eyebrow": "Todo lo que necesitas",
       "title": "Un sistema completo para prioridades, objetivos y tiempo",
       "items": [
-        "Matriz de Eisenhower con Hacer primero, Programar, Delegar y Quizás después",
-        "Tareas, subtareas, recurrencia, etiquetas, fechas límite y recordatorios",
-        "Objetivos conectados con tu trabajo diario",
-        "Resúmenes de la mañana y revisiones de la noche",
-        "Vista de calendario y planificación enfocada de Mi día",
-        "Análisis de productividad locales, en el dispositivo"
+        "Matriz de Eisenhower con Hacer primero, Programar, Delegar y Después",
+        "Captura rápida en lenguaje natural con voz en el dispositivo",
+        "Tareas con subtareas, fechas límite, recordatorios, repetición y etiquetas",
+        "Objetivos con hitos, seguimiento del progreso y Salud del objetivo",
+        "Resúmenes de mañana y noche, y análisis en el dispositivo",
+        "Calendario en vistas de día, 3 días, semana y mes, además de Mi día",
+        "Asistente de chat con propuestas revisables y creación de imágenes en el dispositivo",
+        "App Actions, agentes emparejados (MCP), tema oscuro y 11 idiomas",
+        "Exportación JSON y copia de seguridad cifrada opcional en Google Drive"
       ]
     },
     "free": {
@@ -469,20 +675,24 @@
       "title": "Preguntas habituales",
       "items": [
         {
-          "question": "¿Prio es realmente gratis?",
+          "question": "¿Prio es gratis de verdad?",
           "answer": "Sí. Todas las funciones actuales son gratuitas, sin suscripción, mejora de pago ni compra única."
         },
         {
           "question": "¿Prio funciona sin conexión?",
-          "answer": "Sí. La captura, planificación, objetivos, recordatorios y priorización por reglas funcionan por completo sin conexión y sin cuenta de Prio."
+          "answer": "Sí. La captura, la planificación, los objetivos, los recordatorios y la priorización por reglas funcionan sin conexión a internet y sin cuenta de Prio. La IA remota y la copia en la nube solo se conectan si las activas."
         },
         {
           "question": "¿Prio envía mis tareas a la nube?",
-          "answer": "Solo si tú lo decides. La planificación principal se queda en tu dispositivo. La IA remota, la copia en la nube y la exportación son funciones independientes que activas tú, y Prio no tiene proxy de IA."
+          "answer": "Solo si tú lo decides. La planificación básica se queda en tu dispositivo. La IA remota, la copia en la nube y la exportación son funciones separadas que activas una a una, y Prio no tiene proxy de IA."
+        },
+        {
+          "question": "¿Puedo usar IA sin enviar datos a la nube?",
+          "answer": "Sí. En dispositivos compatibles, Prio puede ejecutar IA con Gemini Nano o con un modelo llama.cpp que descargues, en tu dispositivo. Los proveedores remotos son opcionales, experimentales y usan tu propia clave de API."
         },
         {
           "question": "¿En qué se diferencia Prio de una lista de tareas?",
-          "answer": "Prio no solo guarda tareas: las prioriza. Cada captura recibe una sugerencia explicable según la matriz de Eisenhower, así siempre sabes qué hacer después, no solo qué tienes pendiente."
+          "answer": "Prio no solo guarda tareas: las prioriza. Cada captura recibe una sugerencia explicable de la matriz de Eisenhower, para que siempre sepas qué hacer después y no solo qué hay en tu lista."
         }
       ]
     },
@@ -515,7 +725,7 @@
     "ogLocale": "fr_FR",
     "seo": {
       "title": "Prio : Sachez quoi faire ensuite – Planificateur de tâches IA",
-      "description": "Prio transforme tâches et objectifs en une priorité claire grâce à la matrice d'Eisenhower, en privé et hors ligne. Gratuit sur Android, sans compte."
+      "description": "Prio transforme tâches et objectifs en une prochaine action claire, avec une planification Eisenhower privée sur l'appareil. Gratuit sur Android."
     },
     "nav": {
       "benefits": "Pourquoi Prio",
@@ -527,7 +737,7 @@
     "hero": {
       "eyebrow": "Priorisation privée des tâches pour Android",
       "title": "Sachez quoi faire ensuite, sans envoyer vos tâches dans le cloud.",
-      "body": "Prio transforme vos tâches et objectifs en une priorité claire selon la matrice d'Eisenhower, grâce à un classement par règles directement sur votre appareil. Capturez une tâche, vérifiez la priorité suggérée, puis agissez, sans compte.",
+      "body": "Prio range tout ce qui vous attend en Prioritaire, Planifier, Déléguer et Plus tard — avec une justification que vous pouvez vérifier — et relie votre quotidien aux objectifs qui comptent. La planification essentielle s'exécute sur votre appareil, sans compte.",
       "secondaryCta": "Voir comment ça marche",
       "proofLabel": "quadrants de priorité clairs",
       "trust": [
@@ -537,22 +747,61 @@
         "IA sur l'appareil disponible"
       ]
     },
+    "heroSurface": {
+      "day": "Mardi · 13 oct.",
+      "greeting": "Bonjour",
+      "pill": "Série de 5 jours",
+      "overview": "Aperçu des tâches",
+      "focus": "Focus du jour",
+      "task": "Corriger le bug de renouvellement de jeton en production",
+      "meta": "Prioritaire · échéance 11 h 00",
+      "quadrants": [
+        {
+          "name": "Prioritaire",
+          "hint": "Urgent · important"
+        },
+        {
+          "name": "Planifier",
+          "hint": "Important · pas urgent"
+        },
+        {
+          "name": "Déléguer",
+          "hint": "Urgent · à confier"
+        },
+        {
+          "name": "Plus tard",
+          "hint": "Faible priorité"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Pourquoi Prio",
       "title": "Transformez la surcharge en une seule action claire",
-      "body": "Prio est conçu pour celles et ceux qui jonglent avec trop de tâches dans trop d'applications. Plutôt qu'une liste de plus, vous obtenez une priorité unique et expliquée.",
+      "body": "Prio est conçu pour celles et ceux qui jonglent avec trop de tâches dans trop d'applications. Au lieu d'une liste de plus, vous obtenez une priorité explicable, un plan serein pour aujourd'hui et des objectifs qui avancent.",
       "items": [
         {
-          "title": "Une priorité claire à suivre",
-          "body": "Arrêtez de réorganiser votre liste. La matrice d'Eisenhower de Prio classe chaque tâche en Prioritaire, Planifier, Déléguer ou Peut-être plus tard, pour toujours savoir ce qui compte maintenant."
+          "title": "Clarté immédiate",
+          "body": "Chaque tâche rejoint Prioritaire, Planifier, Déléguer ou Plus tard, avec une courte justification que vous pouvez vérifier ou modifier : vous savez toujours ce qui compte maintenant."
         },
         {
-          "title": "Capturez et planifiez en quelques secondes",
-          "body": "Ajoutez une tâche, une échéance ou un rappel dès que l'idée vous vient. Capture rapide, récurrence, étiquettes et sous-tâches gardent votre journée organisée sans vous ralentir."
+          "title": "Saisie sans effort",
+          "body": "Écrivez ou dites une tâche avec vos mots, comme « Envoyer ma déclaration d'impôts aujourd'hui », et Prio fixe la priorité et le moment. La voix utilise la reconnaissance vocale sur l'appareil."
         },
         {
-          "title": "Des objectifs reliés au quotidien",
-          "body": "Reliez vos tâches quotidiennes aux objectifs qui comptent et utilisez les bilans du matin et du soir pour voir vos priorités avancer."
+          "title": "Un écran Aujourd'hui apaisé",
+          "body": "Votre focus, votre progression et votre série en un coup d'œil, puis Ma journée pour planifier les heures dont vous disposez vraiment."
+        },
+        {
+          "title": "Des briefings qui font ressortir l'essentiel",
+          "body": "Les briefings du matin et les bilans du soir mettent en avant l'important sans fouiller dans vos listes."
+        },
+        {
+          "title": "Des objectifs qui avancent",
+          "body": "Jalons, tâches liées, suivi de la progression et contrôle Santé de l'objectif gardent chaque objectif précis et atteignable."
+        },
+        {
+          "title": "Agenda et tâches réunis",
+          "body": "Événements et tâches côte à côte en vues Jour, 3 jours, Semaine et Mois, pour planifier autour du temps dont vous disposez vraiment."
         }
       ]
     },
@@ -561,71 +810,98 @@
       "title": "Du débordement à la clarté en trois étapes",
       "items": [
         {
-          "title": "Capturez une vraie tâche",
-          "body": "Tapez ou dictez quelque chose que vous avez réellement à faire. Sans configuration ni compte — la saisie vocale, facultative, demande simplement l'accès au micro."
+          "title": "Saisissez avec vos mots",
+          "body": "Écrivez ou dites une chose qui vous attend vraiment. Sans configuration ni compte : la saisie vocale facultative demande seulement l'accès au micro."
         },
         {
           "title": "Vérifiez la priorité suggérée",
-          "body": "Prio explique pourquoi il suggère Prioritaire, Planifier, Déléguer ou Peut-être plus tard. Acceptez ou corrigez : vous gardez le contrôle."
+          "body": "Prio explique pourquoi il a choisi Prioritaire, Planifier, Déléguer ou Plus tard et renseigne le moment compris. Acceptez ou modifiez : vous gardez le contrôle."
         },
         {
           "title": "Agissez depuis Aujourd'hui",
-          "body": "Votre tâche confirmée apparaît comme l'action recommandée dans Aujourd'hui, prête à être traitée."
+          "body": "Votre tâche confirmée apparaît dans le Focus du jour, prête à être traitée, à côté de votre progression et de votre série."
         }
       ]
     },
     "gallery": {
       "eyebrow": "À voir en action",
-      "title": "Une façon plus sereine de planifier sa journée",
-      "body": "De la capture rapide à la matrice d'Eisenhower, chaque écran est pensé pour vous mener plus vite à votre prochaine priorité.",
-      "captions": [
-        "Capture rapide avec priorité suggérée",
-        "Bilan du matin",
-        "Progression de l'objectif",
-        "Détails de la tâche"
+      "title": "De vrais écrans de l'application Android",
+      "body": "D'Aujourd'hui et la saisie rapide aux briefings, objectifs, agenda et réglages de confidentialité — capturés sur Android et affichés en anglais.",
+      "items": [
+        {
+          "caption": "Aujourd'hui, en thème sombre",
+          "alt": "Écran Aujourd'hui de Prio en thème sombre : série de 5 jours, aperçu des tâches Prioritaire, Planifier, Déléguer et Plus tard, 33 % de progression du jour et Focus du jour."
+        },
+        {
+          "caption": "Une saisie rapide qui vous comprend",
+          "alt": "La saisie rapide transforme « Submit tax return today » en tâche Prioritaire et affiche l'interprétation à vérifier."
+        },
+        {
+          "caption": "Un briefing du matin privé",
+          "alt": "Briefing du matin marqué Privé, résumant 2 tâches urgentes et 3 réunions et listant les tâches prioritaires du jour avec leur échéance."
+        },
+        {
+          "caption": "Objectifs et Santé de l'objectif",
+          "alt": "Objectif de carrière à 50 % et en bonne voie, avec jalons, tâches liées et contrôle Santé de l'objectif noté 100 % solide."
+        },
+        {
+          "caption": "Agenda et tâches réunis",
+          "alt": "Vue Jour de l'agenda pour le mardi 13 octobre, avec réunions et tâches Prio réunies, et les options 3 jours, Semaine et Mois."
+        },
+        {
+          "caption": "La confidentialité au même endroit",
+          "alt": "Réglages Confidentialité et sécurité avec des interrupteurs pour masquer le contenu des notifications sur l'écran de verrouillage et bloquer captures et enregistrements d'écran."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Confidentialité",
       "title": "Pensé pour le local, pas seulement affiché comme tel",
-      "body": "La capture, la planification, les objectifs, les rappels, les analyses locales et le classement par règles s'exécutent sur votre appareil Android, sans compte ni connexion internet.",
-      "detail": "Lorsque c'est pris en charge et sélectionné, Gemini Nano ou un modèle llama.cpp téléchargé peuvent aussi s'exécuter entièrement sur l'appareil. L'IA distante, la sauvegarde chiffrée Google Drive, l'export ou le partage manuel, ainsi que Firebase Analytics ou Crashlytics, sont chacun des choix explicites que vous activez individuellement. Prio n'a aucun proxy d'IA : si vous connectez un fournisseur distant, votre clé et votre prompt lui sont envoyés directement.",
+      "body": "Saisie, planification, objectifs, rappels, analyses locales et priorisation par règles s'exécutent sur votre appareil Android. La planification essentielle fonctionne sans compte Prio ni connexion internet.",
+      "detail": "Lorsque c'est pris en charge et que vous le choisissez, Gemini Nano ou un modèle llama.cpp téléchargé exécute l'IA sur votre appareil. Les fournisseurs d'IA distants, la sauvegarde Google Drive chiffrée, l'export ou le partage manuel et Firebase Analytics ou Crashlytics sont des activations distinctes et explicites que vous contrôlez une par une. Prio n'a pas de proxy IA : si vous connectez un fournisseur distant, votre clé et votre requête vont directement à ce fournisseur.",
       "points": [
         {
           "title": "Sur l'appareil par défaut",
-          "body": "Le classement par règles et vos données de planification essentielles ne quittent votre appareil que si vous activez explicitement une fonction réseau."
+          "body": "La classification par règles et vos données de planification restent sur votre appareil, sauf si vous activez une fonction réseau."
         },
         {
-          "title": "Consentement explicite pour tout ce qui est distant",
-          "body": "IA distante, sauvegarde cloud, export et analyses sont chacun désactivés jusqu'à activation ; en activer un n'active jamais les autres."
+          "title": "Activation explicite pour tout ce qui est distant",
+          "body": "IA distante, sauvegarde cloud, export et statistiques restent désactivés jusqu'à ce que vous les activiez — en activer un n'en active jamais un autre."
         },
         {
-          "title": "Sans publicité, sans vente de données",
-          "body": "Prio ne diffuse pas de publicité, ne vend pas vos données personnelles et ne les utilise pas pour un suivi publicitaire entre applications."
+          "title": "Protection à l'écran",
+          "body": "Un interrupteur masque le détail des tâches sur l'écran de verrouillage ; un autre masque Prio dans le sélecteur d'applications et bloque captures, enregistrements et partage d'écran."
+        },
+        {
+          "title": "Ni publicité ni vente de données",
+          "body": "Prio n'affiche pas de publicité, ne vend pas vos données personnelles et ne les utilise pas pour le suivi publicitaire entre applications."
         }
       ]
     },
     "updates": {
       "eyebrow": "Nouveautés",
-      "title": "Améliorations récentes",
-      "body": "Nous améliorons l'expérience principale à chaque version.",
+      "title": "Récemment ajouté",
+      "body": "Les dernières versions ajoutent des outils créatifs et des réglages de confidentialité renforcés, tout en gardant la planification essentielle sur votre appareil.",
       "items": [
-        "Démarrage plus rapide et fiable de l'IA sur l'appareil, meilleure gestion des modèles",
-        "Capture, planification et parcours « À faire maintenant » d'Aujourd'hui simplifiés",
-        "Prise en main plus claire et navigation facilitée vers les réglages d'IA avancés",
-        "Accessibilité, confidentialité et stabilité améliorées dans toute l'application"
+        "Création d'images dans le chat sur l'appareil, avec partage, enregistrement, plein écran et variantes",
+        "Copie des messages du chat en un geste",
+        "Réglages Confidentialité et sécurité pour masquer les détails sur l'écran de verrouillage et bloquer les captures",
+        "Navigateur de modèles pour l'IA sur l'appareil et vérification d'intégrité avant de restaurer une sauvegarde"
       ]
     },
     "features": {
       "eyebrow": "Tout ce qu'il vous faut",
       "title": "Un système complet pour vos priorités, objectifs et temps",
       "items": [
-        "Matrice d'Eisenhower avec Prioritaire, Planifier, Déléguer et Peut-être plus tard",
-        "Tâches, sous-tâches, récurrence, étiquettes, échéances et rappels",
-        "Objectifs reliés à votre travail quotidien",
-        "Bilans du matin et du soir",
-        "Vue calendrier et planification ciblée de Ma journée",
-        "Analyses de productivité locales, sur l'appareil"
+        "Matrice d'Eisenhower avec Prioritaire, Planifier, Déléguer et Plus tard",
+        "Saisie rapide en langage naturel avec saisie vocale sur l'appareil",
+        "Tâches avec sous-tâches, échéances, rappels, répétition et tags",
+        "Objectifs avec jalons, suivi de progression et Santé de l'objectif",
+        "Briefings du matin, bilans du soir et analyses sur l'appareil",
+        "Agenda en vues Jour, 3 jours, Semaine et Mois, plus Ma journée",
+        "Assistant de chat avec propositions à vérifier et création d'images sur l'appareil",
+        "App Actions, agents appairés (MCP), thème sombre et 11 langues",
+        "Export JSON et sauvegarde Google Drive chiffrée sur option"
       ]
     },
     "free": {
@@ -640,19 +916,23 @@
       "items": [
         {
           "question": "Prio est-il vraiment gratuit ?",
-          "answer": "Oui. Toutes les fonctions actuelles sont gratuites, sans abonnement, mise à niveau payante ni achat unique."
+          "answer": "Oui. Toutes les fonctionnalités actuelles sont gratuites, sans abonnement, mise à niveau payante ni achat unique."
         },
         {
           "question": "Prio fonctionne-t-il hors ligne ?",
-          "answer": "Oui. La capture, la planification, les objectifs, les rappels et la priorisation par règles fonctionnent entièrement hors ligne, sans compte Prio."
+          "answer": "Oui. La saisie, la planification, les objectifs, les rappels et la priorisation par règles fonctionnent sans connexion internet ni compte Prio. L'IA distante et la sauvegarde cloud ne se connectent que si vous les activez."
         },
         {
           "question": "Prio envoie-t-il mes tâches dans le cloud ?",
-          "answer": "Seulement si vous le choisissez. La planification essentielle reste sur votre appareil. IA distante, sauvegarde cloud et export sont des fonctions distinctes que vous activez vous-même, et Prio n'a aucun proxy d'IA."
+          "answer": "Seulement si vous le choisissez. La planification essentielle reste sur votre appareil. IA distante, sauvegarde cloud et export sont des fonctions distinctes que vous activez une par une, et Prio n'a pas de proxy IA."
         },
         {
-          "question": "Qu'est-ce qui distingue Prio d'une simple liste de tâches ?",
-          "answer": "Prio ne se contente pas de stocker vos tâches : il les priorise. Chaque capture reçoit une suggestion explicable selon la matrice d'Eisenhower, pour toujours savoir quoi faire ensuite, pas seulement ce qui reste à faire."
+          "question": "Puis-je utiliser l'IA sans envoyer de données dans le cloud ?",
+          "answer": "Oui. Sur les appareils compatibles, Prio peut exécuter l'IA avec Gemini Nano ou un modèle llama.cpp que vous téléchargez, sur votre appareil. Les fournisseurs distants sont facultatifs, expérimentaux et utilisent votre propre clé d'API."
+        },
+        {
+          "question": "Qu'est-ce qui distingue Prio d'une liste de tâches ?",
+          "answer": "Prio ne se contente pas de stocker vos tâches : il les priorise. Chaque saisie reçoit une suggestion explicable selon la matrice d'Eisenhower, pour que vous sachiez toujours quoi faire ensuite, pas seulement ce qui figure sur votre liste."
         }
       ]
     },
@@ -685,7 +965,7 @@
     "ogLocale": "it_IT",
     "seo": {
       "title": "Prio: Sai cosa fare dopo – Planner di attività con IA",
-      "description": "Prio trasforma attività e obiettivi in una priorità chiara con la matrice di Eisenhower, in privato e offline. Gratis su Android, senza account."
+      "description": "Prio trasforma attività e obiettivi in una prossima azione chiara, con una pianificazione Eisenhower privata sul dispositivo. Gratis su Android."
     },
     "nav": {
       "benefits": "Perché Prio",
@@ -697,7 +977,7 @@
     "hero": {
       "eyebrow": "Priorità delle attività in privato per Android",
       "title": "Sai cosa fare dopo, senza inviare le tue attività al cloud.",
-      "body": "Prio trasforma attività e obiettivi in una priorità chiara secondo la matrice di Eisenhower, con classificazione basata su regole direttamente sul tuo dispositivo. Inserisci un'attività, controlla la priorità suggerita e agisci, senza bisogno di un account.",
+      "body": "Prio ordina tutto ciò che hai in sospeso in Fai subito, Pianifica, Delega e Dopo — con una motivazione che puoi verificare — e collega la quotidianità agli obiettivi che contano. La pianificazione essenziale gira sul tuo dispositivo, senza account.",
       "secondaryCta": "Scopri come funziona",
       "proofLabel": "quadranti di priorità chiari",
       "trust": [
@@ -707,22 +987,61 @@
         "IA sul dispositivo disponibile"
       ]
     },
+    "heroSurface": {
+      "day": "Martedì · 13 ott",
+      "greeting": "Buongiorno",
+      "pill": "Serie di 5 giorni",
+      "overview": "Panoramica attività",
+      "focus": "Focus di oggi",
+      "task": "Correggere il bug del refresh del token in produzione",
+      "meta": "Fai subito · scade alle 11:00",
+      "quadrants": [
+        {
+          "name": "Fai subito",
+          "hint": "Urgente · importante"
+        },
+        {
+          "name": "Pianifica",
+          "hint": "Importante · non urgente"
+        },
+        {
+          "name": "Delega",
+          "hint": "Urgente · affidalo"
+        },
+        {
+          "name": "Dopo",
+          "hint": "Bassa priorità"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Perché Prio",
       "title": "Trasforma il sovraccarico in un'unica azione chiara",
-      "body": "Prio è pensato per chi gestisce troppe attività in troppe app. Invece di un'altra lista, ottieni una priorità unica e spiegata.",
+      "body": "Prio è pensato per chi si destreggia tra troppe attività in troppe app. Invece dell'ennesima lista da gestire, ti dà una priorità spiegabile, un piano sereno per oggi e obiettivi che avanzano.",
       "items": [
         {
-          "title": "Una priorità chiara da seguire",
-          "body": "Basta risistemare la lista. La matrice di Eisenhower di Prio classifica ogni attività in Fai subito, Pianifica, Delega o Forse dopo, così sai sempre cosa conta adesso."
+          "title": "Chiarezza immediata",
+          "body": "Ogni attività finisce in Fai subito, Pianifica, Delega o Dopo, con una breve motivazione che puoi verificare o cambiare: sai sempre cosa conta adesso."
         },
         {
-          "title": "Inserisci e pianifica in pochi secondi",
-          "body": "Aggiungi attività, scadenza o promemoria appena ti viene in mente. Inserimento rapido, ricorrenza, etichette e sottoattività mantengono la giornata organizzata senza frenarti."
+          "title": "Acquisizione senza fatica",
+          "body": "Scrivi o detta un'attività con parole tue, come «Inviare la dichiarazione dei redditi oggi», e Prio imposta priorità e tempi. La voce usa il riconoscimento vocale sul dispositivo."
         },
         {
-          "title": "Obiettivi collegati al lavoro quotidiano",
-          "body": "Collega le attività quotidiane agli obiettivi che contano e usa i riepiloghi del mattino e della sera per vedere i tuoi progressi."
+          "title": "Una schermata Oggi serena",
+          "body": "Focus, avanzamento e serie a colpo d'occhio, poi La mia giornata per pianificare le ore che hai davvero."
+        },
+        {
+          "title": "Briefing che mettono in luce ciò che conta",
+          "body": "I briefing del mattino e i riepiloghi serali portano in primo piano ciò che è importante, senza scorrere liste."
+        },
+        {
+          "title": "Obiettivi che avanzano",
+          "body": "Traguardi, attività collegate, monitoraggio dell'avanzamento e un controllo Salute obiettivo mantengono ogni obiettivo concreto e raggiungibile."
+        },
+        {
+          "title": "Calendario e attività insieme",
+          "body": "Eventi e attività fianco a fianco nelle viste Giorno, 3 giorni, Settimana e Mese, per pianificare attorno al tempo che hai davvero."
         }
       ]
     },
@@ -731,43 +1050,67 @@
       "title": "Dal sovraccarico al focus in tre passaggi",
       "items": [
         {
-          "title": "Inserisci un'attività reale",
-          "body": "Scrivi o detta qualcosa che hai davvero da fare. Nessuna configurazione né account necessari: la dettatura vocale, facoltativa, chiede solo l'accesso al microfono."
+          "title": "Acquisisci con parole tue",
+          "body": "Scrivi o detta una cosa che hai davvero da fare. Nessuna configurazione né account: l'acquisizione vocale facoltativa chiede solo l'accesso al microfono."
         },
         {
-          "title": "Controlla la priorità suggerita",
-          "body": "Prio spiega perché suggerisce Fai subito, Pianifica, Delega o Forse dopo. Confermala o correggila: il controllo resta sempre a te."
+          "title": "Verifica la priorità suggerita",
+          "body": "Prio spiega perché ha scelto Fai subito, Pianifica, Delega o Dopo e compila i tempi che ha capito. Accettala o cambiala: il controllo resta tuo."
         },
         {
           "title": "Agisci da Oggi",
-          "body": "L'attività confermata compare come azione consigliata in Oggi, pronta per essere svolta."
+          "body": "L'attività confermata compare nel Focus di oggi, pronta da affrontare, accanto ad avanzamento e serie."
         }
       ]
     },
     "gallery": {
       "eyebrow": "Guardalo in azione",
-      "title": "Un modo più tranquillo di pianificare la giornata",
-      "body": "Dall'inserimento rapido alla matrice di Eisenhower, ogni schermata è pensata per portarti più in fretta alla prossima priorità.",
-      "captions": [
-        "Inserimento rapido con priorità suggerita",
-        "Riepilogo del mattino",
-        "Avanzamento dell'obiettivo",
-        "Dettagli dell'attività"
+      "title": "Schermate reali dell'app Android",
+      "body": "Da Oggi e l'acquisizione rapida a briefing, obiettivi, calendario e controlli della privacy — acquisite su Android e mostrate in inglese.",
+      "items": [
+        {
+          "caption": "Oggi, con tema scuro",
+          "alt": "Schermata Oggi di Prio con tema scuro: serie di 5 giorni, panoramica attività per Fai subito, Pianifica, Delega e Dopo, avanzamento giornaliero al 33% e Focus di oggi."
+        },
+        {
+          "caption": "Acquisizione rapida che ti capisce",
+          "alt": "L'acquisizione rapida trasforma «Submit tax return today» in un'attività Fai subito e mostra l'interpretazione da verificare."
+        },
+        {
+          "caption": "Un briefing del mattino privato",
+          "alt": "Briefing del mattino contrassegnato come privato, con 2 attività urgenti e 3 riunioni e l'elenco delle attività prioritarie del giorno con le scadenze."
+        },
+        {
+          "caption": "Obiettivi con Salute obiettivo",
+          "alt": "Obiettivo di carriera al 50% e nei tempi, con traguardi, attività collegate e un controllo Salute obiettivo valutato 100% solido."
+        },
+        {
+          "caption": "Calendario e attività insieme",
+          "alt": "Vista Giorno del calendario per martedì 13 ottobre, con riunioni e attività di Prio insieme e le opzioni 3 giorni, Settimana e Mese."
+        },
+        {
+          "caption": "La privacy in un unico posto",
+          "alt": "Impostazioni Privacy e sicurezza con interruttori per nascondere il contenuto delle notifiche nella schermata di blocco e bloccare screenshot e registrazioni dello schermo."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Privacy",
       "title": "Pensato per il locale, non solo dichiarato tale",
-      "body": "Inserimento, pianificazione, obiettivi, promemoria, analisi locali e classificazione basata su regole avvengono sul tuo dispositivo Android, senza account né connessione internet.",
-      "detail": "Se supportati e selezionati, Gemini Nano o un modello llama.cpp scaricato possono anche funzionare interamente sul dispositivo. IA remota, backup cifrato su Google Drive, esportazione o condivisione manuale, e Firebase Analytics o Crashlytics sono scelte separate ed esplicite che attivi singolarmente. Prio non ha un proxy IA: se colleghi un fornitore remoto, la tua chiave e il prompt vengono inviati direttamente a quel fornitore.",
+      "body": "Acquisizione, pianificazione, obiettivi, promemoria, analisi locali e priorità basate su regole avvengono sul tuo dispositivo Android. La pianificazione essenziale funziona senza account Prio e senza connessione internet.",
+      "detail": "Se supportati e selezionati, Gemini Nano o un modello llama.cpp scaricato eseguono l'IA sul tuo dispositivo. Provider di IA remoti, backup cifrato su Google Drive, esportazione o condivisione manuale e Firebase Analytics o Crashlytics sono attivazioni separate ed esplicite che controlli una per una. Prio non ha un proxy IA: se colleghi un provider remoto, la tua chiave e il tuo prompt vanno direttamente a quel provider.",
       "points": [
         {
           "title": "Sul dispositivo per impostazione predefinita",
-          "body": "La classificazione basata su regole e i tuoi dati di pianificazione principali lasciano il dispositivo solo se attivi esplicitamente una funzione di rete."
+          "body": "La classificazione basata su regole e i dati di pianificazione restano sul tuo dispositivo, a meno che tu non attivi una funzione di rete."
         },
         {
-          "title": "Consenso esplicito per tutto ciò che è remoto",
-          "body": "IA remota, backup cloud, esportazione e analisi sono disattivati finché non li attivi; attivarne uno non attiva gli altri."
+          "title": "Attivazione esplicita per tutto ciò che è remoto",
+          "body": "IA remota, backup cloud, esportazione e statistiche restano spenti finché non li attivi, e attivarne uno non ne attiva mai un altro."
+        },
+        {
+          "title": "Protezione sullo schermo",
+          "body": "Un interruttore nasconde i dettagli delle attività nella schermata di blocco; un altro nasconde Prio nel selettore delle app e blocca screenshot, registrazione e condivisione dello schermo."
         },
         {
           "title": "Niente pubblicità, niente vendita di dati",
@@ -777,25 +1120,28 @@
     },
     "updates": {
       "eyebrow": "Novità",
-      "title": "Ultimi miglioramenti",
-      "body": "Continuiamo a migliorare l'esperienza principale a ogni versione.",
+      "title": "Aggiunte recenti",
+      "body": "Le ultime versioni aggiungono strumenti creativi e controlli della privacy più solidi, mantenendo la pianificazione essenziale sul tuo dispositivo.",
       "items": [
-        "Avvio più rapido e affidabile dell'IA sul dispositivo e migliore gestione dei modelli",
-        "Inserimento, pianificazione e flusso «Da fare ora» in Oggi più semplici",
-        "Introduzione più chiara e navigazione più semplice verso le impostazioni IA avanzate",
-        "Accessibilità, privacy e stabilità migliorate in tutta l'app"
+        "Creazione di immagini nella chat sul dispositivo, con condivisione, salvataggio, schermo intero e varianti",
+        "Copia dei messaggi della chat con un tocco",
+        "Impostazioni Privacy e sicurezza per nascondere i dettagli nella schermata di blocco e bloccare gli screenshot",
+        "Browser dei modelli per l'IA sul dispositivo e verifica di integrità prima di ripristinare un backup"
       ]
     },
     "features": {
       "eyebrow": "Tutto ciò che ti serve",
       "title": "Un sistema completo per priorità, obiettivi e tempo",
       "items": [
-        "Matrice di Eisenhower con Fai subito, Pianifica, Delega e Forse dopo",
-        "Attività, sottoattività, ricorrenza, etichette, scadenze e promemoria",
-        "Obiettivi collegati al lavoro quotidiano",
-        "Riepiloghi del mattino e revisioni della sera",
-        "Vista calendario e pianificazione mirata della mia giornata",
-        "Analisi di produttività locali, sul dispositivo"
+        "Matrice di Eisenhower con Fai subito, Pianifica, Delega e Dopo",
+        "Acquisizione rapida in linguaggio naturale con voce sul dispositivo",
+        "Attività con sottoattività, scadenze, promemoria, ripetizione e tag",
+        "Obiettivi con traguardi, avanzamento e Salute obiettivo",
+        "Briefing del mattino, riepiloghi serali e analisi sul dispositivo",
+        "Calendario nelle viste Giorno, 3 giorni, Settimana e Mese, più La mia giornata",
+        "Assistente in chat con proposte da verificare e creazione di immagini sul dispositivo",
+        "App Actions, agenti associati (MCP), tema scuro e 11 lingue",
+        "Esportazione JSON e backup cifrato facoltativo su Google Drive"
       ]
     },
     "free": {
@@ -809,20 +1155,24 @@
       "title": "Domande frequenti",
       "items": [
         {
-          "question": "Prio è davvero gratis?",
-          "answer": "Sì. Tutte le funzioni attuali sono gratuite, senza abbonamento, upgrade a pagamento o acquisto unico."
+          "question": "Prio è davvero gratuito?",
+          "answer": "Sì. Tutte le funzioni attuali sono gratuite, senza abbonamento, upgrade a pagamento o acquisto una tantum."
         },
         {
           "question": "Prio funziona offline?",
-          "answer": "Sì. Inserimento, pianificazione, obiettivi, promemoria e prioritizzazione basata su regole funzionano completamente offline, senza account Prio."
+          "answer": "Sì. Acquisizione, pianificazione, obiettivi, promemoria e priorità basate su regole funzionano senza connessione internet e senza account Prio. IA remota e backup cloud si collegano solo se li attivi."
         },
         {
           "question": "Prio invia le mie attività al cloud?",
-          "answer": "Solo se lo scegli tu. La pianificazione principale resta sul dispositivo. IA remota, backup cloud ed esportazione sono funzioni separate che attivi tu stesso, e Prio non ha un proxy IA."
+          "answer": "Solo se lo scegli tu. La pianificazione essenziale resta sul tuo dispositivo. IA remota, backup cloud ed esportazione sono funzioni separate che attivi una per una, e Prio non ha un proxy IA."
+        },
+        {
+          "question": "Posso usare l'IA senza inviare dati al cloud?",
+          "answer": "Sì. Sui dispositivi supportati, Prio può eseguire l'IA con Gemini Nano o con un modello llama.cpp che scarichi, sul tuo dispositivo. I provider remoti sono facoltativi, sperimentali e usano la tua chiave API."
         },
         {
           "question": "In cosa Prio è diverso da una lista di cose da fare?",
-          "answer": "Prio non si limita a memorizzare le attività: le prioritizza. Ogni inserimento riceve un suggerimento spiegabile secondo la matrice di Eisenhower, così sai sempre cosa fare dopo, non solo cosa hai da fare."
+          "answer": "Prio non si limita a salvare attività: le prioritizza. Ogni acquisizione riceve un suggerimento spiegabile secondo la matrice di Eisenhower, così sai sempre cosa fare dopo e non solo cosa c'è nella tua lista."
         }
       ]
     },
@@ -855,7 +1205,7 @@
     "ogLocale": "ja_JP",
     "seo": {
       "title": "Prio — 次にやることがわかる | プライバシー重視のAIタスクプランナー（Android）",
-      "description": "Prioはタスクと目標をアイゼンハワーマトリクスで整理し、次に取るべき行動を一つに絞ります。オフラインで動作し、アカウント不要。Android向けに全機能が無料です。"
+      "description": "Prio はタスクと目標を、端末上のプライベートなアイゼンハワー式計画で明確な次の一手に変えます。Android で無料、アカウント不要。"
     },
     "nav": {
       "benefits": "Prioの理由",
@@ -867,7 +1217,7 @@
     "hero": {
       "eyebrow": "Android向けプライバシー重視のタスク優先付け",
       "title": "次にやることが分かる。タスクをクラウドに送らずに。",
-      "body": "Prioはタスクと目標をアイゼンハワーマトリクスで整理し、端末上のルール優先分類で次の一手を明確にします。タスクを入力し、提案された優先度を確認して、そのまま実行。アカウントは不要です。",
+      "body": "Prio は抱えている用事を最優先・予定・委任・後回しに振り分け、確認できる理由も示しながら、日々の作業を大切な目標につなげます。基本的な計画は端末上で動作し、アカウントは不要です。",
       "secondaryCta": "使い方を見る",
       "proofLabel": "つの明確な優先ゾーン",
       "trust": [
@@ -877,22 +1227,61 @@
         "オンデバイスAIに対応"
       ]
     },
+    "heroSurface": {
+      "day": "10月13日（火）",
+      "greeting": "おはようございます",
+      "pill": "5日連続",
+      "overview": "タスク概要",
+      "focus": "今日のフォーカス",
+      "task": "本番環境のトークン更新バグを修正",
+      "meta": "最優先 · 11:00 期限",
+      "quadrants": [
+        {
+          "name": "最優先",
+          "hint": "緊急 · 重要"
+        },
+        {
+          "name": "予定",
+          "hint": "重要 · 緊急でない"
+        },
+        {
+          "name": "委任",
+          "hint": "緊急 · 任せる"
+        },
+        {
+          "name": "後回し",
+          "hint": "優先度低"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Prioの理由",
       "title": "タスクの山を、たった一つの次の行動に",
-      "body": "Prioは、多すぎるタスクを多すぎるアプリで管理している人のために作られました。新しいリストではなく、理由が分かる一つの優先度を提供します。",
+      "body": "Prio は、たくさんのアプリにまたがる大量のタスクを抱える人のために作られています。管理するリストを増やす代わりに、理由の分かる優先度、落ち着いた今日の計画、前に進む目標を届けます。",
       "items": [
         {
-          "title": "迷わない次の一手",
-          "body": "リストの並べ替えはもう不要です。Prioのアイゼンハワーマトリクスがすべてのタスクを「最優先」「予定」「委任」「後回し」に振り分け、今何が重要かを明確にします。"
+          "title": "すぐに明確に",
+          "body": "各タスクが最優先・予定・委任・後回しに振り分けられ、確認や変更ができる短い理由も表示されます。今いちばん大切なことが常に分かります。"
         },
         {
-          "title": "数秒で入力・予定化",
-          "body": "思いついた瞬間にタスク、期限、通知を追加。クイック入力、繰り返し、タグ、サブタスクで一日を整理しつつスピードも落としません。"
+          "title": "手間なく入力",
+          "body": "「今日中に確定申告を提出」のように自分の言葉で入力するか話すだけで、Prio が優先度とタイミングを設定します。音声入力は端末上の音声認識を使います。"
         },
         {
-          "title": "目標と日々の行動をつなぐ",
-          "body": "日々のタスクを大切な目標に結び付け、朝夕の要約でその日の行動が優先事項をどう前進させたか確認できます。"
+          "title": "落ち着いた「今日」画面",
+          "body": "フォーカス、進捗、連続記録をひと目で確認。「今日のプラン」で実際に使える時間を計画できます。"
+        },
+        {
+          "title": "大切なことが分かるブリーフィング",
+          "body": "朝のブリーフィングと夜のまとめが、リストを探さなくても重要なことを前に出してくれます。"
+        },
+        {
+          "title": "前に進む目標",
+          "body": "マイルストーン、リンクしたタスク、進捗の記録、そして「目標の健全性」チェックで、どの目標も具体的で達成可能に保てます。"
+        },
+        {
+          "title": "カレンダーとタスクを一緒に",
+          "body": "予定とタスクを日・3日・週・月の表示で並べて確認し、実際に使える時間に合わせて計画できます。"
         }
       ]
     },
@@ -901,71 +1290,98 @@
       "title": "3ステップで混乱から集中へ",
       "items": [
         {
-          "title": "実際のタスクを入力",
-          "body": "今本当にやるべきことを入力(または話す)だけ。事前設定やアカウントは不要です。任意の音声入力ではマイクへのアクセス許可のみをお願いします。"
+          "title": "自分の言葉で入力",
+          "body": "今まさに抱えている用事をひとつ、入力するか話してください。設定もアカウントも不要です。任意の音声入力では、マイクへのアクセスだけを求めます。"
         },
         {
           "title": "提案された優先度を確認",
-          "body": "Prioは「最優先」「予定」「委任」「後回し」を提案し、その理由も説明します。そのまま承認するか修正するか、選ぶのはあなたです。"
+          "body": "Prio は最優先・予定・委任・後回しのどれを選んだのか理由を示し、読み取ったタイミングも入力します。そのまま使うか変更するかはあなた次第です。"
         },
         {
           "title": "「今日」から行動",
-          "body": "確認したタスクは「今日」画面に推奨される次の行動として表示され、すぐに取り組めます。"
+          "body": "確定したタスクは、進捗や連続記録と並んで「今日のフォーカス」に表示され、すぐに取りかかれます。"
         }
       ]
     },
     "gallery": {
       "eyebrow": "実際の画面",
-      "title": "もっと落ち着いて一日を計画する",
-      "body": "クイック入力からアイゼンハワーマトリクスまで、どの画面も次の行動にすばやくたどり着けるように設計されています。",
-      "captions": [
-        "優先度提案付きのクイック入力",
-        "朝の要約",
-        "目標の進捗",
-        "タスクの詳細"
+      "title": "Android アプリの実際の画面",
+      "body": "「今日」画面やクイック入力から、ブリーフィング、目標、カレンダー、プライバシー設定まで。Android で撮影した英語表示の画面です。",
+      "items": [
+        {
+          "caption": "ダークテーマの「今日」画面",
+          "alt": "ダークテーマの Prio「今日」画面。5日連続の記録、最優先・予定・委任・後回しのタスク概要、今日の進捗 33%、今日のフォーカスが表示されています。"
+        },
+        {
+          "caption": "言葉を理解するクイック入力",
+          "alt": "クイック入力が「Submit tax return today」を最優先のタスクに変換し、確認用の解釈を表示している画面。"
+        },
+        {
+          "caption": "プライベートな朝のブリーフィング",
+          "alt": "「プライベート」と表示された朝のブリーフィング。緊急タスク 2 件と会議 3 件をまとめ、その日の最優先タスクを期限とともに一覧表示しています。"
+        },
+        {
+          "caption": "目標の健全性つきの目標",
+          "alt": "達成率 50%・順調のキャリア目標。マイルストーン、リンクしたタスク、100% 良好と評価された「目標の健全性」チェックが表示されています。"
+        },
+        {
+          "caption": "カレンダーとタスクを一緒に",
+          "alt": "10月13日（火）のカレンダー日表示。会議と Prio のタスクが並び、3日・週・月の表示切り替えがあります。"
+        },
+        {
+          "caption": "プライバシー設定をひとまとめに",
+          "alt": "「プライバシーとセキュリティ」設定。ロック画面で通知内容を隠すスイッチと、スクリーンショットや画面録画をブロックするスイッチがあります。"
+        }
       ]
     },
     "privacy": {
       "eyebrow": "プライバシー",
       "title": "うたい文句ではなく、設計そのものが端末中心",
-      "body": "入力、計画、目標、リマインダー、端末内分析、ルール優先の分類はすべてAndroid端末で処理され、アカウントや通信は必要ありません。",
-      "detail": "対応していて選択した場合、Gemini Nanoまたはダウンロードしたllama.cppモデルも端末上で完全に動作します。リモートAI、暗号化されたGoogle Driveバックアップ、手動でのエクスポート・共有、Firebase AnalyticsやCrashlyticsは、それぞれ個別に有効化する明示的な選択肢です。PrioにAIプロキシはありません。リモートプロバイダーを接続した場合、APIキーとプロンプトはそのプロバイダーに直接送信されます。",
+      "body": "入力、計画、目標、リマインダー、ローカル分析、ルール優先の優先度付けは Android 端末で処理されます。基本的な計画は Prio アカウントやインターネット接続なしで使えます。",
+      "detail": "対応端末で選択した場合、Gemini Nano またはダウンロードした llama.cpp モデルが端末上で AI を実行します。リモート AI プロバイダー、暗号化された Google ドライブ バックアップ、手動の書き出しや共有、Firebase Analytics・Crashlytics は、それぞれ個別に明示的に有効にする機能です。Prio に AI プロキシはありません。リモート プロバイダーを接続すると、キーとプロンプトはそのプロバイダーへ直接送られます。",
       "points": [
         {
-          "title": "初期設定は端末内",
-          "body": "ルール優先の分類と基本的な計画データは、ネットワーク機能を明示的に有効にしない限り端末の外に出ません。"
+          "title": "標準で端末上",
+          "body": "ルール優先の分類と基本的な計画データは、ネットワーク機能を有効にしない限り端末から出ません。"
         },
         {
-          "title": "リモート機能はすべて明示的な選択",
-          "body": "リモートAI、クラウドバックアップ、エクスポート、分析はそれぞれ有効化するまでオフです。一つを有効にしても他は有効になりません。"
+          "title": "リモート機能はすべて明示的にオン",
+          "body": "リモート AI、クラウド バックアップ、書き出し、分析は、オンにするまでそれぞれオフのまま。ひとつをオンにしても他はオンになりません。"
+        },
+        {
+          "title": "画面上の保護",
+          "body": "ロック画面でタスクの詳細を隠すスイッチと、アプリ切り替え画面で Prio を隠し、スクリーンショット・画面録画・画面共有をブロックするスイッチがあります。"
         },
         {
           "title": "広告なし、データ販売なし",
-          "body": "Prioは広告を表示せず、個人データを販売せず、アプリ横断の広告トラッキングにも使用しません。"
+          "body": "Prio は広告を表示せず、個人データを販売せず、アプリをまたいだ広告トラッキングにも使用しません。"
         }
       ]
     },
     "updates": {
       "eyebrow": "更新情報",
-      "title": "最近の改善点",
-      "body": "リリースごとに、基本体験を改善し続けています。",
+      "title": "最近追加された機能",
+      "body": "最近のリリースでは、基本的な計画を端末上に保ったまま、クリエイティブな機能とより強力なプライバシー設定を追加しました。",
       "items": [
-        "オンデバイスAIの起動とモデル管理を高速化・安定化",
-        "クイック入力、予定設定、「今日」の「次にやること」の流れを簡略化",
-        "初回設定と高度なAI設定への移動を分かりやすく改善",
-        "アプリ全体のアクセシビリティ、プライバシー、安定性を向上"
+        "チャットで端末上の画像生成。共有、保存、全画面表示、バリエーション作成に対応",
+        "チャットのメッセージをワンタップでコピー",
+        "ロック画面の詳細を隠し、スクリーンショットをブロックできる「プライバシーとセキュリティ」設定",
+        "端末上 AI 用のモデルブラウザーと、バックアップ復元前の整合性チェック"
       ]
     },
     "features": {
       "eyebrow": "必要な機能をすべて",
       "title": "優先度、目標、時間管理を支える完全なシステム",
       "items": [
-        "「最優先」「予定」「委任」「後回し」のアイゼンハワーマトリクス",
-        "タスク、サブタスク、繰り返し、タグ、期限、通知",
-        "日々の行動と結び付く目標",
-        "朝の要約と夜の振り返り",
-        "カレンダー表示と集中できるMy Day計画",
-        "端末内で完結するローカルな生産性分析"
+        "最優先・予定・委任・後回しのアイゼンハワーマトリクス",
+        "端末上の音声入力に対応した自然言語のクイック入力",
+        "サブタスク、期限、リマインダー、繰り返し、タグに対応したタスク",
+        "マイルストーン、進捗、目標の健全性をそなえた目標",
+        "朝のブリーフィング、夜のまとめ、端末上の分析",
+        "日・3日・週・月表示のカレンダーと「今日のプラン」",
+        "確認できる変更案と端末上の画像生成を備えたチャットアシスタント",
+        "App Actions、ペアリングしたエージェント（MCP）、ダークテーマ、11 言語",
+        "JSON 書き出しと任意の暗号化 Google ドライブ バックアップ"
       ]
     },
     "free": {
@@ -979,20 +1395,24 @@
       "title": "よくある質問",
       "items": [
         {
-          "question": "Prioは本当に無料ですか？",
-          "answer": "はい。現在提供されているすべての機能は、サブスクリプション、有料アップグレード、買い切りなしで無料で利用できます。"
+          "question": "Prio は本当に無料ですか？",
+          "answer": "はい。現在のすべての機能を無料で利用でき、サブスクリプション、有料アップグレード、買い切りの提供はありません。"
         },
         {
-          "question": "Prioはオフラインで使えますか？",
-          "answer": "はい。入力、計画、目標、リマインダー、ルール優先の優先付けはすべてオフラインかつPrioアカウントなしで動作します。"
+          "question": "Prio はオフラインで使えますか？",
+          "answer": "はい。入力、計画、目標、リマインダー、ルール優先の優先度付けは、インターネット接続や Prio アカウントなしで動作します。リモート AI とクラウド バックアップは、オンにした場合にのみ接続します。"
         },
         {
-          "question": "Prioはタスクをクラウドに送信しますか？",
-          "answer": "自分で選択しない限り送信されません。基本的な計画は端末内にとどまります。リモートAI、クラウドバックアップ、エクスポートは個別に有効化する別機能で、PrioにAIプロキシはありません。"
+          "question": "Prio はタスクをクラウドに送りますか？",
+          "answer": "ご自身で選ばない限り送りません。基本的な計画は端末上に残ります。リモート AI、クラウド バックアップ、書き出しはそれぞれ個別に有効にする機能で、Prio に AI プロキシはありません。"
         },
         {
-          "question": "普通のタスク管理アプリと何が違いますか？",
-          "answer": "Prioは単にタスクを保存するだけではなく、優先順位を付けます。入力するたびにアイゼンハワーマトリクスに基づく理由付きの提案が表示されるため、何が残っているかだけでなく、次に何をすべきかが常に分かります。"
+          "question": "データをクラウドに送らずに AI を使えますか？",
+          "answer": "はい。対応端末では、Gemini Nano またはダウンロードした llama.cpp モデルで AI を端末上で実行できます。リモート プロバイダーは任意の試験的機能で、ご自身の API キーを使います。"
+        },
+        {
+          "question": "Prio は普通の ToDo リストと何が違いますか？",
+          "answer": "Prio はタスクを保存するだけでなく、優先順位を付けます。入力したタスクごとに理由の分かるアイゼンハワーマトリクスの提案が付くので、リストに何があるかだけでなく、次に何をすべきかが常に分かります。"
         }
       ]
     },
@@ -1025,7 +1445,7 @@
     "ogLocale": "ko_KR",
     "seo": {
       "title": "Prio — 다음 할 일을 알려드립니다 | 프라이버시 중심 AI 작업 플래너(Android)",
-      "description": "Prio는 할 일과 목표를 아이젠하워 매트릭스로 정리해 다음 행동 하나를 명확히 알려줍니다. 오프라인에서 동작하고 계정이 필요 없으며, Android에서 모든 기능이 무료입니다."
+      "description": "Prio는 기기 내 비공개 아이젠하워 계획으로 작업과 목표를 분명한 다음 행동으로 바꿉니다. Android에서 무료, 계정 필요 없음."
     },
     "nav": {
       "benefits": "Prio를 선택하는 이유",
@@ -1037,7 +1457,7 @@
     "hero": {
       "eyebrow": "Android를 위한 프라이버시 중심 작업 우선순위",
       "title": "다음에 할 일을 확인하세요 — 클라우드에 보내지 않고.",
-      "body": "Prio는 할 일과 목표를 아이젠하워 매트릭스에 따라 명확한 우선순위로 정리하며, 기기 내 규칙 우선 분류를 사용합니다. 할 일을 입력하고 제안된 우선순위를 확인한 뒤 바로 실행하세요. 계정이 필요하지 않습니다.",
+      "body": "Prio는 해야 할 일을 먼저 하기, 일정 잡기, 위임하기, 나중에로 정리하고 확인할 수 있는 이유를 함께 보여 주며, 일상의 작업을 중요한 목표와 연결합니다. 핵심 계획은 기기에서 실행되며 계정이 필요 없습니다.",
       "secondaryCta": "사용 방법 보기",
       "proofLabel": "가지 명확한 우선순위 영역",
       "trust": [
@@ -1047,22 +1467,61 @@
         "온디바이스 AI 지원"
       ]
     },
+    "heroSurface": {
+      "day": "10월 13일 화요일",
+      "greeting": "좋은 아침이에요",
+      "pill": "5일 연속",
+      "overview": "할 일 개요",
+      "focus": "오늘의 집중",
+      "task": "운영 환경의 토큰 갱신 버그 수정",
+      "meta": "먼저 하기 · 오전 11:00 마감",
+      "quadrants": [
+        {
+          "name": "먼저 하기",
+          "hint": "긴급 · 중요"
+        },
+        {
+          "name": "일정 잡기",
+          "hint": "중요 · 긴급하지 않음"
+        },
+        {
+          "name": "위임하기",
+          "hint": "긴급 · 맡기기"
+        },
+        {
+          "name": "나중에",
+          "hint": "낮은 우선순위"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Prio를 선택하는 이유",
       "title": "쌓인 일을 하나의 명확한 다음 행동으로",
-      "body": "Prio는 너무 많은 앱에서 너무 많은 할 일을 관리하는 사람들을 위해 만들었습니다. 또 다른 목록이 아니라, 이유가 설명된 단 하나의 우선순위를 제공합니다.",
+      "body": "Prio는 너무 많은 앱에서 너무 많은 일을 처리하는 사람을 위해 만들어졌습니다. 관리할 목록을 하나 더 늘리는 대신, 이유를 알 수 있는 우선순위와 차분한 오늘 계획, 앞으로 나아가는 목표를 제공합니다.",
       "items": [
         {
-          "title": "헤매지 않는 다음 행동",
-          "body": "목록을 다시 정렬할 필요가 없습니다. Prio의 아이젠하워 매트릭스가 모든 할 일을 먼저 하기, 일정 잡기, 위임하기, 나중에 하기로 분류해, 지금 무엇이 중요한지 항상 알 수 있습니다."
+          "title": "즉각적인 명확함",
+          "body": "각 작업이 먼저 하기, 일정 잡기, 위임하기, 나중에로 분류되고 확인하거나 바꿀 수 있는 짧은 이유가 함께 표시되어, 지금 가장 중요한 일을 늘 알 수 있습니다."
         },
         {
-          "title": "몇 초 만에 입력하고 일정화",
-          "body": "생각나는 즉시 할 일, 기한, 알림을 추가하세요. 빠른 입력, 반복, 태그, 하위 작업으로 속도를 늦추지 않고 하루를 정리합니다."
+          "title": "손쉬운 입력",
+          "body": "‘오늘 세금 신고서 제출하기’처럼 평소 말투로 입력하거나 말하면 Prio가 우선순위와 시간을 설정합니다. 음성 입력은 기기 내 음성 인식을 사용합니다."
         },
         {
-          "title": "목표와 매일의 할 일을 연결",
-          "body": "일상적인 할 일을 중요한 목표와 연결하고, 아침·저녁 요약으로 오늘의 행동이 목표를 얼마나 앞당겼는지 확인하세요."
+          "title": "차분한 오늘 화면",
+          "body": "집중할 일, 진행률, 연속 기록을 한눈에 보고, 내 하루로 실제로 쓸 수 있는 시간을 계획하세요."
+        },
+        {
+          "title": "중요한 일을 알려 주는 브리핑",
+          "body": "아침 브리핑과 저녁 요약이 목록을 뒤지지 않아도 중요한 일을 앞으로 꺼내 줍니다."
+        },
+        {
+          "title": "앞으로 나아가는 목표",
+          "body": "마일스톤, 연결된 작업, 진행률 추적, 목표 상태 점검으로 모든 목표를 구체적이고 달성 가능하게 유지합니다."
+        },
+        {
+          "title": "캘린더와 작업을 함께",
+          "body": "일정과 작업을 일, 3일, 주, 월 보기에서 나란히 보며 실제로 가진 시간에 맞춰 계획할 수 있습니다."
         }
       ]
     },
@@ -1071,71 +1530,98 @@
       "title": "세 단계로 혼란에서 집중으로",
       "items": [
         {
-          "title": "실제 할 일 입력",
-          "body": "지금 정말로 해야 할 일을 입력하거나 말하세요. 사전 설정이나 계정이 필요 없습니다. 선택 사항인 음성 입력은 마이크 접근 권한만 요청합니다."
+          "title": "내 말로 입력하기",
+          "body": "지금 실제로 해야 하는 일 하나를 입력하거나 말해 보세요. 설정도 계정도 필요 없으며, 선택형 음성 입력은 마이크 접근 권한만 요청합니다."
         },
         {
-          "title": "제안된 우선순위 확인",
-          "body": "Prio는 왜 먼저 하기, 일정 잡기, 위임하기, 나중에 하기를 제안했는지 설명합니다. 그대로 받아들이거나 수정하세요 — 결정은 언제나 당신의 몫입니다."
+          "title": "제안된 우선순위 확인하기",
+          "body": "Prio는 먼저 하기, 일정 잡기, 위임하기, 나중에 중 무엇을 골랐는지 이유를 설명하고 이해한 시간을 채워 넣습니다. 그대로 받아들이거나 바꾸세요. 결정은 언제나 사용자의 몫입니다."
         },
         {
-          "title": "오늘에서 바로 실행",
-          "body": "확인된 할 일은 오늘 화면에 추천 다음 행동으로 표시되어 바로 시작할 수 있습니다."
+          "title": "오늘에서 바로 실행하기",
+          "body": "확정한 작업은 진행률, 연속 기록과 함께 오늘의 집중에 나타나 바로 시작할 수 있습니다."
         }
       ]
     },
     "gallery": {
       "eyebrow": "실제 화면 보기",
-      "title": "더 차분하게 하루를 계획하는 방법",
-      "body": "빠른 입력부터 아이젠하워 매트릭스까지, 모든 화면은 다음 행동에 더 빨리 도달하도록 설계되었습니다.",
-      "captions": [
-        "우선순위가 제안되는 빠른 입력",
-        "아침 요약",
-        "목표 진행 상황",
-        "할 일 상세 정보"
+      "title": "Android 앱의 실제 화면",
+      "body": "오늘 화면과 빠른 입력부터 브리핑, 목표, 캘린더, 개인정보 보호 설정까지. Android에서 캡처했으며 영어로 표시됩니다.",
+      "items": [
+        {
+          "caption": "다크 테마의 오늘 화면",
+          "alt": "다크 테마의 Prio 오늘 화면. 5일 연속 기록, 먼저 하기·일정 잡기·위임하기·나중에 할 일 개요, 오늘 진행률 33%, 오늘의 집중이 표시됩니다."
+        },
+        {
+          "caption": "말을 이해하는 빠른 입력",
+          "alt": "빠른 입력이 ‘Submit tax return today’를 먼저 하기 작업으로 바꾸고 검토할 수 있도록 해석을 보여 주는 화면."
+        },
+        {
+          "caption": "비공개 아침 브리핑",
+          "alt": "비공개로 표시된 아침 브리핑. 긴급한 작업 2개와 회의 3개를 요약하고, 오늘 먼저 할 작업을 마감 시간과 함께 보여 줍니다."
+        },
+        {
+          "caption": "목표 상태 점검이 있는 목표",
+          "alt": "50% 달성, 순조로운 경력 목표. 마일스톤, 연결된 작업, 100% 양호로 평가된 목표 상태 점검이 표시됩니다."
+        },
+        {
+          "caption": "캘린더와 작업을 함께",
+          "alt": "10월 13일 화요일의 캘린더 일 보기. 회의와 Prio 작업이 함께 표시되며 3일, 주, 월 보기 옵션이 있습니다."
+        },
+        {
+          "caption": "개인정보 보호 설정을 한곳에",
+          "alt": "개인정보 보호 및 보안 설정. 잠금 화면에서 알림 내용을 숨기는 스위치와 스크린샷 및 화면 녹화를 차단하는 스위치가 있습니다."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "개인정보",
       "title": "말로만이 아니라 설계부터 기기 중심",
-      "body": "입력, 계획, 목표, 알림, 기기 내 분석, 규칙 우선 분류는 모두 Android 기기에서 처리되며 계정이나 인터넷 연결이 필요하지 않습니다.",
-      "detail": "지원되고 선택한 경우 Gemini Nano 또는 다운로드한 llama.cpp 모델도 기기에서 완전히 실행될 수 있습니다. 원격 AI, 암호화된 Google Drive 백업, 수동 내보내기·공유, Firebase Analytics 또는 Crashlytics는 각각 개별적으로 활성화하는 명시적 선택 사항입니다. Prio에는 AI 프록시가 없습니다 — 원격 제공업체를 연결하면 API 키와 프롬프트가 해당 제공업체로 직접 전송됩니다.",
+      "body": "입력, 계획, 목표, 알림, 로컬 분석, 규칙 우선 우선순위 지정은 Android 기기에서 처리됩니다. 핵심 계획은 Prio 계정이나 인터넷 연결 없이 작동합니다.",
+      "detail": "지원되는 기기에서 선택하면 Gemini Nano 또는 내려받은 llama.cpp 모델이 기기에서 AI를 실행합니다. 원격 AI 제공업체, 암호화된 Google Drive 백업, 수동 내보내기 또는 공유, Firebase Analytics나 Crashlytics는 각각 따로 명시적으로 켜는 기능입니다. Prio에는 AI 프록시가 없습니다. 원격 제공업체를 연결하면 키와 프롬프트가 해당 제공업체로 직접 전송됩니다.",
       "points": [
         {
           "title": "기본은 기기 내 처리",
-          "body": "규칙 우선 분류와 핵심 계획 데이터는 네트워크 기능을 명시적으로 활성화하지 않는 한 기기를 벗어나지 않습니다."
+          "body": "규칙 우선 분류와 핵심 계획 데이터는 네트워크 기능을 직접 켜지 않는 한 기기에 남습니다."
         },
         {
-          "title": "원격 기능은 모두 명시적 동의",
-          "body": "원격 AI, 클라우드 백업, 내보내기, 분석은 각각 켜기 전까지 꺼져 있으며, 하나를 켠다고 다른 것이 켜지지 않습니다."
+          "title": "원격 기능은 모두 명시적으로 켜기",
+          "body": "원격 AI, 클라우드 백업, 내보내기, 분석은 직접 켤 때까지 각각 꺼져 있으며, 하나를 켜도 다른 기능은 켜지지 않습니다."
+        },
+        {
+          "title": "화면 보호",
+          "body": "스위치 하나로 잠금 화면의 작업 세부 정보를 숨기고, 다른 스위치로 앱 전환 화면에서 Prio를 숨기며 스크린샷, 화면 녹화, 화면 공유를 차단합니다."
         },
         {
           "title": "광고 없음, 데이터 판매 없음",
-          "body": "Prio는 광고를 게재하지 않고, 개인 데이터를 판매하지 않으며, 앱 간 광고 추적에도 사용하지 않습니다."
+          "body": "Prio는 광고를 표시하지 않고, 개인 데이터를 판매하지 않으며, 앱 간 광고 추적에도 사용하지 않습니다."
         }
       ]
     },
     "updates": {
       "eyebrow": "업데이트",
-      "title": "최근 개선 사항",
-      "body": "새 버전마다 핵심 사용 경험을 계속 개선하고 있습니다.",
+      "title": "최근 추가된 기능",
+      "body": "최근 릴리스는 핵심 계획을 기기에 둔 채 창작 도구와 더 강력한 개인정보 보호 설정을 더했습니다.",
       "items": [
-        "온디바이스 AI 시작과 모델 관리를 더 빠르고 안정적으로 개선",
-        "빠른 입력, 일정 설정, 오늘의 '다음 할 일' 흐름을 더 간단하게 개선",
-        "시작 안내와 고급 AI 설정으로의 이동을 더 명확하게 개선",
-        "앱 전반의 접근성, 개인정보 보호, 안정성 향상"
+        "채팅에서 기기 내 이미지 생성, 공유·저장·전체 화면·변형 지원",
+        "채팅 메시지를 한 번 탭으로 복사",
+        "잠금 화면 세부 정보를 숨기고 스크린샷을 차단하는 개인정보 보호 및 보안 설정",
+        "기기 내 AI용 모델 브라우저와 백업 복원 전 무결성 검사"
       ]
     },
     "features": {
       "eyebrow": "필요한 모든 기능",
       "title": "우선순위, 목표, 시간을 위한 완전한 시스템",
       "items": [
-        "먼저 하기, 일정 잡기, 위임하기, 나중에 하기로 구성된 아이젠하워 매트릭스",
-        "할 일, 하위 작업, 반복, 태그, 기한, 알림",
-        "매일의 할 일과 연결된 목표",
-        "아침 요약과 저녁 회고",
-        "캘린더 보기와 집중된 My Day 계획",
-        "기기 내에서 완결되는 로컬 생산성 분석"
+        "먼저 하기, 일정 잡기, 위임하기, 나중에로 구성된 아이젠하워 매트릭스",
+        "기기 내 음성 입력을 지원하는 자연어 빠른 입력",
+        "하위 작업, 기한, 알림, 반복, 태그를 갖춘 작업",
+        "마일스톤, 진행률, 목표 상태 점검을 갖춘 목표",
+        "아침 브리핑, 저녁 요약, 기기 내 분석",
+        "일, 3일, 주, 월 보기의 캘린더와 내 하루",
+        "검토 가능한 제안과 기기 내 이미지 생성을 갖춘 채팅 도우미",
+        "App Actions, 페어링한 에이전트(MCP), 다크 테마, 11개 언어",
+        "JSON 내보내기와 선택형 암호화 Google Drive 백업"
       ]
     },
     "free": {
@@ -1150,19 +1636,23 @@
       "items": [
         {
           "question": "Prio는 정말 무료인가요?",
-          "answer": "네. 현재 제공되는 모든 기능은 구독, 유료 업그레이드, 일회성 잠금 해제 없이 무료로 사용할 수 있습니다."
+          "answer": "네. 현재 모든 기능을 무료로 사용할 수 있으며 구독, 유료 업그레이드, 일회성 구매는 제공하지 않습니다."
         },
         {
-          "question": "Prio는 오프라인에서 동작하나요?",
-          "answer": "네. 입력, 계획, 목표, 알림, 규칙 우선 우선순위 지정은 Prio 계정 없이 완전히 오프라인에서 동작합니다."
+          "question": "Prio는 오프라인에서도 작동하나요?",
+          "answer": "네. 입력, 계획, 목표, 알림, 규칙 우선 우선순위 지정은 인터넷 연결이나 Prio 계정 없이 작동합니다. 원격 AI와 클라우드 백업은 직접 켠 경우에만 연결됩니다."
         },
         {
-          "question": "Prio가 제 할 일을 클라우드로 전송하나요?",
-          "answer": "직접 선택하지 않는 한 전송되지 않습니다. 핵심 계획은 기기 내에 머무릅니다. 원격 AI, 클라우드 백업, 내보내기는 개별적으로 활성화하는 별도 기능이며, Prio에는 AI 프록시가 없습니다."
+          "question": "Prio가 제 작업을 클라우드로 보내나요?",
+          "answer": "직접 선택하지 않는 한 보내지 않습니다. 핵심 계획은 기기에 남습니다. 원격 AI, 클라우드 백업, 내보내기는 각각 따로 켜는 기능이며 Prio에는 AI 프록시가 없습니다."
         },
         {
-          "question": "일반적인 할 일 목록 앱과 무엇이 다른가요?",
-          "answer": "Prio는 할 일을 저장만 하는 것이 아니라 우선순위를 매깁니다. 입력할 때마다 아이젠하워 매트릭스에 따른 설명 가능한 제안을 받게 되므로, 남은 일뿐 아니라 다음에 무엇을 해야 할지 항상 알 수 있습니다."
+          "question": "데이터를 클라우드로 보내지 않고 AI를 쓸 수 있나요?",
+          "answer": "네. 지원되는 기기에서는 Gemini Nano 또는 내려받은 llama.cpp 모델로 기기에서 AI를 실행할 수 있습니다. 원격 제공업체는 선택형 실험 기능이며 본인의 API 키를 사용합니다."
+        },
+        {
+          "question": "Prio는 일반 할 일 목록과 무엇이 다른가요?",
+          "answer": "Prio는 작업을 저장하는 데 그치지 않고 우선순위를 정합니다. 입력한 작업마다 이유를 알 수 있는 아이젠하워 매트릭스 제안이 붙어, 목록에 무엇이 있는지뿐 아니라 다음에 무엇을 해야 할지 늘 알 수 있습니다."
         }
       ]
     },
@@ -1195,7 +1685,7 @@
     "ogLocale": "nl_NL",
     "seo": {
       "title": "Prio: Weet wat je nu moet doen – AI-taakplanner",
-      "description": "Prio zet taken en doelen om in één duidelijke prioriteit met de Eisenhower-matrix, privé en offline. Gratis op Android, geen account nodig."
+      "description": "Prio maakt van taken en doelen één duidelijke volgende stap, met privé Eisenhower-planning op je apparaat. Gratis op Android, zonder account."
     },
     "nav": {
       "benefits": "Waarom Prio",
@@ -1207,7 +1697,7 @@
     "hero": {
       "eyebrow": "Privacyvriendelijke taakprioritering voor Android",
       "title": "Weet wat je nu moet doen — zonder je taken naar de cloud te sturen.",
-      "body": "Prio zet je taken en doelen om in één duidelijke prioriteit volgens de Eisenhower-matrix, met classificatie op basis van regels, direct op je toestel. Leg een taak vast, controleer de voorgestelde prioriteit en ga aan de slag — zonder account.",
+      "body": "Prio zet alles wat op je bord ligt in Eerst doen, Plannen, Delegeren en Later — met een reden die je kunt controleren — en verbindt je dagelijkse werk met de doelen die ertoe doen. De kernplanning draait op je apparaat, zonder account.",
       "secondaryCta": "Bekijk hoe het werkt",
       "proofLabel": "duidelijke prioriteitszones",
       "trust": [
@@ -1217,22 +1707,61 @@
         "AI op het apparaat beschikbaar"
       ]
     },
+    "heroSurface": {
+      "day": "Dinsdag · 13 okt",
+      "greeting": "Goedemorgen",
+      "pill": "5 dagen op rij",
+      "overview": "Takenoverzicht",
+      "focus": "Focus van vandaag",
+      "task": "Tokenvernieuwingsbug in productie oplossen",
+      "meta": "Eerst doen · deadline 11:00",
+      "quadrants": [
+        {
+          "name": "Eerst doen",
+          "hint": "Urgent · belangrijk"
+        },
+        {
+          "name": "Plannen",
+          "hint": "Belangrijk · niet urgent"
+        },
+        {
+          "name": "Delegeren",
+          "hint": "Urgent · uitbesteden"
+        },
+        {
+          "name": "Later",
+          "hint": "Lage prioriteit"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Waarom Prio",
       "title": "Van te veel taken naar één duidelijke volgende stap",
-      "body": "Prio is gemaakt voor mensen die te veel taken in te veel apps beheren. In plaats van nog een lijst krijg je één uitgelegde prioriteit.",
+      "body": "Prio is gemaakt voor iedereen die te veel taken in te veel apps jongleert. In plaats van nog een lijst om bij te houden, krijg je een uitlegbare prioriteit, een rustig plan voor vandaag en doelen die vooruitgaan.",
       "items": [
         {
-          "title": "Eén duidelijke volgende stap",
-          "body": "Stop met je lijst herschikken. De Eisenhower-matrix van Prio verdeelt elke taak in Eerst doen, Plannen, Delegeren of Misschien later, zodat je altijd weet wat nu telt."
+          "title": "Direct overzicht",
+          "body": "Elke taak komt in Eerst doen, Plannen, Delegeren of Later, met een korte reden die je kunt controleren of aanpassen — zo weet je altijd wat nu het belangrijkst is."
         },
         {
-          "title": "Vastleggen en plannen in seconden",
-          "body": "Voeg een taak, deadline of herinnering toe zodra je erover denkt. Snel vastleggen, herhaling, labels en subtaken houden je dag overzichtelijk zonder je te vertragen."
+          "title": "Moeiteloos vastleggen",
+          "body": "Typ of zeg een taak in je eigen woorden, zoals ‘Belastingaangifte vandaag indienen’, en Prio stelt prioriteit en timing in. Spraak gebruikt spraakherkenning op het apparaat."
         },
         {
-          "title": "Doelen verbonden met je dagelijkse werk",
-          "body": "Koppel dagelijkse taken aan de doelen die ertoe doen en gebruik ochtend- en avondterugblikken om te zien hoe vandaag je prioriteiten vooruit helpt."
+          "title": "Een rustig Vandaag-scherm",
+          "body": "Zie je focus, voortgang en reeks in één oogopslag en plan met Mijn dag de uren die je echt hebt."
+        },
+        {
+          "title": "Briefings die laten zien wat telt",
+          "body": "Ochtendbriefings en avondoverzichten zetten het belangrijke vooraan, zonder dat je door lijsten hoeft te zoeken."
+        },
+        {
+          "title": "Doelen die vooruitgaan",
+          "body": "Mijlpalen, gekoppelde taken, voortgang en een Doelgezondheid-check houden elk doel concreet en haalbaar."
+        },
+        {
+          "title": "Agenda en taken samen",
+          "body": "Zie afspraken en taken naast elkaar in dag-, 3-daagse, week- en maandweergave, zodat je plant rond de tijd die je echt hebt."
         }
       ]
     },
@@ -1241,71 +1770,98 @@
       "title": "In drie stappen van overbelast naar gefocust",
       "items": [
         {
-          "title": "Leg een echte taak vast",
-          "body": "Typ of spreek iets in dat écht op je bordje ligt. Geen installatie of account nodig — optionele spraakinvoer vraagt alleen om microfoontoegang."
+          "title": "Leg vast in je eigen woorden",
+          "body": "Typ of zeg één ding dat echt op je bord ligt. Geen installatie of account nodig — optionele spraakinvoer vraagt alleen om microfoontoegang."
         },
         {
           "title": "Controleer de voorgestelde prioriteit",
-          "body": "Prio legt uit waarom het Eerst doen, Plannen, Delegeren of Misschien later voorstelt. Bevestig of corrigeer het — jij houdt de controle."
+          "body": "Prio legt uit waarom het Eerst doen, Plannen, Delegeren of Later koos en vult de timing in die het begreep. Accepteer of pas aan — jij houdt de regie."
         },
         {
-          "title": "Ga aan de slag vanuit Vandaag",
-          "body": "Je bevestigde taak verschijnt als aanbevolen volgende stap in Vandaag, klaar om direct mee aan de slag te gaan."
+          "title": "Kom in actie vanuit Vandaag",
+          "body": "Je bevestigde taak verschijnt in Focus van vandaag, klaar om mee te beginnen, naast je voortgang en reeks."
         }
       ]
     },
     "gallery": {
       "eyebrow": "Bekijk het in actie",
-      "title": "Een rustigere manier om je dag te plannen",
-      "body": "Van snel vastleggen tot de Eisenhower-matrix: elk scherm is ontworpen om je sneller bij je volgende prioriteit te brengen.",
-      "captions": [
-        "Snel vastleggen met prioriteitsvoorstel",
-        "Ochtendbriefing",
-        "Voortgang van je doel",
-        "Taakdetails"
+      "title": "Echte schermen uit de Android-app",
+      "body": "Van Vandaag en Snel vastleggen tot briefings, doelen, agenda en privacy-instellingen — vastgelegd op Android en getoond in het Engels.",
+      "items": [
+        {
+          "caption": "Vandaag, in donker thema",
+          "alt": "Prio Vandaag-scherm in donker thema met een reeks van 5 dagen, takenoverzicht voor Eerst doen, Plannen, Delegeren en Later, 33% dagvoortgang en Focus van vandaag."
+        },
+        {
+          "caption": "Snel vastleggen dat je begrijpt",
+          "alt": "Snel vastleggen maakt van ‘Submit tax return today’ een Eerst doen-taak en toont de interpretatie ter controle."
+        },
+        {
+          "caption": "Een privé-ochtendbriefing",
+          "alt": "Ochtendbriefing gemarkeerd als privé, met een samenvatting van 2 urgente taken en 3 vergaderingen en de belangrijkste taken van de dag met tijden."
+        },
+        {
+          "caption": "Doelen met Doelgezondheid",
+          "alt": "Loopbaandoel op 50% en op schema, met mijlpalen, gekoppelde taken en een Doelgezondheid-check met 100% sterk."
+        },
+        {
+          "caption": "Agenda en taken samen",
+          "alt": "Dagweergave van de agenda voor dinsdag 13 oktober, met vergaderingen en Prio-taken samen en de opties 3 dagen, week en maand."
+        },
+        {
+          "caption": "Privacy op één plek",
+          "alt": "Instellingen voor privacy en beveiliging met schakelaars om meldingsinhoud op het vergrendelscherm te verbergen en screenshots en schermopnamen te blokkeren."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Privacy",
       "title": "Lokaal ontworpen, niet alleen zo genoemd",
-      "body": "Vastleggen, plannen, doelen, herinneringen, lokale inzichten en classificatie op basis van regels draaien op je Android-toestel, zonder account of internetverbinding.",
-      "detail": "Als het wordt ondersteund en je het selecteert, kunnen Gemini Nano of een gedownload llama.cpp-model ook volledig op het apparaat draaien. Externe AI, versleutelde Google Drive-back-up, handmatige export of delen, en Firebase Analytics of Crashlytics zijn elk apart en expliciet in te schakelen. Prio heeft geen AI-proxy: als je een externe provider koppelt, gaan je sleutel en prompt rechtstreeks naar die provider.",
+      "body": "Vastleggen, plannen, doelen, herinneringen, lokale inzichten en prioritering met regels eerst draaien op je Android-apparaat. De kernplanning werkt zonder Prio-account en zonder internetverbinding.",
+      "detail": "Als het wordt ondersteund en je het kiest, draait Gemini Nano of een gedownload llama.cpp-model AI op je apparaat. Externe AI-aanbieders, versleutelde Google Drive-back-up, handmatig exporteren of delen en Firebase Analytics of Crashlytics zijn aparte, uitdrukkelijke opt-ins die je afzonderlijk beheert. Prio heeft geen AI-proxy: als je een externe aanbieder koppelt, gaan je sleutel en prompt rechtstreeks naar die aanbieder.",
       "points": [
         {
           "title": "Standaard op het apparaat",
-          "body": "Classificatie op basis van regels en je kernplanningsgegevens verlaten je toestel alleen als je zelf een netwerkfunctie inschakelt."
+          "body": "Classificatie met regels eerst en je kernplanningsgegevens blijven op je apparaat, tenzij je zelf een netwerkfunctie inschakelt."
         },
         {
-          "title": "Expliciete toestemming voor alles wat extern is",
-          "body": "Externe AI, cloudback-up, export en analytics staan elk uit totdat je ze inschakelt; het inschakelen van één functie schakelt de andere niet in."
+          "title": "Uitdrukkelijke opt-in voor alles op afstand",
+          "body": "Externe AI, cloudback-up, export en analyses staan elk uit tot je ze inschakelt — de ene inschakelen zet nooit een andere aan."
         },
         {
-          "title": "Geen advertenties, geen verkoop van data",
-          "body": "Prio toont geen advertenties, verkoopt geen persoonsgegevens en gebruikt ze niet voor advertentietracking tussen apps."
+          "title": "Bescherming op je scherm",
+          "body": "Eén schakelaar verbergt taakdetails op het vergrendelscherm; een andere verbergt Prio in de app-switcher en blokkeert screenshots, schermopnamen en scherm delen."
+        },
+        {
+          "title": "Geen advertenties, geen dataverkoop",
+          "body": "Prio toont geen advertenties, verkoopt je persoonsgegevens niet en gebruikt ze niet voor advertentietracking tussen apps."
         }
       ]
     },
     "updates": {
       "eyebrow": "Nieuws",
-      "title": "Recent verbeterd",
-      "body": "We blijven de kernervaring bij elke release verbeteren.",
+      "title": "Recent toegevoegd",
+      "body": "Recente versies voegen creatieve tools en sterkere privacy-instellingen toe, terwijl de kernplanning op je apparaat blijft.",
       "items": [
-        "Snellere, betrouwbaardere start van AI op het apparaat en beter modelbeheer",
-        "Eenvoudiger vastleggen, plannen en werken met 'Nu doen' in Vandaag",
-        "Duidelijkere introductie en eenvoudigere navigatie naar geavanceerde AI-instellingen",
-        "Betere toegankelijkheid, privacy en stabiliteit in de hele app"
+        "Beeldcreatie in de chat op je apparaat, met delen, opslaan, volledig scherm en variaties",
+        "Chatberichten kopiëren met één tik",
+        "Instellingen voor privacy en beveiliging om details op het vergrendelscherm te verbergen en screenshots te blokkeren",
+        "Modelbrowser voor AI op het apparaat en een integriteitscontrole voordat een back-up wordt hersteld"
       ]
     },
     "features": {
       "eyebrow": "Alles wat je nodig hebt",
       "title": "Een compleet systeem voor prioriteiten, doelen en tijd",
       "items": [
-        "Eisenhower-matrix met Eerst doen, Plannen, Delegeren en Misschien later",
-        "Taken, subtaken, herhaling, labels, deadlines en herinneringen",
-        "Doelen gekoppeld aan je dagelijkse werk",
-        "Ochtendbriefings en avondterugblikken",
-        "Agendaweergave en gerichte Mijn dag-planning",
-        "Lokale productiviteitsinzichten, op het apparaat"
+        "Eisenhower-matrix met Eerst doen, Plannen, Delegeren en Later",
+        "Snel vastleggen in natuurlijke taal met spraakinvoer op het apparaat",
+        "Taken met subtaken, deadlines, herinneringen, herhaling en tags",
+        "Doelen met mijlpalen, voortgang en Doelgezondheid",
+        "Ochtendbriefings, avondoverzichten en inzichten op het apparaat",
+        "Agenda in dag-, 3-daagse, week- en maandweergave, plus Mijn dag",
+        "Chatassistent met controleerbare voorstellen en beeldcreatie op het apparaat",
+        "App Actions, gekoppelde agents (MCP), donker thema en 11 talen",
+        "JSON-export en optionele versleutelde Google Drive-back-up"
       ]
     },
     "free": {
@@ -1320,19 +1876,23 @@
       "items": [
         {
           "question": "Is Prio echt gratis?",
-          "answer": "Ja. Alle huidige functies zijn gratis te gebruiken, zonder abonnement, betaalde upgrade of eenmalige aankoop."
+          "answer": "Ja. Alle huidige functies zijn gratis, zonder abonnement, betaalde upgrade of eenmalige aankoop."
         },
         {
           "question": "Werkt Prio offline?",
-          "answer": "Ja. Vastleggen, plannen, doelen, herinneringen en prioritering op basis van regels werken volledig offline, zonder Prio-account."
+          "answer": "Ja. Vastleggen, plannen, doelen, herinneringen en prioritering met regels eerst werken zonder internetverbinding en zonder Prio-account. Externe AI en cloudback-up maken alleen verbinding als je ze inschakelt."
         },
         {
           "question": "Stuurt Prio mijn taken naar de cloud?",
-          "answer": "Alleen als je dat zelf kiest. De kernplanning blijft op je toestel. Externe AI, cloudback-up en export zijn apart in te schakelen functies, en Prio heeft geen AI-proxy."
+          "answer": "Alleen als jij dat kiest. De kernplanning blijft op je apparaat. Externe AI, cloudback-up en export zijn aparte functies die je afzonderlijk inschakelt, en Prio heeft geen AI-proxy."
         },
         {
-          "question": "Wat maakt Prio anders dan een to-dolijst?",
-          "answer": "Prio slaat taken niet alleen op, het geeft ze prioriteit. Elke vastgelegde taak krijgt een uitgelegd voorstel volgens de Eisenhower-matrix, zodat je altijd weet wat je nu moet doen, niet alleen wat er nog op je lijst staat."
+          "question": "Kan ik AI gebruiken zonder gegevens naar de cloud te sturen?",
+          "answer": "Ja. Op ondersteunde apparaten kan Prio AI draaien met Gemini Nano of een llama.cpp-model dat je downloadt, op je apparaat. Externe aanbieders zijn optioneel, experimenteel en gebruiken je eigen API-sleutel."
+        },
+        {
+          "question": "Wat maakt Prio anders dan een takenlijst?",
+          "answer": "Prio slaat taken niet alleen op — het geeft ze prioriteit. Elke invoer krijgt een uitlegbaar voorstel volgens de Eisenhower-matrix, zodat je altijd weet wat je nu moet doen in plaats van alleen wat er op je lijst staat."
         }
       ]
     },
@@ -1365,7 +1925,7 @@
     "ogLocale": "pt_BR",
     "seo": {
       "title": "Prio: Saiba o que fazer agora – Planejador de tarefas com IA",
-      "description": "O Prio transforma tarefas e metas em uma prioridade clara com a matriz de Eisenhower, em modo privado e offline. Grátis no Android, sem necessidade de conta."
+      "description": "O Prio transforma tarefas e metas em uma próxima ação clara, com planejamento Eisenhower privado no dispositivo. Grátis no Android, sem conta."
     },
     "nav": {
       "benefits": "Por que o Prio",
@@ -1377,7 +1937,7 @@
     "hero": {
       "eyebrow": "Priorização de tarefas privada para Android",
       "title": "Saiba o que fazer agora, sem enviar suas tarefas para a nuvem.",
-      "body": "O Prio transforma suas tarefas e metas em uma prioridade clara segundo a matriz de Eisenhower, com classificação por regras direto no seu aparelho. Capture uma tarefa, revise a prioridade sugerida e aja — sem precisar de conta.",
+      "body": "O Prio organiza tudo o que está na sua lista em Fazer Primeiro, Agendar, Delegar e Depois — com um motivo que você pode revisar — e conecta o dia a dia às metas que importam. O planejamento principal roda no seu dispositivo, sem precisar de conta.",
       "secondaryCta": "Ver como funciona",
       "proofLabel": "zonas de prioridade claras",
       "trust": [
@@ -1387,22 +1947,61 @@
         "IA no dispositivo disponível"
       ]
     },
+    "heroSurface": {
+      "day": "Terça · 13 de out.",
+      "greeting": "Bom dia",
+      "pill": "Sequência de 5 dias",
+      "overview": "Visão Geral das Tarefas",
+      "focus": "Foco de hoje",
+      "task": "Corrigir bug de renovação de token em produção",
+      "meta": "Fazer Primeiro · vence às 11:00",
+      "quadrants": [
+        {
+          "name": "Fazer Primeiro",
+          "hint": "Urgente · importante"
+        },
+        {
+          "name": "Agendar",
+          "hint": "Importante · não urgente"
+        },
+        {
+          "name": "Delegar",
+          "hint": "Urgente · repasse"
+        },
+        {
+          "name": "Depois",
+          "hint": "Baixa prioridade"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Por que o Prio",
       "title": "Transforme a sobrecarga em uma única ação clara",
-      "body": "O Prio foi feito para quem lida com muitas tarefas em muitos apps. Em vez de mais uma lista, você recebe uma prioridade única e explicada.",
+      "body": "O Prio foi feito para quem equilibra tarefas demais em apps demais. Em vez de mais uma lista para gerenciar, você recebe uma prioridade explicável, um plano tranquilo para hoje e metas que avançam.",
       "items": [
         {
-          "title": "Uma prioridade clara para seguir",
-          "body": "Pare de reorganizar sua lista. A matriz de Eisenhower do Prio classifica cada tarefa em Fazer Primeiro, Agendar, Delegar ou Talvez depois, para você sempre saber o que importa agora."
+          "title": "Clareza imediata",
+          "body": "Cada tarefa vai para Fazer Primeiro, Agendar, Delegar ou Depois, com um motivo curto que você pode revisar ou mudar — assim você sempre sabe o que importa agora."
         },
         {
-          "title": "Capture e agende em segundos",
-          "body": "Adicione uma tarefa, prazo ou lembrete no momento em que pensar nela. Captura rápida, recorrência, tags e subtarefas mantêm seu dia organizado sem te atrasar."
+          "title": "Captura sem esforço",
+          "body": "Digite ou fale uma tarefa com suas palavras, como “Enviar a declaração de imposto hoje”, e o Prio define a prioridade e o momento. A voz usa reconhecimento de fala no dispositivo."
         },
         {
-          "title": "Metas conectadas ao seu dia a dia",
-          "body": "Conecte tarefas diárias às metas que importam e use os resumos da manhã e as revisões da noite para ver o quanto você avançou."
+          "title": "Uma tela Hoje tranquila",
+          "body": "Veja foco, progresso e sequência de relance, e use o Meu dia para planejar as horas que você realmente tem."
+        },
+        {
+          "title": "Briefings que mostram o que importa",
+          "body": "Briefings da manhã e resumos da noite trazem o que é importante para a frente, sem vasculhar listas."
+        },
+        {
+          "title": "Metas que avançam",
+          "body": "Marcos, tarefas vinculadas, acompanhamento de progresso e uma verificação de Saúde da meta mantêm cada meta específica e alcançável."
+        },
+        {
+          "title": "Agenda e tarefas juntas",
+          "body": "Veja eventos e tarefas lado a lado nas visualizações Dia, 3 dias, Semana e Mês, para planejar em torno do tempo que você realmente tem."
         }
       ]
     },
@@ -1411,71 +2010,98 @@
       "title": "Da sobrecarga ao foco em três passos",
       "items": [
         {
-          "title": "Capture uma tarefa real",
-          "body": "Digite ou fale algo que você realmente precisa fazer. Sem configuração nem conta — a captura por voz, opcional, só pede acesso ao microfone."
+          "title": "Capture com suas palavras",
+          "body": "Digite ou fale uma coisa que realmente está na sua lista. Sem configuração nem conta — a captura por voz opcional só pede acesso ao microfone."
         },
         {
           "title": "Revise a prioridade sugerida",
-          "body": "O Prio explica por que sugeriu Fazer Primeiro, Agendar, Delegar ou Talvez depois. Confirme ou corrija — o controle é sempre seu."
+          "body": "O Prio explica por que escolheu Fazer Primeiro, Agendar, Delegar ou Depois e preenche o momento que entendeu. Aceite ou mude — o controle é sempre seu."
         },
         {
-          "title": "Aja a partir de Hoje",
-          "body": "Sua tarefa confirmada aparece como a próxima ação recomendada em Hoje, pronta para você começar."
+          "title": "Aja a partir do Hoje",
+          "body": "Sua tarefa confirmada aparece no Foco de hoje, pronta para começar, ao lado do seu progresso e da sua sequência."
         }
       ]
     },
     "gallery": {
       "eyebrow": "Veja em ação",
-      "title": "Uma forma mais tranquila de planejar o seu dia",
-      "body": "Da captura rápida à matriz de Eisenhower, cada tela foi pensada para te levar mais rápido à sua próxima prioridade.",
-      "captions": [
-        "Captura rápida com prioridade sugerida",
-        "Resumo da manhã",
-        "Progresso da meta",
-        "Detalhes da tarefa"
+      "title": "Telas reais do app para Android",
+      "body": "Do Hoje e da Captura rápida a briefings, metas, agenda e controles de privacidade — capturadas no Android e exibidas em inglês.",
+      "items": [
+        {
+          "caption": "Hoje, no tema escuro",
+          "alt": "Tela Hoje do Prio no tema escuro, com sequência de 5 dias, visão geral das tarefas em Fazer Primeiro, Agendar, Delegar e Depois, 33% de progresso diário e Foco de hoje."
+        },
+        {
+          "caption": "Captura rápida que entende você",
+          "alt": "A Captura rápida transforma “Submit tax return today” em uma tarefa Fazer Primeiro e mostra a interpretação para revisão."
+        },
+        {
+          "caption": "Um briefing da manhã privado",
+          "alt": "Briefing da manhã marcado como privado, resumindo 2 tarefas urgentes e 3 reuniões e listando as tarefas prioritárias do dia com horários."
+        },
+        {
+          "caption": "Metas com Saúde da meta",
+          "alt": "Meta de carreira em 50% e no caminho certo, com marcos, tarefas vinculadas e uma verificação de Saúde da meta com 100% forte."
+        },
+        {
+          "caption": "Agenda e tarefas juntas",
+          "alt": "Visualização Dia da agenda para terça-feira, 13 de outubro, com reuniões e tarefas do Prio juntas e as opções 3 dias, Semana e Mês."
+        },
+        {
+          "caption": "Privacidade em um só lugar",
+          "alt": "Configurações de privacidade e segurança com chaves para ocultar o conteúdo das notificações na tela de bloqueio e bloquear capturas e gravações de tela."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Privacidade",
       "title": "Feito para ser local, não só chamado assim",
-      "body": "Captura, planejamento, metas, lembretes, análises locais e classificação por regras rodam no seu aparelho Android, sem conta ou conexão com a internet.",
-      "detail": "Quando compatível e selecionado, o Gemini Nano ou um modelo llama.cpp baixado também podem rodar totalmente no dispositivo. IA remota, backup criptografado do Google Drive, exportação ou compartilhamento manual, e Firebase Analytics ou Crashlytics são opções separadas e explícitas que você ativa individualmente. O Prio não tem proxy de IA: se você conectar um provedor remoto, sua chave e seu prompt vão direto para esse provedor.",
+      "body": "Captura, planejamento, metas, lembretes, análises locais e priorização por regras rodam no seu dispositivo Android. O planejamento principal funciona sem conta Prio e sem conexão com a internet.",
+      "detail": "Quando compatível e selecionado, o Gemini Nano ou um modelo llama.cpp baixado roda a IA no seu dispositivo. Provedores de IA remotos, backup criptografado no Google Drive, exportação ou compartilhamento manual e Firebase Analytics ou Crashlytics são ativações separadas e explícitas que você controla individualmente. O Prio não tem proxy de IA: se você conectar um provedor remoto, sua chave e seu prompt vão direto para esse provedor.",
       "points": [
         {
           "title": "No dispositivo por padrão",
-          "body": "A classificação por regras e seus dados principais de planejamento só saem do aparelho se você ativar explicitamente um recurso de rede."
+          "body": "A classificação por regras e seus dados de planejamento principais ficam no seu dispositivo, a menos que você ative um recurso de rede."
         },
         {
-          "title": "Consentimento explícito para tudo o que é remoto",
-          "body": "IA remota, backup na nuvem, exportação e análises ficam desativados até você ativá-los; ativar um nunca ativa os outros."
+          "title": "Ativação explícita para tudo o que é remoto",
+          "body": "IA remota, backup na nuvem, exportação e análises ficam desligados até você ativá-los — ativar um nunca ativa outro."
+        },
+        {
+          "title": "Proteção na sua tela",
+          "body": "Uma opção oculta os detalhes das tarefas na tela de bloqueio; outra oculta o Prio no alternador de apps e bloqueia capturas, gravações e compartilhamento de tela."
         },
         {
           "title": "Sem anúncios, sem venda de dados",
-          "body": "O Prio não exibe anúncios, não vende seus dados pessoais e não os usa para rastreamento publicitário entre apps."
+          "body": "O Prio não exibe anúncios, não vende seus dados pessoais nem os usa para rastreamento publicitário entre apps."
         }
       ]
     },
     "updates": {
       "eyebrow": "Novidades",
-      "title": "Melhorias recentes",
-      "body": "Continuamos melhorando a experiência principal a cada versão.",
+      "title": "Adicionado recentemente",
+      "body": "As versões recentes trazem ferramentas criativas e controles de privacidade mais fortes, mantendo o planejamento principal no seu dispositivo.",
       "items": [
-        "Inicialização mais rápida e confiável da IA no dispositivo e melhor gerenciamento de modelos",
-        "Captura, agendamento e fluxo “Fazer agora” em Hoje mais simples",
-        "Introdução mais clara e navegação mais fácil até as configurações avançadas de IA",
-        "Melhor acessibilidade, privacidade e estabilidade em todo o app"
+        "Criação de imagens no chat, no dispositivo, com compartilhar, salvar, tela cheia e variações",
+        "Cópia de mensagens do chat com um toque",
+        "Configurações de privacidade e segurança para ocultar detalhes na tela de bloqueio e bloquear capturas",
+        "Navegador de modelos para IA no dispositivo e verificação de integridade antes de restaurar um backup"
       ]
     },
     "features": {
       "eyebrow": "Tudo o que você precisa",
       "title": "Um sistema completo para prioridades, metas e tempo",
       "items": [
-        "Matriz de Eisenhower com Fazer Primeiro, Agendar, Delegar e Talvez depois",
-        "Tarefas, subtarefas, recorrência, tags, prazos e lembretes",
-        "Metas conectadas ao seu trabalho diário",
-        "Resumos da manhã e revisões da noite",
-        "Visualização de calendário e planejamento focado do Meu Dia",
-        "Análises de produtividade locais, no dispositivo"
+        "Matriz de Eisenhower com Fazer Primeiro, Agendar, Delegar e Depois",
+        "Captura rápida em linguagem natural com voz no dispositivo",
+        "Tarefas com subtarefas, prazos, lembretes, recorrência e tags",
+        "Metas com marcos, acompanhamento de progresso e Saúde da meta",
+        "Briefings da manhã, resumos da noite e análises no dispositivo",
+        "Agenda nas visualizações Dia, 3 dias, Semana e Mês, além do Meu dia",
+        "Assistente de chat com propostas revisáveis e criação de imagens no dispositivo",
+        "App Actions, agentes pareados (MCP), tema escuro e 11 idiomas",
+        "Exportação JSON e backup criptografado opcional no Google Drive"
       ]
     },
     "free": {
@@ -1489,20 +2115,24 @@
       "title": "Perguntas frequentes",
       "items": [
         {
-          "question": "O Prio é realmente gratuito?",
+          "question": "O Prio é mesmo grátis?",
           "answer": "Sim. Todos os recursos atuais são gratuitos, sem assinatura, upgrade pago ou compra única."
         },
         {
           "question": "O Prio funciona offline?",
-          "answer": "Sim. Captura, planejamento, metas, lembretes e priorização por regras funcionam totalmente offline, sem conta do Prio."
+          "answer": "Sim. Captura, planejamento, metas, lembretes e priorização por regras funcionam sem conexão com a internet e sem conta Prio. IA remota e backup na nuvem só se conectam se você ativá-los."
         },
         {
           "question": "O Prio envia minhas tarefas para a nuvem?",
-          "answer": "Só se você escolher isso. O planejamento principal fica no seu aparelho. IA remota, backup na nuvem e exportação são recursos separados que você ativa individualmente, e o Prio não tem proxy de IA."
+          "answer": "Só se você escolher. O planejamento principal fica no seu dispositivo. IA remota, backup na nuvem e exportação são recursos separados que você ativa individualmente, e o Prio não tem proxy de IA."
         },
         {
-          "question": "O que diferencia o Prio de uma lista de tarefas comum?",
-          "answer": "O Prio não apenas guarda tarefas — ele as prioriza. Cada captura recebe uma sugestão explicável segundo a matriz de Eisenhower, então você sempre sabe o que fazer agora, não só o que ainda falta fazer."
+          "question": "Posso usar IA sem enviar dados para a nuvem?",
+          "answer": "Sim. Em dispositivos compatíveis, o Prio pode rodar IA com o Gemini Nano ou com um modelo llama.cpp que você baixar, no seu dispositivo. Provedores remotos são opcionais, experimentais e usam sua própria chave de API."
+        },
+        {
+          "question": "O que diferencia o Prio de uma lista de tarefas?",
+          "answer": "O Prio não só guarda tarefas — ele as prioriza. Cada captura recebe uma sugestão explicável da matriz de Eisenhower, para você sempre saber o que fazer agora, e não só o que está na sua lista."
         }
       ]
     },
@@ -1535,7 +2165,7 @@
     "ogLocale": "ru_RU",
     "seo": {
       "title": "Prio — Что делать дальше | Приватный ИИ-планировщик Android",
-      "description": "Prio превращает задачи и цели в понятную приоритетную задачу по матрице Эйзенхауэра — приватно и офлайн. Бесплатно на Android, без регистрации."
+      "description": "Prio превращает задачи и цели в один понятный следующий шаг с приватным планированием по Эйзенхауэру на устройстве. Бесплатно для Android."
     },
     "nav": {
       "benefits": "Почему Prio",
@@ -1547,7 +2177,7 @@
     "hero": {
       "eyebrow": "Приватная расстановка приоритетов для Android",
       "title": "Узнайте, что делать дальше, — без отправки задач в облако.",
-      "body": "Prio превращает ваши задачи и цели в один понятный приоритет по матрице Эйзенхауэра. Классификация сначала опирается на правила и выполняется прямо на устройстве. Добавьте задачу, проверьте предложенный приоритет и действуйте — без учётной записи.",
+      "body": "Prio раскладывает ваши дела по категориям «Сделать первым», «Запланировать», «Делегировать» и «Потом» — с пояснением, которое можно проверить, — и связывает повседневную работу с важными целями. Основное планирование работает на вашем устройстве и не требует аккаунта.",
       "secondaryCta": "Посмотреть, как это работает",
       "proofLabel": "чёткие зоны приоритета",
       "trust": [
@@ -1557,22 +2187,61 @@
         "Доступен ИИ на устройстве"
       ]
     },
+    "heroSurface": {
+      "day": "Вторник · 13 окт.",
+      "greeting": "Доброе утро",
+      "pill": "5 дней подряд",
+      "overview": "Обзор задач",
+      "focus": "Фокус на сегодня",
+      "task": "Исправить ошибку обновления токена в продакшене",
+      "meta": "Сделать первым · до 11:00",
+      "quadrants": [
+        {
+          "name": "Сделать первым",
+          "hint": "Срочно · важно"
+        },
+        {
+          "name": "Запланировать",
+          "hint": "Важно · не срочно"
+        },
+        {
+          "name": "Делегировать",
+          "hint": "Срочно · поручить"
+        },
+        {
+          "name": "Потом",
+          "hint": "Низкий приоритет"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "Почему Prio",
       "title": "Превратите завал задач в одно понятное действие",
-      "body": "Prio создан для тех, кто ведёт слишком много задач в слишком многих приложениях. Вместо очередного списка вы получаете один приоритет с понятным объяснением.",
+      "body": "Prio создан для тех, кто жонглирует слишком большим числом задач в слишком многих приложениях. Вместо ещё одного списка вы получаете понятный приоритет, спокойный план на сегодня и цели, которые движутся.",
       "items": [
         {
-          "title": "Одно понятное следующее действие",
-          "body": "Хватит пересортировывать список. Матрица Эйзенхауэра в Prio распределяет каждую задачу на «Сделать первым», «Запланировать», «Делегировать» или «Может подождать», чтобы вы всегда знали, что важно прямо сейчас."
+          "title": "Мгновенная ясность",
+          "body": "Каждая задача попадает в «Сделать первым», «Запланировать», «Делегировать» или «Потом» с коротким пояснением, которое можно проверить или изменить, — и вы всегда знаете, что важно сейчас."
         },
         {
-          "title": "Добавляйте и планируйте за секунды",
-          "body": "Добавляйте задачу, срок или напоминание в момент, когда о них подумали. Быстрый ввод, повторы, метки и подзадачи держат день в порядке, не замедляя вас."
+          "title": "Быстрый ввод",
+          "body": "Напишите или произнесите задачу своими словами, например «Подать налоговую декларацию сегодня», и Prio задаст приоритет и время. Голосовой ввод использует распознавание речи на устройстве."
         },
         {
-          "title": "Цели связаны с повседневными делами",
-          "body": "Свяжите повседневные задачи с важными целями и используйте утренние и вечерние итоги, чтобы видеть, как сегодняшние дела продвигают приоритеты."
+          "title": "Спокойный экран «Сегодня»",
+          "body": "Фокус, прогресс и серия видны с первого взгляда, а «Мой день» помогает распланировать реально доступные часы."
+        },
+        {
+          "title": "Брифинги о главном",
+          "body": "Утренние брифинги и вечерние итоги выводят важное на первый план — без поиска по спискам."
+        },
+        {
+          "title": "Цели, которые движутся",
+          "body": "Вехи, связанные задачи, отслеживание прогресса и проверка «Состояние цели» помогают держать каждую цель конкретной и достижимой."
+        },
+        {
+          "title": "Календарь и задачи вместе",
+          "body": "События и задачи рядом в режимах «День», «3 дня», «Неделя» и «Месяц» — планируйте, исходя из реально доступного времени."
         }
       ]
     },
@@ -1581,71 +2250,98 @@
       "title": "Три шага от завала к сосредоточенности",
       "items": [
         {
-          "title": "Добавьте реальную задачу",
-          "body": "Напишите или произнесите то, что действительно нужно сделать. Без настройки и регистрации — необязательный голосовой ввод запрашивает только доступ к микрофону."
+          "title": "Запишите своими словами",
+          "body": "Напишите или произнесите одно дело, которое действительно ждёт. Без настройки и аккаунта — необязательный голосовой ввод запрашивает только доступ к микрофону."
         },
         {
           "title": "Проверьте предложенный приоритет",
-          "body": "Prio объясняет, почему предлагает «Сделать первым», «Запланировать», «Делегировать» или «Может подождать». Согласитесь или исправьте — контроль всегда у вас."
+          "body": "Prio объясняет, почему выбрал «Сделать первым», «Запланировать», «Делегировать» или «Потом», и подставляет распознанное время. Примите или исправьте — контроль всегда у вас."
         },
         {
-          "title": "Действуйте из раздела «Сегодня»",
-          "body": "Подтверждённая задача появляется как рекомендованное следующее действие в разделе «Сегодня» — можно приступать сразу."
+          "title": "Действуйте из экрана «Сегодня»",
+          "body": "Подтверждённая задача появляется в «Фокусе на сегодня» рядом с прогрессом и серией — можно сразу браться за дело."
         }
       ]
     },
     "gallery": {
       "eyebrow": "Посмотрите в деле",
-      "title": "Более спокойный способ планировать день",
-      "body": "От быстрого ввода до матрицы Эйзенхауэра — каждый экран создан, чтобы быстрее привести вас к следующему приоритету.",
-      "captions": [
-        "Быстрый ввод с предложенным приоритетом",
-        "Утренний брифинг",
-        "Прогресс по цели",
-        "Детали задачи"
+      "title": "Настоящие экраны Android-приложения",
+      "body": "От экрана «Сегодня» и быстрого ввода до брифингов, целей, календаря и настроек приватности — сняты на Android и показаны на английском.",
+      "items": [
+        {
+          "caption": "«Сегодня» в тёмной теме",
+          "alt": "Экран «Сегодня» в Prio в тёмной теме: серия 5 дней, обзор задач по категориям «Сделать первым», «Запланировать», «Делегировать» и «Потом», прогресс дня 33 % и «Фокус на сегодня»."
+        },
+        {
+          "caption": "Быстрый ввод, который вас понимает",
+          "alt": "Быстрый ввод превращает «Submit tax return today» в задачу «Сделать первым» и показывает интерпретацию для проверки."
+        },
+        {
+          "caption": "Приватный утренний брифинг",
+          "alt": "Утренний брифинг с пометкой «Приватно»: 2 срочные задачи и 3 встречи, а также список первоочередных задач дня со сроками."
+        },
+        {
+          "caption": "Цели с проверкой состояния",
+          "alt": "Карьерная цель на 50 % и по плану, с вехами, связанными задачами и проверкой «Состояние цели» с оценкой 100 %."
+        },
+        {
+          "caption": "Календарь и задачи вместе",
+          "alt": "Календарь в режиме «День» на вторник, 13 октября: встречи и задачи Prio вместе, а также режимы «3 дня», «Неделя» и «Месяц»."
+        },
+        {
+          "caption": "Приватность в одном месте",
+          "alt": "Настройки «Конфиденциальность и безопасность» с переключателями, скрывающими содержимое уведомлений на экране блокировки и блокирующими скриншоты и запись экрана."
+        }
       ]
     },
     "privacy": {
       "eyebrow": "Приватность",
       "title": "Локальность заложена в архитектуру, а не просто заявлена",
-      "body": "Ввод и планирование задач, цели, напоминания, локальная аналитика и классификация с приоритетом правил работают на вашем Android-устройстве — без учётной записи и подключения к интернету.",
-      "detail": "Если поддерживается и выбрано, Gemini Nano или загруженная модель llama.cpp также могут полностью работать на устройстве. Удалённый ИИ, зашифрованный бэкап в Google Drive, ручной экспорт или общий доступ, а также Firebase Analytics и Crashlytics — это отдельные явные опции, которые вы включаете по отдельности. У Prio нет ИИ-прокси: если вы подключите удалённого поставщика, ваш ключ и запрос отправляются прямо ему.",
+      "body": "Ввод, планирование, цели, напоминания, локальная аналитика и расстановка приоритетов по правилам выполняются на вашем Android-устройстве. Основное планирование работает без аккаунта Prio и без подключения к интернету.",
+      "detail": "Если устройство поддерживает это и вы выбрали такой вариант, Gemini Nano или загруженная модель llama.cpp запускает ИИ на вашем устройстве. Удалённые ИИ-провайдеры, зашифрованный бэкап в Google Drive, ручной экспорт или отправка, а также Firebase Analytics или Crashlytics — отдельные функции, которые вы явно включаете по одной. У Prio нет ИИ-прокси: если вы подключаете удалённого провайдера, ваш ключ и запрос отправляются напрямую ему.",
       "points": [
         {
-          "title": "По умолчанию — на устройстве",
-          "body": "Классификация сначала опирается на правила, а основные данные планирования не покидают устройство, пока вы сами не включите сетевую функцию."
+          "title": "На устройстве по умолчанию",
+          "body": "Классификация по правилам и основные данные планирования остаются на вашем устройстве, пока вы сами не включите сетевую функцию."
         },
         {
-          "title": "Явное согласие для всего удалённого",
-          "body": "Удалённый ИИ, облачный бэкап, экспорт и аналитика по отдельности выключены, пока вы их не включите; включение одной функции не включает другую."
+          "title": "Всё удалённое — только с вашего согласия",
+          "body": "Удалённый ИИ, облачный бэкап, экспорт и аналитика выключены, пока вы их не включите, и включение одной функции никогда не включает другую."
+        },
+        {
+          "title": "Защита на экране",
+          "body": "Один переключатель скрывает детали задач на экране блокировки, другой скрывает Prio в списке недавних приложений и блокирует скриншоты, запись экрана и трансляцию экрана."
         },
         {
           "title": "Без рекламы и продажи данных",
-          "body": "Prio не показывает рекламу, не продаёт ваши персональные данные и не использует их для отслеживания между приложениями в рекламных целях."
+          "body": "Prio не показывает рекламу, не продаёт ваши персональные данные и не использует их для рекламного отслеживания между приложениями."
         }
       ]
     },
     "updates": {
       "eyebrow": "Новое",
-      "title": "Недавние улучшения",
-      "body": "Мы продолжаем улучшать основной опыт с каждым выпуском.",
+      "title": "Недавно добавлено",
+      "body": "Последние версии добавляют творческие инструменты и более сильные настройки приватности, сохраняя основное планирование на вашем устройстве.",
       "items": [
-        "Более быстрый и надёжный запуск ИИ на устройстве и улучшенное управление моделями",
-        "Упрощены быстрый ввод, планирование и сценарий «Сделать следующим» в разделе «Сегодня»",
-        "Стали понятнее знакомство с приложением и переход к расширенным настройкам ИИ",
-        "Улучшены доступность, приватность и стабильность всего приложения"
+        "Создание изображений в чате на устройстве — с отправкой, сохранением, полноэкранным просмотром и вариациями",
+        "Копирование сообщений чата одним нажатием",
+        "Настройки конфиденциальности и безопасности: скрытие деталей на экране блокировки и блокировка скриншотов",
+        "Каталог моделей для ИИ на устройстве и проверка целостности перед восстановлением бэкапа"
       ]
     },
     "features": {
       "eyebrow": "Всё, что нужно",
       "title": "Полноценная система для приоритетов, целей и времени",
       "items": [
-        "Матрица Эйзенхауэра: «Сделать первым», «Запланировать», «Делегировать» и «Может подождать»",
-        "Задачи, подзадачи, повторы, метки, сроки и напоминания",
-        "Цели, связанные с повседневными делами",
-        "Утренние итоги и вечерние обзоры",
-        "Календарь и сфокусированное планирование «Мой день»",
-        "Локальная аналитика продуктивности на устройстве"
+        "Матрица Эйзенхауэра: «Сделать первым», «Запланировать», «Делегировать» и «Потом»",
+        "Быстрый ввод на естественном языке с голосом на устройстве",
+        "Задачи с подзадачами, сроками, напоминаниями, повторами и тегами",
+        "Цели с вехами, прогрессом и проверкой «Состояние цели»",
+        "Утренние брифинги, вечерние итоги и аналитика на устройстве",
+        "Календарь в режимах «День», «3 дня», «Неделя» и «Месяц», а также «Мой день»",
+        "Чат-ассистент с проверяемыми предложениями и созданием изображений на устройстве",
+        "App Actions, подключённые агенты (MCP), тёмная тема и 11 языков",
+        "Экспорт в JSON и необязательный зашифрованный бэкап в Google Drive"
       ]
     },
     "free": {
@@ -1659,20 +2355,24 @@
       "title": "Частые вопросы",
       "items": [
         {
-          "question": "Prio действительно бесплатен?",
-          "answer": "Да. Все текущие функции доступны бесплатно, без подписки, платного обновления или разовой покупки."
+          "question": "Prio действительно бесплатный?",
+          "answer": "Да. Все текущие функции бесплатны: без подписки, платного обновления или разовой покупки."
         },
         {
-          "question": "Работает ли Prio офлайн?",
-          "answer": "Да. Ввод и планирование задач, цели, напоминания и приоритизация, которая сначала опирается на правила, полностью работают офлайн и без учётной записи Prio."
+          "question": "Prio работает без интернета?",
+          "answer": "Да. Ввод, планирование, цели, напоминания и расстановка приоритетов по правилам работают без подключения к интернету и без аккаунта Prio. Удалённый ИИ и облачный бэкап подключаются, только если вы их включите."
         },
         {
           "question": "Отправляет ли Prio мои задачи в облако?",
-          "answer": "Только если вы сами это выберете. Основное планирование остаётся на устройстве. Удалённый ИИ, облачный бэкап и экспорт — отдельные функции, которые вы включаете сами, а у Prio нет ИИ-прокси."
+          "answer": "Только если вы сами так решите. Основное планирование остаётся на вашем устройстве. Удалённый ИИ, облачный бэкап и экспорт — отдельные функции, которые вы включаете по одной, а ИИ-прокси у Prio нет."
+        },
+        {
+          "question": "Можно ли пользоваться ИИ, не отправляя данные в облако?",
+          "answer": "Да. На поддерживаемых устройствах Prio может запускать ИИ с Gemini Nano или загруженной вами моделью llama.cpp прямо на устройстве. Удалённые провайдеры необязательны, экспериментальны и работают с вашим собственным API-ключом."
         },
         {
           "question": "Чем Prio отличается от обычного списка дел?",
-          "answer": "Prio не просто хранит задачи — он расставляет по ним приоритеты. Для каждой задачи предлагается понятное объяснение по матрице Эйзенхауэра, поэтому вы всегда знаете, что делать дальше, а не только что осталось сделать."
+          "answer": "Prio не просто хранит задачи — он расставляет приоритеты. Каждая запись получает понятное предложение по матрице Эйзенхауэра, чтобы вы всегда знали, что делать дальше, а не только что есть в списке."
         }
       ]
     },
@@ -1705,7 +2405,7 @@
     "ogLocale": "zh_CN",
     "seo": {
       "title": "Prio — 明确下一步该做什么 | 注重隐私的 AI 任务规划应用（Android）",
-      "description": "Prio 用艾森豪威尔矩阵把任务和目标整理成清晰的下一步行动，私密且可离线使用。Android 版现已全部功能免费，无需注册账号。"
+      "description": "Prio 将任务和目标变成一个清晰的下一步，在设备上私密进行艾森豪威尔规划。Android 免费使用，无需账号。"
     },
     "nav": {
       "benefits": "为什么选择 Prio",
@@ -1717,7 +2417,7 @@
     "hero": {
       "eyebrow": "Android 上的私密任务优先级排序",
       "title": "明确下一步该做什么——无需把任务发送到云端。",
-      "body": "Prio 借助艾森豪威尔矩阵，把任务和目标整理成清晰的优先级，采用规则优先、在设备本地完成的分类方式。记录一项任务，查看建议的优先级，然后立即行动——无需账号。",
+      "body": "Prio 将你手头的所有事情分入立即执行、计划安排、委派他人和稍后处理，并附上可供你核对的理由，同时把日常工作与真正重要的目标连接起来。核心规划在你的设备上运行，无需账号。",
       "secondaryCta": "查看使用方法",
       "proofLabel": "个清晰优先级区域",
       "trust": [
@@ -1727,22 +2427,61 @@
         "支持端侧 AI"
       ]
     },
+    "heroSurface": {
+      "day": "10月13日 周二",
+      "greeting": "早上好",
+      "pill": "连续 5 天",
+      "overview": "任务概览",
+      "focus": "今日专注",
+      "task": "修复生产环境令牌刷新问题",
+      "meta": "立即执行 · 11:00 截止",
+      "quadrants": [
+        {
+          "name": "立即执行",
+          "hint": "紧急 · 重要"
+        },
+        {
+          "name": "计划安排",
+          "hint": "重要 · 不紧急"
+        },
+        {
+          "name": "委派他人",
+          "hint": "紧急 · 交给他人"
+        },
+        {
+          "name": "稍后处理",
+          "hint": "低优先级"
+        }
+      ]
+    },
     "benefits": {
       "eyebrow": "为什么选择 Prio",
       "title": "把繁杂任务变成一个清晰的下一步",
-      "body": "Prio 专为在太多应用中处理太多任务的人设计。你得到的不是又一个清单，而是一个有理由的清晰优先级。",
+      "body": "Prio 专为在太多应用中处理太多任务的人而设计。你得到的不是又一个需要管理的清单，而是可解释的优先级、从容的今日计划，以及持续推进的目标。",
       "items": [
         {
-          "title": "一个清晰的下一步",
-          "body": "不用再反复整理清单。Prio 的艾森豪威尔矩阵会把每项任务归入“立即执行”“计划安排”“委派他人”或“以后再说”，让你随时清楚现在最重要的事。"
+          "title": "一眼看清重点",
+          "body": "每项任务都会归入立即执行、计划安排、委派他人或稍后处理，并附上可以核对或修改的简短理由，让你随时知道现在最重要的是什么。"
         },
         {
-          "title": "几秒钟完成记录和安排",
-          "body": "想到任务、截止日期或提醒时立即记录。快速记录、重复任务、标签和子任务让你的一天井井有条，而不会拖慢你的节奏。"
+          "title": "轻松记录",
+          "body": "用自己的话输入或说出任务，例如“今天提交纳税申报表”，Prio 会设置优先级和时间。语音输入使用设备上的语音识别。"
         },
         {
-          "title": "把目标与日常工作连接起来",
-          "body": "把日常任务与重要目标关联，并通过早晚简报查看今天的行动如何推动目标前进。"
+          "title": "从容的“今天”页面",
+          "body": "专注事项、进度和连续天数一目了然，还可以用“我的一天”规划你真正拥有的时间。"
+        },
+        {
+          "title": "聚焦重点的简报",
+          "body": "晨间简报和晚间总结把重要事项放在前面，无需翻找清单。"
+        },
+        {
+          "title": "持续推进的目标",
+          "body": "里程碑、关联任务、进度跟踪和目标健康度检查，让每个目标都具体且可实现。"
+        },
+        {
+          "title": "日历与任务合一",
+          "body": "在日、3 日、周和月视图中并排查看日程和任务，围绕你真正拥有的时间做计划。"
         }
       ]
     },
@@ -1751,71 +2490,98 @@
       "title": "三步从混乱到专注",
       "items": [
         {
-          "title": "记录一项真实任务",
-          "body": "输入或说出你真正要做的一件事。无需预先设置或注册账号——可选的语音输入仅会请求麦克风权限。"
+          "title": "用自己的话记录",
+          "body": "输入或说出一件你真正要做的事。无需设置或账号；可选的语音输入只会请求麦克风权限。"
         },
         {
-          "title": "查看建议的优先级",
-          "body": "Prio 会说明为什么建议“立即执行”“计划安排”“委派他人”或“以后再说”。你可以直接确认，也可以修改——决定权始终在你手中。"
+          "title": "核对建议的优先级",
+          "body": "Prio 会解释为什么选择立即执行、计划安排、委派他人或稍后处理，并填入它理解的时间。接受或修改都由你决定。"
         },
         {
           "title": "从“今天”开始行动",
-          "body": "确认后的任务会作为“今天”界面中推荐的下一步行动出现，随时可以开始处理。"
+          "body": "确认后的任务会出现在“今日专注”中，与进度和连续天数一起，随时可以开始。"
         }
       ]
     },
     "gallery": {
       "eyebrow": "实际界面预览",
-      "title": "更从容地规划你的一天",
-      "body": "从快速记录到艾森豪威尔矩阵，每个界面都为了让你更快找到下一步行动而设计。",
-      "captions": [
-        "带优先级建议的快速记录",
-        "早间简报",
-        "目标进度",
-        "任务详情"
+      "title": "Android 应用的真实界面",
+      "body": "从“今天”和快速记录，到简报、目标、日历和隐私控制——均在 Android 上截取，界面为英文。",
+      "items": [
+        {
+          "caption": "深色主题下的“今天”",
+          "alt": "深色主题下的 Prio“今天”页面，显示连续 5 天、立即执行、计划安排、委派他人和稍后处理的任务概览、33% 的今日进度以及今日专注。"
+        },
+        {
+          "caption": "懂你的快速记录",
+          "alt": "快速记录将“Submit tax return today”变成一项立即执行任务，并显示解析结果供你核对。"
+        },
+        {
+          "caption": "私密的晨间简报",
+          "alt": "标记为私密的晨间简报，概括 2 项紧急任务和 3 场会议，并列出今天带时间的优先任务。"
+        },
+        {
+          "caption": "带目标健康度的目标",
+          "alt": "完成 50% 且进展顺利的职业目标，包含里程碑、关联任务，以及 100% 强健的目标健康度检查。"
+        },
+        {
+          "caption": "日历与任务合一",
+          "alt": "10 月 13 日周二的日历日视图，会议与 Prio 任务同时显示，并提供 3 日、周和月视图选项。"
+        },
+        {
+          "caption": "隐私集中管理",
+          "alt": "隐私与安全设置，带有在锁屏上隐藏通知内容以及阻止截屏和录屏的开关。"
+        }
       ]
     },
     "privacy": {
       "eyebrow": "隐私",
       "title": "本地优先是设计本身，不只是口号",
-      "body": "记录、规划、目标、提醒、本地分析以及规则优先分类均在你的 Android 设备上完成，无需账号或联网。",
-      "detail": "在设备支持且你主动选择的情况下，Gemini Nano 或下载的 llama.cpp 模型也可以完全在设备上运行。远程 AI、加密的 Google Drive 备份、手动导出或分享，以及 Firebase Analytics 或 Crashlytics，都是需要你分别单独开启的明确选项。Prio 没有 AI 代理：如果你连接远程提供商，你的密钥和提示词会直接发送给该提供商。",
+      "body": "记录、规划、目标、提醒、本地洞察和规则优先的优先级排序都在你的 Android 设备上运行。核心规划无需 Prio 账号，也无需联网。",
+      "detail": "在受支持且由你选择时，Gemini Nano 或已下载的 llama.cpp 模型会在设备上运行 AI。远程 AI 提供商、加密的 Google Drive 备份、手动导出或分享，以及 Firebase Analytics 或 Crashlytics 都需要你分别明确开启。Prio 没有 AI 代理：如果你连接远程提供商，你的密钥和提示会直接发送给该提供商。",
       "points": [
         {
-          "title": "默认在设备本地处理",
-          "body": "只要你没有主动开启联网功能，规则优先分类和核心规划数据就不会离开你的设备。"
+          "title": "默认在设备上",
+          "body": "规则优先的分类和核心规划数据都保留在你的设备上，除非你自己开启联网功能。"
         },
         {
-          "title": "所有联网功能都需明确同意",
-          "body": "远程 AI、云端备份、导出和分析在你开启前均处于关闭状态；开启其中一项不会开启其他功能。"
+          "title": "远程功能需明确开启",
+          "body": "远程 AI、云备份、导出和分析在你开启前都保持关闭，开启其中一项绝不会顺带开启另一项。"
+        },
+        {
+          "title": "屏幕上的保护",
+          "body": "一个开关可在锁屏上隐藏任务详情；另一个可在最近应用中隐藏 Prio，并阻止截屏、录屏和屏幕共享。"
         },
         {
           "title": "无广告，不出售数据",
-          "body": "Prio 不投放广告，不出售你的个人数据，也不将其用于跨应用广告追踪。"
+          "body": "Prio 不展示广告，不出售你的个人数据，也不会将其用于跨应用广告追踪。"
         }
       ]
     },
     "updates": {
       "eyebrow": "更新内容",
-      "title": "近期改进",
-      "body": "我们会在每次发布中持续改进核心体验。",
+      "title": "最近新增",
+      "body": "最近的版本增加了创意工具和更强的隐私控制，同时核心规划仍保留在你的设备上。",
       "items": [
-        "提升端侧 AI 启动速度和模型管理的可靠性",
-        "简化快速记录、日程安排以及“今天”中的“下一步行动”流程",
-        "让新手引导和高级 AI 设置的导航更清晰",
-        "提升整个应用的无障碍体验、隐私保护和稳定性"
+        "聊天中的设备端图像创作，支持分享、保存、全屏查看和生成变体",
+        "一键复制聊天消息",
+        "隐私与安全设置，可在锁屏上隐藏详情并阻止截屏",
+        "设备端 AI 模型浏览器，以及恢复备份前的完整性校验"
       ]
     },
     "features": {
       "eyebrow": "你需要的一切功能",
       "title": "一套完整的优先级、目标与时间管理系统",
       "items": [
-        "包含“立即执行”“计划安排”“委派他人”“以后再说”的艾森豪威尔矩阵",
-        "任务、子任务、重复、标签、截止日期和提醒",
-        "与日常工作相连的目标",
-        "早间简报和晚间反思",
-        "日历视图和专注的“我的一天”规划",
-        "本地、端侧完成的效率分析"
+        "艾森豪威尔矩阵：立即执行、计划安排、委派他人和稍后处理",
+        "支持设备端语音的自然语言快速记录",
+        "支持子任务、截止日期、提醒、重复和标签的任务",
+        "带里程碑、进度跟踪和目标健康度的目标",
+        "晨间简报、晚间总结和设备端洞察",
+        "日、3 日、周和月视图日历，以及“我的一天”",
+        "带可核对建议和设备端图像创作的聊天助手",
+        "App Actions、配对智能体（MCP）、深色主题和 11 种语言",
+        "JSON 导出和可选的加密 Google Drive 备份"
       ]
     },
     "free": {
@@ -1830,19 +2596,23 @@
       "items": [
         {
           "question": "Prio 真的免费吗？",
-          "answer": "是的。目前所有功能均可免费使用，不提供订阅、付费升级或一次性解锁购买。"
+          "answer": "是的。目前所有功能均免费，没有订阅、付费升级或一次性购买。"
         },
         {
           "question": "Prio 可以离线使用吗？",
-          "answer": "可以。记录、规划、目标、提醒和规则优先的优先级排序都能完全离线运行，且无需 Prio 账号。"
+          "answer": "可以。记录、规划、目标、提醒和规则优先的优先级排序都无需联网，也无需 Prio 账号。远程 AI 和云备份只有在你开启后才会联网。"
         },
         {
           "question": "Prio 会把我的任务发送到云端吗？",
-          "answer": "只有你主动选择时才会。核心规划始终保留在你的设备上。远程 AI、云端备份和导出都是需要你单独开启的独立功能，Prio 没有 AI 代理。"
+          "answer": "只有在你选择时才会。核心规划保留在你的设备上。远程 AI、云备份和导出都是需要你分别开启的独立功能，而且 Prio 没有 AI 代理。"
         },
         {
-          "question": "Prio 与普通待办清单有什么不同？",
-          "answer": "Prio 不只是存储任务，还会为任务排序优先级。每次记录都会得到基于艾森豪威尔矩阵、附带理由的建议，让你始终清楚下一步该做什么，而不只是清单上还有什么。"
+          "question": "可以在不把数据发送到云端的情况下使用 AI 吗？",
+          "answer": "可以。在受支持的设备上，Prio 可以使用 Gemini Nano 或你下载的 llama.cpp 模型在设备上运行 AI。远程提供商是可选的实验功能，并使用你自己的 API 密钥。"
+        },
+        {
+          "question": "Prio 和普通待办清单有什么不同？",
+          "answer": "Prio 不只是存储任务，还会为任务排定优先级。每次记录都会得到可解释的艾森豪威尔矩阵建议，让你始终知道现在该做什么，而不只是清单上有什么。"
         }
       ]
     },

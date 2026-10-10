@@ -113,7 +113,9 @@ class SiteBuildTests(unittest.TestCase):
             self.assertNotIn("no permissions required", source.lower())
             self.assertNotIn("Eliminate", source)
             self.assertIn("Do First", source)
-            self.assertIn("Maybe Later", source)
+            self.assertIn("Later", source)
+            self.assertNotIn("Maybe Later", source)
+            self.assertNotIn("fully offline", source.lower())
             self.assertIn("microphone access", source)
 
             terms = (output / "terms-of-service.html").read_text(encoding="utf-8")
@@ -204,16 +206,46 @@ class SiteBuildTests(unittest.TestCase):
             )
 
     def test_gallery_captions_match_current_screenshots(self) -> None:
-        captions = build_site.load_locales()["en-US"]["gallery"]["captions"]
+        items = build_site.load_locales()["en-US"]["gallery"]["items"]
         self.assertEqual(
-            captions,
+            [item["caption"] for item in items],
             [
-                "Quick Capture with a priority suggestion",
-                "Morning briefing",
-                "Goal progress",
-                "Task details",
+                "Today, in dark theme",
+                "Quick Capture that understands you",
+                "A private morning briefing",
+                "Goals with Goal Health",
+                "Calendar and tasks together",
+                "Privacy controls in one place",
             ],
         )
+        self.assertEqual(len(build_site.GALLERY_SCREENS), len(items))
+
+    def test_every_locale_uses_current_quadrant_names(self) -> None:
+        stale_labels = (
+            "Maybe Later",
+            "Vielleicht später",
+            "Quizás después",
+            "Peut-être plus tard",
+            "Forse dopo",
+            "Misschien later",
+            "Talvez depois",
+            "Может подождать",
+            "以后再说",
+        )
+        for locale, data in build_site.load_locales().items():
+            serialized = json.dumps(data, ensure_ascii=False)
+            for label in stale_labels:
+                with self.subTest(locale=locale, label=label):
+                    self.assertNotIn(label, serialized)
+
+    def test_gallery_screens_are_committed_responsive_webp(self) -> None:
+        for name in build_site.GALLERY_SCREENS:
+            for width in build_site.SCREEN_WIDTHS:
+                path = build_site.SCREENS_DIR / f"{name}-{width}.webp"
+                with self.subTest(path=path.name):
+                    self.assertTrue(path.is_file())
+                    self.assertEqual(path.read_bytes()[8:12], b"WEBP")
+                    self.assertLess(path.stat().st_size, 160_000)
 
     def test_screenshots_render_as_chrome_free_app_plates(self) -> None:
         locales = build_site.load_locales()
@@ -230,10 +262,25 @@ class SiteBuildTests(unittest.TestCase):
         self.assertIn('class="matrix"', source)
         for cell in ("do", "schedule", "delegate", "later"):
             self.assertIn(f"matrix__cell--{cell}", source)
-        for label in ("Do First", "Schedule", "Delegate", "Maybe Later"):
+        for label in ("Do First", "Schedule", "Delegate", "Later"):
             self.assertIn(label, source)
-        for variant in ("capture", "briefing", "goals", "task"):
-            self.assertIn(f"app-surface--{variant}", source)
+
+        gallery_images = re.findall(
+            r'<figure class="gallery-card[^"]*">\s*'
+            r'<div class="gallery-card__screen">\s*(<img [^>]+>)',
+            source,
+        )
+        self.assertEqual(len(gallery_images), len(build_site.GALLERY_SCREENS))
+        for name, image in zip(build_site.GALLERY_SCREENS, gallery_images):
+            with self.subTest(screen=name):
+                fallback = build_site.SCREEN_WIDTHS[0]
+                self.assertIn(f'src="/assets/screens/{name}-{fallback}.webp"', image)
+                for width in build_site.SCREEN_WIDTHS:
+                    self.assertIn(f"/assets/screens/{name}-{width}.webp {width}w", image)
+                self.assertIn('width="1080" height="1920"', image)
+                self.assertIn('loading="lazy"', image)
+                self.assertRegex(image, r'alt="[^"]{20,}"')
+        self.assertIn("gallery-card--dark", source)
 
         self.assertNotIn("/screenshots/", source)
         self.assertNotIn("app-plate", source)
@@ -246,16 +293,22 @@ class SiteBuildTests(unittest.TestCase):
         self.assertIn(".app-surface", styles)
         self.assertIn(".matrix__cell--do", styles)
         self.assertNotIn("object-fit: cover", styles)
+        self.assertNotIn("app-surface--capture", styles)
         self.assertRegex(
             styles,
             r"\.gallery-grid\s*\{[^}]*"
-            r"grid-template-columns:\s*repeat\(2,",
+            r"grid-template-columns:\s*repeat\(3,",
         )
 
         with tempfile.TemporaryDirectory() as temporary_directory:
             output = Path(temporary_directory) / "_site"
             build_site.build(output)
             self.assertFalse((output / "screenshots").exists())
+            for name in build_site.GALLERY_SCREENS:
+                for width in build_site.SCREEN_WIDTHS:
+                    self.assertTrue(
+                        (output / "assets" / "screens" / f"{name}-{width}.webp").is_file()
+                    )
             rendered = (output / "index.html").read_text(encoding="utf-8")
             self.assertIn('class="app-surface app-surface--hero"', rendered)
 

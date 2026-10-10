@@ -18,6 +18,23 @@ The preview command stages a complete build before replacing `_site` and sends
 no-cache headers so local browsers never mix markup and styles from different
 revisions.
 
+## App screenshots
+
+The gallery shows real Android screens from the Prio repository's store
+screenshot capture (`store-listing/screenshots/`). After a new capture, refresh
+the committed responsive WebP files and rebuild:
+
+```bash
+python3 scripts/import_screenshots.py --source ../prio/store-listing/screenshots
+```
+
+The importer requires 1080x1920 sources and writes 540, 720, and 1080 px WebP
+variants to `assets/screens/`. CI does not run it, so commit the regenerated
+files. The hero matrix stays HTML/CSS, localized per locale under
+`heroSurface`, so the largest above-the-fold element never waits on an image.
+Gallery captions and alt text live in `gallery.items`, ordered like
+`GALLERY_SCREENS` in `scripts/build_site.py`.
+
 ## Search indexing
 
 The build emits static HTML for every locale, reciprocal `hreflang` links,

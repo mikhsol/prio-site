@@ -22,7 +22,7 @@ DEFAULT_OUTPUT = ROOT / "_site"
 SITE_URL = "https://prio.tl-dr.ch"
 SITE_NAME = "Prio"
 PLAY_URL = "https://play.google.com/store/apps/details?id=com.prio.app"
-LAST_MODIFIED = "2026-09-15"
+LAST_MODIFIED = "2026-10-10"
 
 EXPECTED_LOCALES = (
     "en-US",
@@ -82,14 +82,33 @@ MANIFEST_BACKGROUND_COLOR = "#fbfcf7"
 
 EXPECTED_ARRAY_LENGTHS = {
     "hero.trust": 4,
-    "benefits.items": 3,
+    "heroSurface.quadrants": 4,
+    "benefits.items": 6,
     "how.items": 3,
-    "gallery.captions": 4,
-    "privacy.points": 3,
+    "gallery.items": 6,
+    "privacy.points": 4,
     "updates.items": 4,
-    "features.items": 6,
-    "faq.items": 4,
+    "features.items": 9,
+    "faq.items": 5,
 }
+
+# Real Android screens, imported from the app repository's committed Play Store
+# screenshots by scripts/import_screenshots.py. Order matches gallery.items.
+GALLERY_SCREENS = (
+    "today-dark",
+    "quick-capture",
+    "morning-briefing",
+    "goal-health",
+    "calendar",
+    "privacy-controls",
+)
+SCREEN_SIZE = (1080, 1920)
+SCREEN_WIDTHS = (540, 720, 1080)
+SCREENS_DIR = ROOT / "assets" / "screens"
+GALLERY_IMAGE_SIZES = (
+    "(max-width: 420px) 82vw, (max-width: 720px) 72vw, "
+    "(max-width: 960px) 30vw, 20rem"
+)
 
 COPY_FILES = (
     "CNAME",
@@ -430,136 +449,71 @@ def _render_cards(
     return "\n".join(rows)
 
 
-_MATRIX_CELLS = (
-    ("do", "2", "Do First", "Urgent · important"),
-    ("schedule", "4", "Schedule", "Important · plan it"),
-    ("delegate", "2", "Delegate", "Urgent · hand off"),
-    ("later", "2", "Maybe Later", "Low priority"),
-)
-_MATRIX_HTML = "".join(
-    f'<div class="matrix__cell matrix__cell--{key}">'
-    f'<span class="matrix__count">{count}</span>'
-    f'<span class="matrix__name">{name}</span>'
-    f'<span class="matrix__hint">{hint}</span></div>'
-    for key, count, name, hint in _MATRIX_CELLS
-)
-
-HERO_SURFACE_HTML = (
-    '            <div class="app-surface app-surface--hero" aria-hidden="true">\n'
-    '              <div class="app-surface__bar">\n'
-    "                <div>\n"
-    '                  <p class="app-surface__eyebrow">Saturday · Feb 21</p>\n'
-    '                  <p class="app-surface__heading">Good morning</p>\n'
-    "                </div>\n"
-    '                <span class="app-surface__pill">2 urgent</span>\n'
-    "              </div>\n"
-    f'              <div class="matrix">{_MATRIX_HTML}</div>\n'
-    '              <div class="focus-row">\n'
-    '                <span class="focus-row__index">1</span>\n'
-    '                <div class="focus-row__text">\n'
-    '                  <p class="focus-row__task">Fix critical auth bug in production</p>\n'
-    '                  <p class="focus-row__meta">Do First · due 1:26 PM</p>\n'
-    "                </div>\n"
-    f'                <span class="focus-row__check">{_icon("check")}</span>\n'
-    "              </div>\n"
-    "            </div>"
-)
-
-_CAPTURE_SURFACE = (
-    '            <div class="app-surface app-surface--capture" aria-hidden="true">\n'
-    '              <div class="capture-field">\n'
-    f'                <span class="capture-field__mic">{_icon("mic")}</span>\n'
-    '                <span class="capture-field__text">Prepare Q1 board deck</span>\n'
-    f'                <span class="capture-field__lock">{_icon("lock")}</span>\n'
-    "              </div>\n"
-    '              <div class="capture-ai">\n'
-    f'                <span class="capture-ai__spark">{_icon("sparkles")}</span>\n'
-    "                <div>\n"
-    '                  <p class="capture-ai__label">Suggested priority</p>\n'
-    '                  <p class="capture-ai__value">Schedule · important, not urgent</p>\n'
-    "                </div>\n"
-    "              </div>\n"
-    '              <div class="capture-meta">\n'
-    f'                <span class="capture-meta__item">{_icon("calendar")} Fri, 9:00 AM</span>\n'
-    f'                <span class="capture-meta__item">{_icon("bell")} Reminder</span>\n'
-    "              </div>\n"
-    '              <span class="surface-btn">Create task</span>\n'
-    "            </div>"
-)
-
-_BRIEFING_SURFACE = (
-    '            <div class="app-surface app-surface--briefing" aria-hidden="true">\n'
-    '              <div class="briefing-card">\n'
-    f'                <p class="briefing-card__eyebrow">{_icon("sun")} Your morning briefing</p>\n'
-    '                <p class="briefing-card__stat">2 urgent tasks · 0 meetings</p>\n'
-    '                <p class="briefing-card__note">Top task: “Prepare Q1 review presentation”</p>\n'
-    "              </div>\n"
-    '              <p class="surface-label">Do First</p>\n'
-    '              <div class="mini-task"><span class="mini-task__dot mini-task__dot--do">1</span>'
-    "Prepare Q1 review presentation</div>\n"
-    '              <div class="mini-task"><span class="mini-task__dot mini-task__dot--do">2</span>'
-    "Fix critical auth bug</div>\n"
-    "            </div>"
-)
-
-_GOALS_SURFACE = (
-    '            <div class="app-surface app-surface--goals" aria-hidden="true">\n'
-    '              <div class="goals-head">\n'
-    '                <div class="goals-ring" style="--value:45%"><span>45%</span></div>\n'
-    '                <div class="goals-head__stats">\n'
-    "                  <span><strong>3</strong> active</span>\n"
-    "                  <span><strong>2</strong> on track</span>\n"
-    "                  <span><strong>1</strong> at risk</span>\n"
-    "                </div>\n"
-    "              </div>\n"
-    '              <div class="goal-line">\n'
-    '                <div class="goal-line__top"><span class="tag">Career</span>'
-    '<span class="goal-line__pct">45%</span></div>\n'
-    '                <p class="goal-line__name">Get promoted to Staff Engineer</p>\n'
-    '                <div class="bar"><span style="width:45%"></span></div>\n'
-    "              </div>\n"
-    '              <div class="goal-line">\n'
-    '                <div class="goal-line__top"><span class="tag">Health</span>'
-    '<span class="goal-line__pct">30%</span></div>\n'
-    '                <p class="goal-line__name">Run a half marathon</p>\n'
-    '                <div class="bar"><span style="width:30%"></span></div>\n'
-    "              </div>\n"
-    "            </div>"
-)
-
-_TASK_SURFACE = (
-    '            <div class="app-surface app-surface--task" aria-hidden="true">\n'
-    '              <div class="task-title">Prepare Q1 review presentation</div>\n'
-    '              <p class="surface-label">Notes</p>\n'
-    '              <div class="task-notes">Include team metrics, project outcomes, '
-    "and individual contributions. Needs it by Friday.</div>\n"
-    '              <div class="task-priority">\n'
-    '                <span class="task-priority__flag">!</span>\n'
-    "                <div>\n"
-    '                  <p class="task-priority__label">Priority</p>\n'
-    '                  <p class="task-priority__value">Do First</p>\n'
-    "                </div>\n"
-    "              </div>\n"
-    f'              <span class="surface-btn surface-btn--full">{_icon("check")} Complete</span>\n'
-    "            </div>"
-)
-
-GALLERY_SURFACES = (
-    _CAPTURE_SURFACE,
-    _BRIEFING_SURFACE,
-    _GOALS_SURFACE,
-    _TASK_SURFACE,
-)
+_MATRIX_KEYS = ("do", "schedule", "delegate", "later")
+_MATRIX_COUNTS = ("2", "3", "2", "2")
 
 
-def _render_gallery(captions: list[str]) -> str:
-    return "\n".join(
-        '          <figure class="gallery-card">\n'
-        f"{surface}\n"
-        f"            <figcaption>{_text(caption)}</figcaption>\n"
-        "          </figure>"
-        for surface, caption in zip(GALLERY_SURFACES, captions)
+def _render_hero_surface(surface: dict[str, Any]) -> str:
+    cells = "".join(
+        f'<div class="matrix__cell matrix__cell--{key}">'
+        f'<span class="matrix__name">{_text(quadrant["name"])}</span>'
+        f'<span class="matrix__count">{count}</span>'
+        f'<span class="matrix__hint">{_text(quadrant["hint"])}</span></div>'
+        for key, count, quadrant in zip(
+            _MATRIX_KEYS,
+            _MATRIX_COUNTS,
+            surface["quadrants"],
+        )
     )
+    return (
+        '            <div class="app-surface app-surface--hero" aria-hidden="true">\n'
+        '              <div class="app-surface__bar">\n'
+        "                <div>\n"
+        f'                  <p class="app-surface__eyebrow">{_text(surface["day"])}</p>\n'
+        '                  <p class="app-surface__heading">'
+        f'<span class="app-surface__sun">{_icon("sun")}</span>'
+        f'{_text(surface["greeting"])}</p>\n'
+        "                </div>\n"
+        f'                <span class="app-surface__pill">{_text(surface["pill"])}</span>\n'
+        "              </div>\n"
+        f'              <p class="app-surface__label">{_text(surface["overview"])}</p>\n'
+        f'              <div class="matrix">{cells}</div>\n'
+        f'              <p class="app-surface__label">{_text(surface["focus"])}</p>\n'
+        '              <div class="focus-row">\n'
+        '                <span class="focus-row__index">!</span>\n'
+        '                <div class="focus-row__text">\n'
+        f'                  <p class="focus-row__task">{_text(surface["task"])}</p>\n'
+        f'                  <p class="focus-row__meta">{_text(surface["meta"])}</p>\n'
+        "                </div>\n"
+        f'                <span class="focus-row__check">{_icon("check")}</span>\n'
+        "              </div>\n"
+        "            </div>"
+    )
+
+
+def _screen_url(name: str, width: int) -> str:
+    return f"/assets/screens/{name}-{width}.webp"
+
+
+def _render_gallery(items: list[dict[str, str]]) -> str:
+    cards = []
+    for name, item in zip(GALLERY_SCREENS, items):
+        srcset = ", ".join(
+            f"{_screen_url(name, width)} {width}w" for width in SCREEN_WIDTHS
+        )
+        variant = " gallery-card--dark" if name.endswith("-dark") else ""
+        cards.append(
+            f'          <figure class="gallery-card{variant}">\n'
+            '            <div class="gallery-card__screen">'
+            f'<img src="{_screen_url(name, SCREEN_WIDTHS[0])}" '
+            f'srcset="{srcset}" sizes="{GALLERY_IMAGE_SIZES}" '
+            f'width="{SCREEN_SIZE[0]}" height="{SCREEN_SIZE[1]}" '
+            f'alt="{_attribute(item["alt"])}" loading="lazy" decoding="async">'
+            "</div>\n"
+            f"            <figcaption>{_text(item['caption'])}</figcaption>\n"
+            "          </figure>"
+        )
+    return "\n".join(cards)
 
 
 def render_page(
@@ -568,7 +522,7 @@ def render_page(
     locales: dict[str, dict[str, Any]],
     template: str,
 ) -> str:
-    gallery = _render_gallery(data["gallery"]["captions"])
+    gallery = _render_gallery(data["gallery"]["items"])
     privacy_points = "\n".join(
         "          <article class=\"privacy-point\">"
         f'<span aria-hidden="true">0{index}</span>'
@@ -634,7 +588,7 @@ def render_page(
         "LANGUAGE_LINKS": _render_language_links(locale, locales),
         "MENU_LABEL": common["menu"],
         "CLOSE_MENU_LABEL": common["closeMenu"],
-        "HERO_SURFACE": HERO_SURFACE_HTML,
+        "HERO_SURFACE": _render_hero_surface(data["heroSurface"]),
         "PLAY_URL": PLAY_URL,
         "PLAY_ARIA": common["playAria"],
         "BADGE_FILE": BADGE_FILES[locale],
@@ -651,7 +605,7 @@ def render_page(
         "BENEFIT_ITEMS": _render_cards(
             data["benefits"]["items"],
             "outcome-card",
-            ("target", "zap", "flag"),
+            ("target", "zap", "sun", "sparkles", "flag", "calendar"),
         ),
         "HOW_EYEBROW": data["how"]["eyebrow"],
         "HOW_TITLE": data["how"]["title"],
@@ -934,6 +888,18 @@ def _build_output(output: Path) -> None:
         if not source.is_file():
             raise FileNotFoundError(f"Localized social card is missing: {source}")
         shutil.copy2(source, social_output / filename)
+
+    screens_output = output / "assets" / "screens"
+    screens_output.mkdir(parents=True)
+    for name in GALLERY_SCREENS:
+        for width in SCREEN_WIDTHS:
+            source = SCREENS_DIR / f"{name}-{width}.webp"
+            if not source.is_file():
+                raise FileNotFoundError(
+                    f"Gallery screenshot is missing: {source} "
+                    "(run scripts/import_screenshots.py)"
+                )
+            shutil.copy2(source, screens_output / source.name)
 
     _write_brand_icons(output)
     _write_web_manifest(output, locales["en-US"]["seo"]["description"])
